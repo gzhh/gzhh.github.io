@@ -6,14 +6,71 @@
     <description>Recent content in misc on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jan 2022 16:09:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Dec 2021 23:55:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>http://localhost:1313/post/test/</link>
-      <pubDate>Sat, 01 Jan 2022 16:09:50 +0800</pubDate>
+      <title>2022新年计划</title>
+      <link>http://localhost:1313/post/the-purpose-of-2022/</link>
+      <pubDate>Fri, 31 Dec 2021 23:55:50 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/test/</guid>
-      <description>2020全年盘点 工作 2020年一月份向前公司提了离职计划，恰巧一月底疫情变得严重起来，到二月底差不多一个月只能呆在家里，三月份才正式入职新公</description>
+      <guid>http://localhost:1313/post/the-purpose-of-2022/</guid>
+      <description>&lt;h2 id=&#34;2021全年盘点&#34;&gt;2021全年盘点&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;工作&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2021年还是在团队中负责技术难度偏弱且业务性比较强的工作，但工作强度全年大部分时间都比较大，所以今年心累的时候比较多，头发感觉也还是在慢慢变稀。&lt;/p&gt;
+&lt;p&gt;今年和去年一样，年中的时候公司项目冲刺了两个月，这两个月是996工作制的，两个月实打实的全天工作，高负荷确实很伤身体，今年下半年到现在右肩都时不时会感到痛。&lt;/p&gt;
+&lt;p&gt;总体来说个人对今年的工作内容都不怎么喜欢，偏业务性的工作太多，在技术方面的沉淀可以说很少，空闲时间研究的技术又很难在工作中用到，所以今年还是比较焦虑的。&lt;/p&gt;
+&lt;p&gt;最后年底晋升了，工资也稍微涨了些，算是踩尾巴完成去年定下的一个目标吧。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;学习&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在技术方面，今年通过下面这些技术书籍，深度理解了一些技术知识&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《数据密集型应用系统设计（DDIA）》学习了些数据方面相关的知识&lt;/li&gt;
+&lt;li&gt;《Redis设计与实现》学习了了Redis原理及设计相关的一些知识&lt;/li&gt;
+&lt;li&gt;《HTTP/2 in Action 中文版》学习了一些HTTP概念及HTTP2等相关前沿的一些知识&lt;/li&gt;
+&lt;li&gt;《MySQL是怎样运行的》从底层深度了解了一些MySQL原理相关的知识&lt;/li&gt;
+&lt;li&gt;《The Go Programming Language》等Golang技术方面的书籍，深度学习了Golang相关知识&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;行业知识方面的书籍有&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《UNIX传奇》了解一些unix发展历史&lt;/li&gt;
+&lt;li&gt;《程序化广告》了解了一些在线广告相关的一些知识&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;生活&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;生活方面2021全年回了两次老家，一次是春季假期在家呆了六天，第二次是国庆节，回家呆了三天。&lt;/p&gt;
+&lt;p&gt;运动方面今年有断断续续的去游泳，为数不多的跑步则主要是集中在夏天。&lt;/p&gt;
+&lt;p&gt;今年参加了两次徒步活动，清明节期间去天目山花了三天穿越七尖，这次强度很大，体能差点被拉爆了；中秋节完成武功山到明月山的三天穿越活动，在这之后收获了一份短暂感情。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;读书&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2021年总的来说看的书没有去年看的多，总共就看了十几本非技术书吧，年初和年底稍微看了几本，年中由于加班多，所以荒废了。&lt;/p&gt;
+&lt;p&gt;今年看的书基本也都是在书店看的，也有尝试过在家看书，但是做不到一整天都看书，容易被各种电子设备吸引注意力，这个方面还是希望自己能改进。&lt;/p&gt;
+&lt;p&gt;下面列出了今年看过的一些非技术书：&lt;/p&gt;
+&lt;p&gt;《江村经济》、《如何阅读一本书》、《江城》、《夹边沟记事》、《定西.孤儿院纪事》、《甘南纪事》、《你一定爱读的极简欧洲史》、《德米安》、《寻路中国》、《思考，快与慢》、《学习之道》、《中国近代史-徐中约》&lt;/p&gt;
+&lt;p&gt;总结下今年的看书情况，工作对个人的生活有很大影响，也导致今年看的书不多，也缺少计划。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;理财&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2021年大部分的投资资金都放在股票中，股票全年的收益率差不多快到15%，勉强完成去年定下的目标；今年基金中只放了很小一部分的资金，可以忽略不计。&lt;/p&gt;
+&lt;p&gt;总的来说，2021年是股市不怎么景气的一年，很多人今年理财投资都亏了钱，尤其是去年大红大火的各大明星基金经理，今年大多都套在了去年的各大白马股上；另外今年美股的中概互联也是惨不忍睹，同样港股的恒指也跌无止境。&lt;/p&gt;
+&lt;p&gt;我个人今年股票的投资理念是长期持有低估值股、逢低加仓、做低成本，等待价值回归，这些理念也确实在个股大跌长熊的时候给了我很强的底气，也最终在第四季度的时候慢慢开始浮盈。&lt;/description&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2021新年计划</title>
+      <link>http://localhost:1313/post/the-purpose-of-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 01:10:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/the-purpose-of-2021/</guid>
+      <description>&lt;h2 id=&#34;2020全年盘点&#34;&gt;2020全年盘点&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;工作&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2020年一月份向前公司提了离职计划，恰巧一月底疫情变得严重起来，到二月底差不多一个月只能呆在家里，三月份才正式入职新公司（也就是现在就职的公司）。&lt;/p&gt;
+&lt;p&gt;刚入职现公司不久就参加了两个月的项目冲刺996工作制度，新公司所在小组业务需求比较繁多，迭代速度快，全年压力都很大，导致整个一年都在持续不断的掉头发。&lt;/p&gt;
+&lt;p&gt;工作压力直到逐渐熟悉业务系统，并第四个季度公司进入敏捷开发阶段后，才慢慢减轻，再就是年底12月份末尾也被普调一波涨了一次薪水。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;生活&lt;/strong&gt;
+全年回了两次家，由于疫情春季期间在家呆了差不多一个月，这一个月也是完全刷剧荒废了；第二次回家是国庆回家呆了三天。&lt;/p&gt;
+&lt;p&gt;全年参加了两次徒步活动，五一期间去仙居公盂参加了中途两天多的徒步活动；十一期间去舟山大洋山岛参加了短途一天的徒步活动。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;读书&lt;/strong&gt;
+2020年总的来说大概读了20本左右非技术书吧，各种类型的书都有几本吧，有的书很难读懂，只能说看完，并不能说都理解。&lt;/p&gt;
+&lt;p&gt;然后全年去了蛮多次书店和自习室去学习或者看书的，为什么不在家里面看呢，因为周末在家里我实在看不下去书，去书店看本着类似有人监督和有气氛的目的，才看的下去。&lt;/p&gt;
+&lt;p&gt;下面列出了今年看过的一些非技术书&lt;/p&gt;
+&lt;p&gt;《许三观卖血记》、《明朝那些事》、《少年凯歌》、《战争风云》、《动物庄园》、《2001：太空漫游》、《无人生还》、《邓小平时代》、《富爸爸，穷爸爸》、《局外人》、《鼠疫》、《情人》、《路易·波拿巴的雾月十八日》、《小王子》、《余下只有噪音 : 聆听20世纪》、《跨越边界的社区》、《1984》、《天堂城堡中的音乐 : 巴赫传》、《习惯的力量》、《悉达多》&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;理财&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2020年从零开始学习理财知识，年初开始尝试基金理财，第四季度开始尝试股票投资；基金股票投资比例1:4，基金全年收益率7%，股票全年收益率-0.5%。&lt;/p&gt;
+&lt;p&gt;总的来说，2020年是股市牛年，很多人今年理财投资都有蛮多收益率的，而我的理财投资理念还处于初步阶段，今年大概有微微的收益，权当学习新知识吧。&lt;/p&gt;</description>
     </item>
     
   </channel>
