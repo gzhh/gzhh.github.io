@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gzhh&#39;s blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on gzhh&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Jan 2022 16:09:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>Hi, I&amp;rsquo;m gzhh.
+I live in China and work as an Backend Engineer.</description>
+    </item>
+    
+    <item>
+      <title>Read</title>
+      <link>http://localhost:1313/read/</link>
+      <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/read/</guid>
+      <description>阅读记录 2021 书名 标签 阅读状态 阅读方式 书目链接 HTTP/2 in Action 中文版 计算机 已读 实体书 https://book.douban.com/subject/35137621/</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/post/test/</link>
+      <pubDate>Sat, 01 Jan 2022 16:09:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/test/</guid>
+      <description>2020全年盘点 工作 2020年一月份向前公司提了离职计划，恰巧一月底疫情变得严重起来，到二月底差不多一个月只能呆在家里，三月份才正式入职新公</description>
+    </item>
+    
+  </channel>
+</rss>
