@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gzhh&#39;s blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://gzhh.github.io/</link>
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Dec 2021 23:55:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Dec 2021 23:55:50 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://gzhh.github.io/about/</link>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://gzhh.github.io/about/</guid>
       <description>Hi, I&amp;rsquo;m gzhh.
 I live in China and work as an Backend Engineer.</description>
     </item>
     
     <item>
       <title>Read</title>
-      <link>http://localhost:1313/read/</link>
+      <link>https://gzhh.github.io/read/</link>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       
-      <guid>http://localhost:1313/read/</guid>
+      <guid>https://gzhh.github.io/read/</guid>
       <description>阅读记录 2021 书名 标签 阅读状态 阅读方式 书目链接 HTTP/2 in Action 中文版 计算机 已读 实体书 https://book.douban.com/subject/35137621/</description>
     </item>
     
     <item>
       <title>2022新年计划</title>
-      <link>http://localhost:1313/post/the-purpose-of-2022/</link>
+      <link>https://gzhh.github.io/post/the-purpose-of-2022/</link>
       <pubDate>Fri, 31 Dec 2021 23:55:50 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/the-purpose-of-2022/</guid>
+      <guid>https://gzhh.github.io/post/the-purpose-of-2022/</guid>
       <description>&lt;h2 id=&#34;2021全年盘点&#34;&gt;2021全年盘点&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;工作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2021年还是在团队中负责技术难度偏弱且业务性比较强的工作，但工作强度全年大部分时间都比较大，所以今年心累的时候比较多，头发感觉也还是在慢慢变稀。&lt;/p&gt;
@@ -70,10 +70,10 @@ I live in China and work as an Backend Engineer.</description>
     
     <item>
       <title>2021新年计划</title>
-      <link>http://localhost:1313/post/the-purpose-of-2021/</link>
+      <link>https://gzhh.github.io/post/the-purpose-of-2021/</link>
       <pubDate>Fri, 01 Jan 2021 01:10:50 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/the-purpose-of-2021/</guid>
+      <guid>https://gzhh.github.io/post/the-purpose-of-2021/</guid>
       <description>&lt;h2 id=&#34;2020全年盘点&#34;&gt;2020全年盘点&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;工作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2020年一月份向前公司提了离职计划，恰巧一月底疫情变得严重起来，到二月底差不多一个月只能呆在家里，三月份才正式入职新公司（也就是现在就职的公司）。&lt;/p&gt;
