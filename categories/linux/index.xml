@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on gzhh&#39;s blog</title>
+    <link>https://gzhh.github.io/categories/linux/</link>
+    <description>Recent content in Linux on gzhh&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 23 Mar 2018 09:22:30 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【VIM】vim常用操作</title>
+      <link>https://gzhh.github.io/post/vim-skill/</link>
+      <pubDate>Fri, 23 Mar 2018 09:22:30 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/post/vim-skill/</guid>
+      <description>&lt;h3 id=&#34;1一般模式默认模式&#34;&gt;1.一般模式(默认模式)：&lt;/h3&gt;
+&lt;p&gt;Ctrl+f 	向下移动一页
+Ctrl+b  向上移动一页
+0或Home	移到这一行的最前面字符处
+$或End	移到这一行的最后面字符处
+G		移到这个文件的最后一行
+nG		移到这个文件的第n行
+gg		移到这个文件的第一行
+n+Enter 向下移动n行&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>玩转sed操作文本-基础篇</title>
+      <link>https://gzhh.github.io/post/play-sed-first/</link>
+      <pubDate>Fri, 17 Nov 2017 18:42:35 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/post/play-sed-first/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
+&lt;p&gt;sed 全名是 stream editor，是文本流处理方面的强大工具，和另一个文本处理工具 awk 工具有的一比，接下来就让我们简单介绍下它的基本使用和适用场景。
+我们这篇主要讲的是 Gnu sed，还有一个常用的是 BSD sed（Mac OS就是源自 BSD 的），两者略微有点不同，不过他们俩都是由 Posix sed 演化而来。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OperatingSystem on gzhh&#39;s blog</title>
+    <link>https://gzhh.github.io/categories/operatingsystem/</link>
+    <description>Recent content in OperatingSystem on gzhh&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Mar 2019 01:08:00 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/categories/operatingsystem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【操作系统】3.内存memory(抽象的地址空间)</title>
+      <link>https://gzhh.github.io/post/operating-system-3.memory/</link>
+      <pubDate>Mon, 11 Mar 2019 01:08:00 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/post/operating-system-3.memory/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
+&lt;p&gt;早期的操作系统实现功能起来很简单，一般看来，物理内存的结构就一般分为俩快：一块用来存os的代码和数据，另一块给当前程序的代码和数据。就像下图：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【操作系统】2.调度scheduling</title>
+      <link>https://gzhh.github.io/post/operating-system-2.scheduling/</link>
+      <pubDate>Wed, 27 Feb 2019 16:37:33 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/post/operating-system-2.scheduling/</guid>
+      <description>&lt;h3 id=&#34;调度的前提限制&#34;&gt;调度的前提：限制&lt;/h3&gt;
+&lt;p&gt;为了虚拟化 CPU，操作系统需要将物理 CPU 分享给正在运行的作业，即进程。虚拟化的基础思想是：运行一个进程一会儿，然后再运行另一个，一直下去，按时间来分享 CPU。 然而建立虚拟机有两个难题：性能和控制性，虚拟机的可控性非常重要，他可以让进程在系统中稳定的运行，不会崩溃，所以就有了一个技术: Limited Direct Execution(限制直接执行)。 如果不做限制，一般是当操作系统想运行某个程序的时候，系统就会在进程表里面创建一条记录，然后分配内存给程序，并把程序代码加载到内存里面去，然后开始运行程序代码。 Limited Direct Execution 是说当操作系统想让一个程序运行的时候，不直接让它做上面的操作，需要避免危险操作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【操作系统】1.进程process</title>
+      <link>https://gzhh.github.io/post/operating-system-1.process/</link>
+      <pubDate>Mon, 25 Feb 2019 23:00:39 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/post/operating-system-1.process/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
+&lt;p&gt;什么是进程：简单来说就是一个正在运行中的程序 进程是程序的一次执行，包括代码和数据，是CPU分配资源的基本单位，一个进程可以包括多个线程。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【操作系统】基础概念介绍</title>
+      <link>https://gzhh.github.io/post/operating-system-0.basic-info/</link>
+      <pubDate>Sat, 23 Feb 2019 09:43:53 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/post/operating-system-0.basic-info/</guid>
+      <description>&lt;p&gt;进程：正在运行的程序
+线程：是操作系统能够进行运算调度的最小单位，他被包含在进程中，是进程中的实际运作单位。（抢占式、可并发、 OS 控制）
+协程：协程是一种程序组件、协程更为一般和灵活（非抢占式、模拟并发、用户控制）&lt;/p&gt;
+&lt;p&gt;并行：多个进程同时工作
+并发：多个进程不同时工作&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

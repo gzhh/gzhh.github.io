@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Write on gzhh&#39;s blog</title>
+    <link>https://gzhh.github.io/categories/write/</link>
+    <description>Recent content in Write on gzhh&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Oct 2019 17:23:05 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/categories/write/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX学习记录</title>
+      <link>https://gzhh.github.io/post/latex-usage-notes/</link>
+      <pubDate>Sun, 20 Oct 2019 17:23:05 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/post/latex-usage-notes/</guid>
+      <description>&lt;h3 id=&#34;说在前面&#34;&gt;说在前面&lt;/h3&gt;
+&lt;p&gt;最早接触的文字排版是 markdown，当时在 sublime 上面装了个插件就能把 .md 后缀文件生成 pdf，后来陆续读了
+一些 LaTeX 排版的电子书籍(当时并不知道是 LaTeX 排版的)，觉得这样的排版很简洁，一直想使用这样的排版工具
+写一些文档之类的东西，后来了解到 LaTeX 基于 Knuth 发明的 TeX 演变出来的排版工具，现在笔者就把 LaTeX 的简单使用记录下来，方便
+读者和自己查阅。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
