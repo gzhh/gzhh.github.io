@@ -87,8 +87,6 @@
         <li class="mobile-menu-item">Categories</li>
       </a><a href="/about/">
         <li class="mobile-menu-item">About</li>
-      </a><a href="/read/">
-        <li class="mobile-menu-item">Read</li>
       </a>
   </ul>
 
@@ -119,8 +117,6 @@
         <a class="menu-item-link" href="/categories/">Categories</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">About</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/read/">Read</a>
       </li>
   </ul>
 </nav>
@@ -170,18 +166,19 @@
     <div class="post-content">
       <h3 id="介绍">介绍</h3>
 <p>什么是进程：简单来说就是一个正在运行中的程序 进程是程序的一次执行，包括代码和数据，是CPU分配资源的基本单位，一个进程可以包括多个线程。</p>
-<p>进程之间通信方式：管道、SOCKET、信号量（互斥、同步）等。
-子进程是父进程的复制品。子进程获得父进程数据空间、堆和栈的复制品。
-线程是独立运行和独立调度的基本单位（线程比进程更小，基本上不拥有系统资源，故对它的调度所付出的开销就会小得多，能更高效的提高系统内多个程序间并发执行的程度），线程之间共享进程的数据空间（借此通信）</p>
+<p>进程之间通信方式：管道、SOCKET、信号量（互斥、同步）等。</p>
+<p>子进程是父进程的复制品。子进程获得父进程数据空间、堆和栈的复制品。</p>
+<p>线程是独立运行和独立调度的基本单位（线程比进程更小，基本上不拥有系统资源，故对它的调度所付出的开销就会小得多，能更
+高效的提高系统内多个程序间并发执行的程度），线程之间共享进程的数据空间（借此通信）</p>
 <h3 id="进程接口">进程接口</h3>
-<p>操作系统提供一些 API 给进程调用，例如 create 创建, destroy 销毁, wait 等, suspend 暂停, status 状态等。
-<strong>1.fork()</strong>
-fork函数复制了当前进程，生成子进程，子进程与父进程不完全相同，子进程有自己的资源，例如：address space (private memory), registers, PC。
-子进程不会从 main 函数开始运行，只会从调用 fork 函数处开始运行。
-fork调用的一个奇妙之处就是它仅仅被调用一次，却能够返回两次，它可能有三种不同的返回值：
-1）在父进程中，fork返回新创建子进程的进程ID；
-2）在子进程中，fork返回0；
-3）如果出现错误，fork返回一个负值；</p>
+<p>操作系统提供一些 API 给进程调用，例如 create 创建, destroy 销毁, wait 等, suspend 暂停, status 状态等。</p>
+<p><strong>1.fork()</strong></p>
+<p>fork函数复制了当前进程，生成子进程，子进程与父进程不完全相同，子进程有自己的资源，例如：address space (private memory), registers, PC。</p>
+<p>子进程不会从 main 函数开始运行，只会从调用 fork 函数处开始运行。</p>
+<p>fork调用的一个奇妙之处就是它仅仅被调用一次，却能够返回两次，它可能有三种不同的返回值：</p>
+<p>1）在父进程中，fork返回新创建子进程的进程ID；</p>
+<p>2）在子进程中，fork返回0；</p>
+<p>3）如果出现错误，fork返回一个负值；</p>
 <pre><code>#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include &lt;unistd.h&gt;
@@ -213,9 +210,9 @@ hello, i am parent of 10643 (pid:10642)
 hello, i am child (pid:10643)
 */
 </code></pre>
-<p><strong>2.wait()</strong>
-wait函数让当前进程执行等操作，进入wait状态，而操作系统的调度器则会去执行其他的进程，当根据调度策略执行完其他进程，回到该正在等的进程时，继续执行这个进程。
-返回值：如果执行成功则返回子进程识别码(PID), 如果有错误发生则返回-1. 失败原因存于errno 中.</p>
+<p><strong>2.wait()</strong></p>
+<p>wait函数让当前进程执行等操作，进入wait状态，而操作系统的调度器则会去执行其他的进程，当根据调度策略执行完其他进程，回到该正在等的进程时，继续执行这个进程。</p>
+<p>返回值：如果执行成功则返回子进程识别码(PID), 如果有错误发生则返回-1. 失败原因存于errno 中.</p>
 <pre><code>#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include &lt;unistd.h&gt;
@@ -248,13 +245,16 @@ hello, i am child (pid:10634)
 hello, i am parent of 10634 (wc:10634) (pid:10633)
 */
 </code></pre>
-<p><strong>3.exec() 函数集合</strong>
-下面这些函数执行操作系统的命令
-execl(path, arg1, arg2, &hellip;)
-execle(path, arg1, arg2, &hellip;)
-execlp(file, arg1, arg2, &hellip;)
-execv(path, arg[])
-execvp(file, arg[]) 最好用 execve() 内核级系统调用，上面5个都是调用了这个函数</p>
+<p><strong>3.exec() 函数集合</strong></p>
+<p>下面这些函数执行操作系统的命令</p>
+<ul>
+<li>execl(path, arg1, arg2, &hellip;)</li>
+<li>execle(path, arg1, arg2, &hellip;)</li>
+<li>execlp(file, arg1, arg2, &hellip;)</li>
+<li>execv(path, arg[])</li>
+<li>execvp(file, arg[])</li>
+</ul>
+<p>最好用 execve() 内核级系统调用，上面5个都是调用了这个函数</p>
 <pre><code>#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include &lt;string.h&gt;
@@ -296,8 +296,8 @@ hello, i am child (pid:10701)
 hello, i am parent of 10701 (wc:10701) (pid:10700)
 */
 </code></pre>
-<p><strong>4.总结</strong>
-fork/exec 编程模式很流行</p>
+<p><strong>4.总结</strong></p>
+<p>fork/exec 编程模式很流行</p>
 <h3 id="进程的创建">进程的创建</h3>
 <p>从程序到进程创建
 <img src="http://uploads.gzhh.tech/2018/02/program_to_process.png" alt="http://uploads.gzhh.tech/2018/02/program_to_process.png"></p>

@@ -49,7 +49,7 @@
 <meta itemprop="name" content="Lua 语言入门（二）">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2019-10-06T09:22:54+08:00" />
 <meta itemprop="dateModified" content="2019-10-06T09:22:54+08:00" />
-<meta itemprop="wordCount" content="1087">
+<meta itemprop="wordCount" content="1133">
 <meta itemprop="keywords" content="Lua," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Lua 语言入门（二）"/>
 <meta name="twitter:description" content=""/>
@@ -87,8 +87,6 @@
         <li class="mobile-menu-item">Categories</li>
       </a><a href="/about/">
         <li class="mobile-menu-item">About</li>
-      </a><a href="/read/">
-        <li class="mobile-menu-item">Read</li>
       </a>
   </ul>
 
@@ -119,8 +117,6 @@
         <a class="menu-item-link" href="/categories/">Categories</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">About</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/read/">Read</a>
       </li>
   </ul>
 </nav>
@@ -209,6 +205,58 @@
 </span><span class="lnt">37
 </span><span class="lnt">38
 </span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="c1">-- 普通函数</span>
@@ -250,58 +298,63 @@
 <span class="n">print</span><span class="p">(</span><span class="n">Lib.foo</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">Lib.bar</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 
 <span class="c1">-- 非全局函数2</span>
+<span class="c1">-- local function fact () ... end 这样会出现递归调用全局函数的错误</span>
+<span class="kd">local</span> <span class="n">fact</span>
+<span class="n">fact</span> <span class="o">=</span> <span class="kr">function</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="kr">then</span> <span class="kr">return</span> <span class="mi">1</span>
+    <span class="kr">else</span> <span class="kr">return</span> <span class="n">n</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+<span class="n">print</span><span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+
+
+<span class="c1">-- a closure is a function that accesses one or more local variables from its enclosing environment.</span>
+<span class="c1">-- 闭包是一个可以从它自身的闭合环境中访问一个或多个局部变量的函数</span>
+<span class="c1">-- 闭包(在函数中写另一个闭合函数) </span>
+<span class="c1">-- 词法作用域1</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;Peter&#34;</span><span class="p">,</span> <span class="s2">&#34;Paul&#34;</span><span class="p">,</span> <span class="s2">&#34;Mary&#34;</span><span class="p">}</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span><span class="n">Mary</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">Paul</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="n">Peter</span> <span class="o">=</span> <span class="mi">8</span><span class="p">}</span>
+<span class="n">table.sort</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="kr">function</span> <span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">)</span>
+    <span class="kr">return</span> <span class="n">grades</span><span class="p">[</span><span class="n">n1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">grades</span><span class="p">[</span><span class="n">n2</span><span class="p">]</span>
+<span class="kr">end</span><span class="p">)</span>
+<span class="kr">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="kr">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span> <span class="kr">do</span>
+    <span class="n">print</span><span class="p">(</span><span class="s2">&#34;name:&#34;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s2">&#34;  &#34;</span><span class="p">,</span> <span class="s2">&#34;grade:&#34;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">-- 词法作用域2</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;Peter&#34;</span><span class="p">,</span> <span class="s2">&#34;Paul&#34;</span><span class="p">,</span> <span class="s2">&#34;Mary&#34;</span><span class="p">}</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span><span class="n">Mary</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">Paul</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="n">Peter</span> <span class="o">=</span> <span class="mi">8</span><span class="p">}</span>
+<span class="kr">function</span> <span class="nf">sortbygrade</span> <span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
+    <span class="n">table.sort</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="kr">function</span> <span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">)</span>
+        <span class="kr">return</span> <span class="n">grades</span><span class="p">[</span><span class="n">n1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">grades</span><span class="p">[</span><span class="n">n2</span><span class="p">]</span>
+    <span class="kr">end</span><span class="p">)</span>
+<span class="kr">end</span>
+<span class="n">sortbygrade</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
+<span class="kr">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="kr">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span> <span class="kr">do</span>
+    <span class="n">print</span><span class="p">(</span><span class="s2">&#34;name:&#34;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s2">&#34;  &#34;</span><span class="p">,</span> <span class="s2">&#34;grade:&#34;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">-- 词法作用域3</span>
+<span class="kr">function</span> <span class="nf">newCounter</span> <span class="p">()</span>
+    <span class="kd">local</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="kr">return</span> <span class="kr">function</span> <span class="p">()</span> <span class="c1">-- anonymous function</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="kr">return</span> <span class="n">count</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="n">newCounter</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="n">c1</span><span class="p">())</span> <span class="c1">--&gt; 1</span>
+<span class="n">print</span><span class="p">(</span><span class="n">c1</span><span class="p">())</span> <span class="c1">--&gt; 2</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">newCounter</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="n">c2</span><span class="p">())</span>  <span class="c1">--&gt; 1</span>
+<span class="n">print</span><span class="p">(</span><span class="n">c1</span><span class="p">())</span>  <span class="c1">--&gt; 3</span>
+<span class="n">print</span><span class="p">(</span><span class="n">c2</span><span class="p">())</span>  <span class="c1">--&gt; 2</span>
+<span class="c1">-- c1 和 c2 是不同的闭包</span>
 </code></pre></td></tr></table>
 </div>
 </div></li>
-</ul>
-<p>&ndash; local function fact () &hellip; end 这样会出现递归调用全局函数的错误
-local fact
-fact = function (n)
-if n == 0 then return 1
-else return n*fact(n-1)
-end
-end
-print(fact(5))</p>
-<p>&ndash; a closure is a function that accesses one or more local variables from its enclosing environment.
-&ndash; 闭包是一个可以从它自身的闭合环境中访问一个或多个局部变量的函数
-&ndash; 闭包(在函数中写另一个闭合函数)
-&ndash; 词法作用域1
-names = {&ldquo;Peter&rdquo;, &ldquo;Paul&rdquo;, &ldquo;Mary&rdquo;}
-grades = {Mary = 10, Paul = 7, Peter = 8}
-table.sort(names, function (n1, n2)
-return grades[n1] &gt; grades[n2]
-end)
-for key, value in pairs(grades) do
-print(&ldquo;name:&rdquo;, key, &quot;  &ldquo;, &ldquo;grade:&rdquo;, value)
-end</p>
-<p>&ndash; 词法作用域2
-names = {&ldquo;Peter&rdquo;, &ldquo;Paul&rdquo;, &ldquo;Mary&rdquo;}
-grades = {Mary = 10, Paul = 7, Peter = 8}
-function sortbygrade (names, grades)
-table.sort(names, function (n1, n2)
-return grades[n1] &gt; grades[n2]
-end)
-end
-sortbygrade(names, grades)
-for key, value in pairs(grades) do
-print(&ldquo;name:&rdquo;, key, &quot;  &ldquo;, &ldquo;grade:&rdquo;, value)
-end</p>
-<p>&ndash; 词法作用域3
-function newCounter ()
-local count = 0
-return function () &ndash; anonymous function
-count = count + 1
-return count
-end
-end
-c1 = newCounter()
-print(c1()) &ndash;&gt; 1
-print(c1()) &ndash;&gt; 2
-c2 = newCounter()
-print(c2())  &ndash;&gt; 1
-print(c1())  &ndash;&gt; 3
-print(c2())  &ndash;&gt; 2
-&ndash; c1 和 c2 是不同的闭包</p>
+<li>
+<p>2.模式匹配</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -366,81 +419,73 @@ print(c2())  &ndash;&gt; 2
 </span><span class="lnt">60
 </span><span class="lnt">61
 </span><span class="lnt">62
-</span><span class="lnt">63
-</span><span class="lnt">64
-</span><span class="lnt">65
-</span><span class="lnt">66
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-- 2.模式匹配
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="c1">-- string.find</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;hello world&#34;</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">&#34;hello&#34;</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>                         <span class="c1">--&gt; 1 5</span>
+<span class="n">print</span><span class="p">(</span><span class="n">string.sub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span>          <span class="c1">--&gt; hello</span>
+<span class="n">print</span><span class="p">(</span><span class="n">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">&#34;world&#34;</span><span class="p">))</span>      <span class="c1">--&gt; 7 11</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">&#34;l&#34;</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>                         <span class="c1">--&gt; 3 3</span>
+<span class="n">print</span><span class="p">(</span><span class="n">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">&#34;lll&#34;</span><span class="p">))</span>        <span class="c1">--&gt; nil</span>
 
-```lua
--- string.find
-s = &#34;hello world&#34;
-i, j = string.find(s, &#34;hello&#34;)
-print(i, j)                         --&gt; 1 5
-print(string.sub(s, i, j))          --&gt; hello
-print(string.find(s, &#34;world&#34;))      --&gt; 7 11
-i, j = string.find(s, &#34;l&#34;)
-print(i, j)                         --&gt; 3 3
-print(string.find(s, &#34;lll&#34;))        --&gt; nil
-
--- 第三个参数表示从哪个位置开始查找
--- 第四个参数表示是否是文本查找，表示第二个参数中的字符串没有其他特别的意思
-i, j = string.find(&#34;a [word]&#34;, &#34;[&#34;, 1, true)   --&gt; 3   3
+<span class="c1">-- 第三个参数表示从哪个位置开始查找</span>
+<span class="c1">-- 第四个参数表示是否是文本查找，表示第二个参数中的字符串没有其他特别的意思</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">string.find</span><span class="p">(</span><span class="s2">&#34;a [word]&#34;</span><span class="p">,</span> <span class="s2">&#34;[&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>   <span class="c1">--&gt; 3   3</span>
 
 
--- string.match
-print(string.match(&#34;hello world&#34;, &#34;hello&#34;)) --&gt; hello
-date = &#34;Today is 17/7/1990&#34;
-d = string.match(date, &#34;%d+/%d+/%d&#34;)
-print(d) --&gt; 17/7/1990
+<span class="c1">-- string.match</span>
+<span class="n">print</span><span class="p">(</span><span class="n">string.match</span><span class="p">(</span><span class="s2">&#34;hello world&#34;</span><span class="p">,</span> <span class="s2">&#34;hello&#34;</span><span class="p">))</span> <span class="c1">--&gt; hello</span>
+<span class="n">date</span> <span class="o">=</span> <span class="s2">&#34;Today is 17/7/1990&#34;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">string.match</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="s2">&#34;%d+/%d+/%d&#34;</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="c1">--&gt; 17/7/1990</span>
 
 
--- string.gsub
-s = string.gsub(&#34;Lua is cute&#34;, &#34;cute&#34;, &#34;great&#34;)
-print(s)         --&gt; Lua is great
-s = string.gsub(&#34;all lii&#34;, &#34;l&#34;, &#34;x&#34;)
-print(s)         --&gt; axx xii
-s = string.gsub(&#34;Lua is great&#34;, &#34;Sol&#34;, &#34;Sun&#34;)
-print(s)         --&gt; Lua is great
+<span class="c1">-- string.gsub</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">string.gsub</span><span class="p">(</span><span class="s2">&#34;Lua is cute&#34;</span><span class="p">,</span> <span class="s2">&#34;cute&#34;</span><span class="p">,</span> <span class="s2">&#34;great&#34;</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>         <span class="c1">--&gt; Lua is great</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">string.gsub</span><span class="p">(</span><span class="s2">&#34;all lii&#34;</span><span class="p">,</span> <span class="s2">&#34;l&#34;</span><span class="p">,</span> <span class="s2">&#34;x&#34;</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>         <span class="c1">--&gt; axx xii</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">string.gsub</span><span class="p">(</span><span class="s2">&#34;Lua is great&#34;</span><span class="p">,</span> <span class="s2">&#34;Sol&#34;</span><span class="p">,</span> <span class="s2">&#34;Sun&#34;</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>         <span class="c1">--&gt; Lua is great</span>
 
-s = string.gsub(&#34;all lii&#34;, &#34;l&#34;, &#34;x&#34;, 1)
-print(s)          --&gt; axl lii
-s = string.gsub(&#34;all lii&#34;, &#34;l&#34;, &#34;x&#34;, 2)
-print(s)          --&gt; axx lii
-
-
--- string.gmatch
-s = &#34;some string&#34;
-words = {}
--- {&#34;some&#34;, &#34;string&#34;}
-for w in string.gmatch(s, &#34;%a+&#34;) do
-    words[#words + 1] = w
-end
+<span class="n">s</span> <span class="o">=</span> <span class="n">string.gsub</span><span class="p">(</span><span class="s2">&#34;all lii&#34;</span><span class="p">,</span> <span class="s2">&#34;l&#34;</span><span class="p">,</span> <span class="s2">&#34;x&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>          <span class="c1">--&gt; axl lii</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">string.gsub</span><span class="p">(</span><span class="s2">&#34;all lii&#34;</span><span class="p">,</span> <span class="s2">&#34;l&#34;</span><span class="p">,</span> <span class="s2">&#34;x&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>          <span class="c1">--&gt; axx lii</span>
 
 
---[[
--- 正则表达式中预定义字符所表示的意思
-.               all characters
-%a              letters
-%c              control characters
-%d              digits
-%g              printable characters except spaces
-%l              lower-case letters
-%p              punctuation characters
-%s              space characters
-%u              upper-case letters
-%w              alphanumeric characters
-%x              hexadecimal digits
+<span class="c1">-- string.gmatch</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;some string&#34;</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1">-- {&#34;some&#34;, &#34;string&#34;}</span>
+<span class="kr">for</span> <span class="n">w</span> <span class="kr">in</span> <span class="n">string.gmatch</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">&#34;%a+&#34;</span><span class="p">)</span> <span class="kr">do</span>
+    <span class="n">words</span><span class="p">[</span><span class="o">#</span><span class="n">words</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">w</span>
+<span class="kr">end</span>
 
--- 魔法字符
-( ) . % + - * ? [  ] ^ $
-]]
+
+<span class="cm">--[[
+</span><span class="cm">-- 正则表达式中预定义字符所表示的意思
+</span><span class="cm">.               all characters
+</span><span class="cm">%a              letters
+</span><span class="cm">%c              control characters
+</span><span class="cm">%d              digits
+</span><span class="cm">%g              printable characters except spaces
+</span><span class="cm">%l              lower-case letters
+</span><span class="cm">%p              punctuation characters
+</span><span class="cm">%s              space characters
+</span><span class="cm">%u              upper-case letters
+</span><span class="cm">%w              alphanumeric characters
+</span><span class="cm">%x              hexadecimal digits
+</span><span class="cm">
+</span><span class="cm">-- 魔法字符
+</span><span class="cm">( ) . % + - * ? [  ] ^ $
+</span><span class="cm">]]</span>
 </code></pre></td></tr></table>
 </div>
-</div><ul>
+</div></li>
 <li>
 <p>3.日期与时间</p>
 <div class="highlight"><div class="chroma">
