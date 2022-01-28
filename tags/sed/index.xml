@@ -13,9 +13,7 @@
       <pubDate>Fri, 17 Nov 2017 18:42:35 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/play-sed-first/</guid>
-      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
-&lt;p&gt;sed 全名是 stream editor，是文本流处理方面的强大工具，和另一个文本处理工具 awk 工具有的一比，接下来就让我们简单介绍下它的基本使用和适用场景。
-我们这篇主要讲的是 Gnu sed，还有一个常用的是 BSD sed（Mac OS就是源自 BSD 的），两者略微有点不同，不过他们俩都是由 Posix sed 演化而来。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
   </channel>

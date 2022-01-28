@@ -13,15 +13,7 @@
       <pubDate>Fri, 23 Mar 2018 09:22:30 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/vim-skill/</guid>
-      <description>&lt;h3 id=&#34;1一般模式默认模式&#34;&gt;1.一般模式(默认模式)：&lt;/h3&gt;
-&lt;p&gt;Ctrl+f 	向下移动一页
-Ctrl+b  向上移动一页
-0或Home	移到这一行的最前面字符处
-$或End	移到这一行的最后面字符处
-G		移到这个文件的最后一行
-nG		移到这个文件的第n行
-gg		移到这个文件的第一行
-n+Enter 向下移动n行&lt;/p&gt;</description>
+      <description></description>
     </item>
     
   </channel>

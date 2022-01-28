@@ -13,8 +13,7 @@
       <pubDate>Sun, 06 Oct 2019 09:22:54 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/play-lua-second/</guid>
-      <description>&lt;h3 id=&#34;说在前面&#34;&gt;说在前面&lt;/h3&gt;
-&lt;p&gt;这一篇接着 &lt;a href=&#34;http://blog.zhhgao.com/2019/09/29/play-lua-first/&#34;&gt;Lua 语言入门（一）&lt;/a&gt; 继续写，主要是 lua 稍微高级一点的编程方式。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -23,10 +22,7 @@
       <pubDate>Sun, 29 Sep 2019 20:20:36 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/play-lua-first/</guid>
-      <description>&lt;h3 id=&#34;说在前面&#34;&gt;说在前面&lt;/h3&gt;
-&lt;p&gt;由于前段时间使用 Redis 相关技术接触到了 Lua 脚本用于提升 Redis 性能，再加上之前对 Nginx
-可以使用 Lua 技术进行扩展非常感兴趣，所以这段时间抽空学习了下Lua，现在把自己初学 Lua 的
-经历记录下来，供自己与各位同行参考和交流。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
   </channel>

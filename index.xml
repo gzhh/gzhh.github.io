@@ -32,9 +32,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Fri, 31 Dec 2021 23:55:50 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/the-purpose-of-2022/</guid>
-      <description>&lt;h2 id=&#34;2021全年盘点&#34;&gt;2021全年盘点&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;工作&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2021年还是在团队中负责技术难度偏弱且业务性比较强的工作，但工作强度全年大部分时间都比较大，所以今年心累的时候比较多，头发感觉也还是在慢慢变稀。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -43,9 +41,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Fri, 01 Jan 2021 01:10:50 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/the-purpose-of-2021/</guid>
-      <description>&lt;h2 id=&#34;2020全年盘点&#34;&gt;2020全年盘点&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;工作&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2020年一月份向前公司提了离职计划，恰巧一月底疫情变得严重起来，到二月底差不多一个月只能呆在家里，三月份才正式入职新公司（也就是现在就职的公司）。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -54,11 +50,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Sun, 20 Oct 2019 17:23:05 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/latex-usage-notes/</guid>
-      <description>&lt;h3 id=&#34;说在前面&#34;&gt;说在前面&lt;/h3&gt;
-&lt;p&gt;最早接触的文字排版是 markdown，当时在 sublime 上面装了个插件就能把 .md 后缀文件生成 pdf，后来陆续读了
-一些 LaTeX 排版的电子书籍(当时并不知道是 LaTeX 排版的)，觉得这样的排版很简洁，一直想使用这样的排版工具
-写一些文档之类的东西，后来了解到 LaTeX 基于 Knuth 发明的 TeX 演变出来的排版工具，现在笔者就把 LaTeX 的简单使用记录下来，方便
-读者和自己查阅。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -67,8 +59,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Sun, 06 Oct 2019 09:22:54 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/play-lua-second/</guid>
-      <description>&lt;h3 id=&#34;说在前面&#34;&gt;说在前面&lt;/h3&gt;
-&lt;p&gt;这一篇接着 &lt;a href=&#34;http://blog.zhhgao.com/2019/09/29/play-lua-first/&#34;&gt;Lua 语言入门（一）&lt;/a&gt; 继续写，主要是 lua 稍微高级一点的编程方式。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -77,10 +68,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Sun, 29 Sep 2019 20:20:36 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/play-lua-first/</guid>
-      <description>&lt;h3 id=&#34;说在前面&#34;&gt;说在前面&lt;/h3&gt;
-&lt;p&gt;由于前段时间使用 Redis 相关技术接触到了 Lua 脚本用于提升 Redis 性能，再加上之前对 Nginx
-可以使用 Lua 技术进行扩展非常感兴趣，所以这段时间抽空学习了下Lua，现在把自己初学 Lua 的
-经历记录下来，供自己与各位同行参考和交流。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -89,8 +77,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Mon, 11 Mar 2019 01:08:00 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/operating-system-3.memory/</guid>
-      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
-&lt;p&gt;早期的操作系统实现功能起来很简单，一般看来，物理内存的结构就一般分为俩快：一块用来存os的代码和数据，另一块给当前程序的代码和数据。就像下图：&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -99,8 +86,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Wed, 27 Feb 2019 16:37:33 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/operating-system-2.scheduling/</guid>
-      <description>&lt;h3 id=&#34;调度的前提限制&#34;&gt;调度的前提：限制&lt;/h3&gt;
-&lt;p&gt;为了虚拟化 CPU，操作系统需要将物理 CPU 分享给正在运行的作业，即进程。虚拟化的基础思想是：运行一个进程一会儿，然后再运行另一个，一直下去，按时间来分享 CPU。 然而建立虚拟机有两个难题：性能和控制性，虚拟机的可控性非常重要，他可以让进程在系统中稳定的运行，不会崩溃，所以就有了一个技术: Limited Direct Execution(限制直接执行)。 如果不做限制，一般是当操作系统想运行某个程序的时候，系统就会在进程表里面创建一条记录，然后分配内存给程序，并把程序代码加载到内存里面去，然后开始运行程序代码。 Limited Direct Execution 是说当操作系统想让一个程序运行的时候，不直接让它做上面的操作，需要避免危险操作。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -109,8 +95,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Mon, 25 Feb 2019 23:00:39 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/operating-system-1.process/</guid>
-      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
-&lt;p&gt;什么是进程：简单来说就是一个正在运行中的程序 进程是程序的一次执行，包括代码和数据，是CPU分配资源的基本单位，一个进程可以包括多个线程。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -119,11 +104,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Sat, 23 Feb 2019 09:43:53 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/operating-system-0.basic-info/</guid>
-      <description>&lt;p&gt;进程：正在运行的程序
-线程：是操作系统能够进行运算调度的最小单位，他被包含在进程中，是进程中的实际运作单位。（抢占式、可并发、 OS 控制）
-协程：协程是一种程序组件、协程更为一般和灵活（非抢占式、模拟并发、用户控制）&lt;/p&gt;
-&lt;p&gt;并行：多个进程同时工作
-并发：多个进程不同时工作&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -132,10 +113,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Tue, 01 Jan 2019 22:10:51 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/the-purpose-of-2019/</guid>
-      <description>&lt;h3 id=&#34;2018全年盘点&#34;&gt;2018全年盘点&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;2018年刚从学校毕业，虽然推迟了两三月才拿到毕业证，但总归是拿到了，得到的教训是要认真的对待自己看起来不重要的大事。&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -144,10 +122,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Thu, 06 Sep 2018 00:53:07 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/how-to-improve-yourself/</guid>
-      <description>&lt;p&gt;如何在技术快速发展的时代成为逐浪者？随着接触越来越多的新技术新名词，内心就越会感觉到知识的空虚，恨不得一下子就多学一门新技术，但是对每个技术都是浅尝即止，很难深入．最近思来想去只能把问题集中在基础不扎实上．如果技术扎实，那么在尝试新技术的时候心里底气就会足一点，学起来也就不会那么吃力了．&lt;/p&gt;
-&lt;p&gt;那么该如何打好基础呢？年初的时候想刚工作的时候慢慢打好基础不急，也在看一些操作系统，网络编程之类的著作，但是后来看不下去了，由于没有太多实践．之后思考可能是自己对系统编程语言C语言还是不太熟悉，大学里面学的基本都忘光了，所以就买了几本C语言的书籍来看（但是只大概的看了其中一两本），照着书敲了些习题，着重复习了指针相关类的，然后又做了些链表，树，图之类的数据结构基础题．&lt;/p&gt;
-&lt;p&gt;本来是准备这个时候就会回头去重新看那些操作系统和网络编程相关的书籍了，但是不知不觉学习知识的广度上来了之后有些东西就会忘记，需要回过头去看一些概念性或逻辑性强的知识，在加上平时又需要工作，用php做一些web开发，然后不知不觉的就疲惫了，看不到明显的学习成果，学习的乐趣就慢慢减弱了．如此一来倒是底层知识和项目业务逻辑都没有太大提升，最后就有了很大的挫败感，最近也一直在思考这个问题．&lt;/p&gt;
-&lt;p&gt;那么现在可以把问题当做是如何来学习这一个宏观概念上了．如何更高效的学习，在网络上看了许多的知名人士都有一套一套的理论，但是很难找到适合自己的，最后不是由于自己没有自制力，就是没有动力等原因坚持下去的．所以仔细琢磨下还是适合自己的学习方法可能比较好．&lt;/p&gt;</description>
+      <description>&lt;p&gt;如何在技术快速发展的时代成为逐浪者？随着接触越来越多的新技术新名词，内心就越会感觉到知识的空虚，恨不得一下子就多学一门新技术，但是对每个技术都是浅尝即止，很难深入．最近思来想去只能把问题集中在基础不扎实上．如果技术扎实，那么在尝试新技术的时候心里底气就会足一点，学起来也就不会那么吃力了．&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -156,8 +131,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/sso/</guid>
-      <description>&lt;h3 id=&#34;说在前面&#34;&gt;说在前面&lt;/h3&gt;
-&lt;p&gt;由于公司要开发几套系统，并且需要几套系统使用统一的用户管理功能，TM让我研究如何实现多系统的单点登录，这周零零碎碎研究了下，所以写下这篇文章，加深下理解，也方便以后回顾。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -166,12 +140,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/sort-algorithm/</guid>
-      <description>&lt;h3 id=&#34;简介八大排序算法&#34;&gt;简介：八大排序算法&lt;/h3&gt;
-&lt;p&gt;插入排序【直接插入排序和希尔排序】&lt;/p&gt;
-&lt;p&gt;交换排序【冒泡排序和快速排序】&lt;/p&gt;
-&lt;p&gt;选择排序【选择排序和堆排序】&lt;/p&gt;
-&lt;p&gt;归并排序&lt;/p&gt;
-&lt;p&gt;基数排序&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -180,15 +149,7 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Fri, 23 Mar 2018 09:22:30 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/vim-skill/</guid>
-      <description>&lt;h3 id=&#34;1一般模式默认模式&#34;&gt;1.一般模式(默认模式)：&lt;/h3&gt;
-&lt;p&gt;Ctrl+f 	向下移动一页
-Ctrl+b  向上移动一页
-0或Home	移到这一行的最前面字符处
-$或End	移到这一行的最后面字符处
-G		移到这个文件的最后一行
-nG		移到这个文件的第n行
-gg		移到这个文件的第一行
-n+Enter 向下移动n行&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -206,9 +167,7 @@ n+Enter 向下移动n行&lt;/p&gt;</description>
       <pubDate>Fri, 17 Nov 2017 18:42:35 +0800</pubDate>
       
       <guid>https://gzhh.github.io/post/play-sed-first/</guid>
-      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
-&lt;p&gt;sed 全名是 stream editor，是文本流处理方面的强大工具，和另一个文本处理工具 awk 工具有的一比，接下来就让我们简单介绍下它的基本使用和适用场景。
-我们这篇主要讲的是 Gnu sed，还有一个常用的是 BSD sed（Mac OS就是源自 BSD 的），两者略微有点不同，不过他们俩都是由 Posix sed 演化而来。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
