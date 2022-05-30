@@ -65,6 +65,27 @@
   </url>
   
   <url>
+    <loc>https://gzhh.github.io/categories/database/</loc>
+    <lastmod>2020-02-23T09:43:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gzhh.github.io/tags/mysql/</loc>
+    <lastmod>2020-02-23T09:43:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gzhh.github.io/post/know_mysql_lock/</loc>
+    <lastmod>2020-02-23T09:43:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://gzhh.github.io/tags/latex/</loc>
     <lastmod>2019-10-20T17:23:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
