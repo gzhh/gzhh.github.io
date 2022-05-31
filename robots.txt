@@ -1,2 +1,1 @@
 User-agent: *
-Sitemap: https://gzhh.github.io/sitemap.xml

@@ -1,291 +1,132 @@
-<?xml-stylesheet type="text/xsl" href="https://gzhh.github.io/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gzhh.github.io/about/</loc>
     <lastmod>2021-12-06T16:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/the-purpose-of-2022/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/the-purpose-of-2022/</loc>
     <lastmod>2021-12-31T23:55:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/</loc>
     <lastmod>2021-12-31T23:55:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/</loc>
     <lastmod>2021-12-31T23:55:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/misc/</loc>
     <lastmod>2021-12-31T23:55:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/</loc>
     <lastmod>2021-12-31T23:55:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/summary/</loc>
     <lastmod>2021-12-31T23:55:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/</loc>
     <lastmod>2021-12-31T23:55:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/the-purpose-of-2021/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/the-purpose-of-2021/</loc>
     <lastmod>2021-01-01T01:10:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/database/</loc>
     <lastmod>2020-02-23T09:43:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/mysql/</loc>
     <lastmod>2020-02-23T09:43:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/know_mysql_lock/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/know_mysql_lock/</loc>
     <lastmod>2020-02-23T09:43:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/latex/</loc>
     <lastmod>2019-10-20T17:23:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/latex-usage-notes/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/latex-usage-notes/</loc>
     <lastmod>2019-10-20T17:23:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/write/</loc>
     <lastmod>2019-10-20T17:23:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/lua/</loc>
     <lastmod>2019-10-06T09:22:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/lua/</loc>
     <lastmod>2019-10-06T09:22:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/play-lua-second/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/play-lua-second/</loc>
     <lastmod>2019-10-06T09:22:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/play-lua-first/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/play-lua-first/</loc>
     <lastmod>2019-09-29T20:20:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/operatingsystem/</loc>
     <lastmod>2019-03-11T01:08:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/os/</loc>
     <lastmod>2019-03-11T01:08:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/operating-system-3.memory/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/operating-system-3.memory/</loc>
     <lastmod>2019-03-11T01:08:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/operating-system-2.scheduling/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/operating-system-2.scheduling/</loc>
     <lastmod>2019-02-27T16:37:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/operating-system-1.process/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/operating-system-1.process/</loc>
     <lastmod>2019-02-25T23:00:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/operating-system-0.basic-info/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/operating-system-0.basic-info/</loc>
     <lastmod>2019-02-23T09:43:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/the-purpose-of-2019/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/the-purpose-of-2019/</loc>
     <lastmod>2019-01-01T22:10:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/work/</loc>
     <lastmod>2018-09-06T00:53:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/how-to-improve-yourself/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/how-to-improve-yourself/</loc>
     <lastmod>2018-09-06T00:53:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/algorithm/</loc>
     <lastmod>2018-04-01T23:24:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/architecture/</loc>
     <lastmod>2018-04-01T23:24:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/quick-sort/</loc>
     <lastmod>2018-04-01T23:24:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/sso/</loc>
     <lastmod>2018-04-01T23:24:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/sso/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/sso/</loc>
     <lastmod>2018-04-01T23:24:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/sort-algorithm/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/sort-algorithm/</loc>
     <lastmod>2018-04-01T23:24:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/categories/linux/</loc>
     <lastmod>2018-03-23T09:22:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/vim/</loc>
     <lastmod>2018-03-23T09:22:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/vim-skill/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/vim-skill/</loc>
     <lastmod>2018-03-23T09:22:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/the-purpose-of-2018/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/the-purpose-of-2018/</loc>
     <lastmod>2018-01-01T00:43:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gzhh.github.io/tags/sed/</loc>
     <lastmod>2017-11-17T18:42:35+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/play-sed-first/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/play-sed-first/</loc>
     <lastmod>2017-11-17T18:42:35+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gzhh.github.io/post/the-purpose-of-2017/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/posts/the-purpose-of-2017/</loc>
     <lastmod>2017-01-01T23:26:25+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+  </url><url>
+    <loc>https://gzhh.github.io/authors/</loc>
+  </url><url>
+    <loc>https://gzhh.github.io/series/</loc>
   </url>
-  
 </urlset>
