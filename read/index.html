@@ -2,221 +2,528 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Read - gzhh&#39;s blog</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="gzhh" /><meta name="description" content="阅读记录 2021 书名 标签 阅读状态 阅读方式 书目链接 HTTP/2 in Action 中文版 计算机 已读 实体书 https://book.douban.com/subject/35137621/" /><meta name="keywords" content="Blog, Hugo, even" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
 
 
 
+<meta name="author" content="gzhh">
+<meta name="description" content="阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     深入理解计算机系统 计算机 在读 PDF &amp; 实体书 分析阅读 2022/06/08    小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13    2021       书名 标签 状态 媒介 方式 开始日期 结束日期     数据密集型应用系统设计（DDIA） 计算机 已读 实体书 检视阅读 2021/12/19 2021/12/19   学习之道 逻辑 已读 微信阅读 分析阅读 2021/12/18 2021/12/18   Redis设计与实现 计算机 已读 实体书 分析阅读 2021/12/11 2021/12/12   中国近代史 历史 已读 PDF 分析阅读 2021/12/05 2022/01/03   HTTP/2 in Action 中文版 计算机 已读 实体书 分析阅读 2021/11/27 2021/12/04   思考，快与慢 逻辑 已读 微信阅读 检视阅读 2021/11/27 2021/11/27   Go语言学习笔记 计算机 已读 PDF 分析阅读 2021/10/17 2021/10/20   Go语言编程 计算机 已读 微信阅读 检视阅读 2021/10/11 2021/10/16   寻路中国 社科 已读 PDF 分析阅读 2021/10/03 2021/10/06   德米安 哲学 已读 微信阅读 分析阅读 2021/09/25 2021/09/25   你一定爱读的极简欧洲史 历史 已读 微信阅读 分析阅读 2021/06/05 2021/06/05   甘南纪事 社科 已读 PDF 分析阅读 2021/06/01 2021/09/22   MySQL是怎样运行的 计算机 已读 实体书 分析阅读 2021/05/23 2021/05/23   UNIX传奇 计算机 已读 实体书 分析阅读 2021/05/09 2021/05/09   定西.">
+<meta name="keywords" content="blog,developer,personal">
 
-
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
-
-
-<link rel="canonical" href="https://gzhh.github.io/read/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
-
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Read"/>
+<meta name="twitter:description" content="阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     深入理解计算机系统 计算机 在读 PDF &amp; 实体书 分析阅读 2022/06/08    小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13    2021       书名 标签 状态 媒介 方式 开始日期 结束日期     数据密集型应用系统设计（DDIA） 计算机 已读 实体书 检视阅读 2021/12/19 2021/12/19   学习之道 逻辑 已读 微信阅读 分析阅读 2021/12/18 2021/12/18   Redis设计与实现 计算机 已读 实体书 分析阅读 2021/12/11 2021/12/12   中国近代史 历史 已读 PDF 分析阅读 2021/12/05 2022/01/03   HTTP/2 in Action 中文版 计算机 已读 实体书 分析阅读 2021/11/27 2021/12/04   思考，快与慢 逻辑 已读 微信阅读 检视阅读 2021/11/27 2021/11/27   Go语言学习笔记 计算机 已读 PDF 分析阅读 2021/10/17 2021/10/20   Go语言编程 计算机 已读 微信阅读 检视阅读 2021/10/11 2021/10/16   寻路中国 社科 已读 PDF 分析阅读 2021/10/03 2021/10/06   德米安 哲学 已读 微信阅读 分析阅读 2021/09/25 2021/09/25   你一定爱读的极简欧洲史 历史 已读 微信阅读 分析阅读 2021/06/05 2021/06/05   甘南纪事 社科 已读 PDF 分析阅读 2021/06/01 2021/09/22   MySQL是怎样运行的 计算机 已读 实体书 分析阅读 2021/05/23 2021/05/23   UNIX传奇 计算机 已读 实体书 分析阅读 2021/05/09 2021/05/09   定西."/>
 
 <meta property="og:title" content="Read" />
-<meta property="og:description" content="阅读记录 2021 书名 标签 阅读状态 阅读方式 书目链接 HTTP/2 in Action 中文版 计算机 已读 实体书 https://book.douban.com/subject/35137621/" />
+<meta property="og:description" content="阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     深入理解计算机系统 计算机 在读 PDF &amp; 实体书 分析阅读 2022/06/08    小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13    2021       书名 标签 状态 媒介 方式 开始日期 结束日期     数据密集型应用系统设计（DDIA） 计算机 已读 实体书 检视阅读 2021/12/19 2021/12/19   学习之道 逻辑 已读 微信阅读 分析阅读 2021/12/18 2021/12/18   Redis设计与实现 计算机 已读 实体书 分析阅读 2021/12/11 2021/12/12   中国近代史 历史 已读 PDF 分析阅读 2021/12/05 2022/01/03   HTTP/2 in Action 中文版 计算机 已读 实体书 分析阅读 2021/11/27 2021/12/04   思考，快与慢 逻辑 已读 微信阅读 检视阅读 2021/11/27 2021/11/27   Go语言学习笔记 计算机 已读 PDF 分析阅读 2021/10/17 2021/10/20   Go语言编程 计算机 已读 微信阅读 检视阅读 2021/10/11 2021/10/16   寻路中国 社科 已读 PDF 分析阅读 2021/10/03 2021/10/06   德米安 哲学 已读 微信阅读 分析阅读 2021/09/25 2021/09/25   你一定爱读的极简欧洲史 历史 已读 微信阅读 分析阅读 2021/06/05 2021/06/05   甘南纪事 社科 已读 PDF 分析阅读 2021/06/01 2021/09/22   MySQL是怎样运行的 计算机 已读 实体书 分析阅读 2021/05/23 2021/05/23   UNIX传奇 计算机 已读 实体书 分析阅读 2021/05/09 2021/05/09   定西." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gzhh.github.io/read/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2021-12-06T16:38:52+08:00" />
 <meta property="article:modified_time" content="2021-12-06T16:41:52+08:00" />
 
-<meta itemprop="name" content="Read">
-<meta itemprop="description" content="阅读记录 2021 书名 标签 阅读状态 阅读方式 书目链接 HTTP/2 in Action 中文版 计算机 已读 实体书 https://book.douban.com/subject/35137621/"><meta itemprop="datePublished" content="2021-12-06T16:38:52+08:00" />
-<meta itemprop="dateModified" content="2021-12-06T16:41:52+08:00" />
-<meta itemprop="wordCount" content="36">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Read"/>
-<meta name="twitter:description" content="阅读记录 2021 书名 标签 阅读状态 阅读方式 书目链接 HTTP/2 in Action 中文版 计算机 已读 实体书 https://book.douban.com/subject/35137621/"/>
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
 
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">gzhh&#39;s blog</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">Categories</li>
-      </a><a href="/about/">
-        <li class="mobile-menu-item">About</li>
-      </a><a href="/read/">
-        <li class="mobile-menu-item">Read</li>
-      </a>
-  </ul>
+  <title>gzhh&#39;s blog</title>
 
+  
+  <link rel="canonical" href="https://gzhh.github.io/read/">
+  
+
+  <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
   
 
 
-</nav>
 
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">gzhh&#39;s blog</a>
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.89.4" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
 </div>
 
 
-
-
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">About</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/read/">Read</a>
-      </li>
-  </ul>
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      gzhh&#39;s blog
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/read/">Read</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
 </nav>
 
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://gzhh.github.io/read/">
+          Read
+        </a>
+      </h1>
     </header>
 
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-  <div class="post-content">
-    <h1 id="阅读记录">阅读记录</h1>
-<h2 id="2021">2021</h2>
+    <h1 id="阅读记录">
+  阅读记录
+  <a class="heading-link" href="#%e9%98%85%e8%af%bb%e8%ae%b0%e5%bd%95">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h2 id="2022">
+  2022
+  <a class="heading-link" href="#2022">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <table>
 <thead>
 <tr>
 <th>书名</th>
 <th>标签</th>
-<th>阅读状态</th>
-<th>阅读方式</th>
-<th>书目链接</th>
+<th>状态</th>
+<th>媒介</th>
+<th>方式</th>
+<th>开始日期</th>
+<th>结束日期</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>HTTP/2 in Action 中文版</td>
+<td><a href="https://book.douban.com/subject/26912767/">深入理解计算机系统</a></td>
+<td>计算机</td>
+<td>在读</td>
+<td>PDF &amp; 实体书</td>
+<td>分析阅读</td>
+<td>2022/06/08</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/3576486/">小狗钱钱</a></td>
+<td>经济</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>分析阅读</td>
+<td>2022/01/09</td>
+<td>2022/01/13</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2021">
+  2021
+  <a class="heading-link" href="#2021">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>书名</th>
+<th>标签</th>
+<th>状态</th>
+<th>媒介</th>
+<th>方式</th>
+<th>开始日期</th>
+<th>结束日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://book.douban.com/subject/30329536/">数据密集型应用系统设计（DDIA）</a></td>
 <td>计算机</td>
 <td>已读</td>
 <td>实体书</td>
-<td><a href="https://book.douban.com/subject/35137621/">https://book.douban.com/subject/35137621/</a></td>
+<td>检视阅读</td>
+<td>2021/12/19</td>
+<td>2021/12/19</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/26895988/">学习之道</a></td>
+<td>逻辑</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>分析阅读</td>
+<td>2021/12/18</td>
+<td>2021/12/18</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/25900156/">Redis设计与实现</a></td>
+<td>计算机</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2021/12/11</td>
+<td>2021/12/12</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/3293627/">中国近代史</a></td>
+<td>历史</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2021/12/05</td>
+<td>2022/01/03</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/35137621/">HTTP/2 in Action 中文版</a></td>
+<td>计算机</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2021/11/27</td>
+<td>2021/12/04</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/10785583/">思考，快与慢</a></td>
+<td>逻辑</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>检视阅读</td>
+<td>2021/11/27</td>
+<td>2021/11/27</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/26832468/">Go语言学习笔记</a></td>
+<td>计算机</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2021/10/17</td>
+<td>2021/10/20</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/11577300/">Go语言编程</a></td>
+<td>计算机</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>检视阅读</td>
+<td>2021/10/11</td>
+<td>2021/10/16</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/5414391/">寻路中国</a></td>
+<td>社科</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2021/10/03</td>
+<td>2021/10/06</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/3578470/">德米安</a></td>
+<td>哲学</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>分析阅读</td>
+<td>2021/09/25</td>
+<td>2021/09/25</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/5366248/">你一定爱读的极简欧洲史</a></td>
+<td>历史</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>分析阅读</td>
+<td>2021/06/05</td>
+<td>2021/06/05</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/6840152/">甘南纪事</a></td>
+<td>社科</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2021/06/01</td>
+<td>2021/09/22</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/35231266/">MySQL是怎样运行的</a></td>
+<td>计算机</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2021/05/23</td>
+<td>2021/05/23</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/35292726/">UNIX传奇</a></td>
+<td>计算机</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2021/05/09</td>
+<td>2021/05/09</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/26671188/">定西.孤儿院纪事</a></td>
+<td>社科</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2021/05/01</td>
+<td>2021/05/25</td>
+</tr>
+<tr>
+<td><a href="https://www.goodreads.com/book/show/18876054">夹边沟记事</a></td>
+<td>社科</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2021/04/01</td>
+<td>2021/05/01</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/27180590/">程序化广告</a></td>
+<td>互联网</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>分析阅读</td>
+<td>2021/04/14</td>
+<td>2021/04/14</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/7060185/">江城</a></td>
+<td>社科</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2021/03/20</td>
+<td>2021/03/21</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/1013208/">如何阅读一本书</a></td>
+<td>逻辑</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>分析阅读</td>
+<td>2021/03/06</td>
+<td>2021/03/06</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/1325507/">江村经济</a></td>
+<td>社科</td>
+<td>已读</td>
+<td>微信阅读</td>
+<td>分析阅读</td>
+<td>2021/01/09</td>
+<td>2021/01/09</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/26337545/">The Go Programming Language</a></td>
+<td>计算机</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2021/01/01</td>
+<td>2021/04/09</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2020">
+  2020
+  <a class="heading-link" href="#2020">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>书名</th>
+<th>标签</th>
+<th>状态</th>
+<th>媒介</th>
+<th>方式</th>
+<th>开始日期</th>
+<th>结束日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://book.douban.com/subject/4820710/">1984</a></td>
+<td>文学</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2020/12/05</td>
+<td>2020/12/05</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/3406401/">悉达多</a></td>
+<td>哲学</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2020/10/26</td>
+<td>2020/10/26</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/1033778/">富爸爸，穷爸爸</a></td>
+<td>经济</td>
+<td>已读</td>
+<td>微信读书</td>
+<td>分析阅读</td>
+<td>2020/09/12</td>
+<td>2020/09/12</td>
+</tr>
+<tr>
+<td><a href="https://book.douban.com/subject/20424526/">邓小平时代</a></td>
+<td>历史</td>
+<td>已读</td>
+<td>PDF</td>
+<td>分析阅读</td>
+<td>2020/09/10</td>
+<td>2020/09/10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2019">
+  2019
+  <a class="heading-link" href="#2019">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>书名</th>
+<th>标签</th>
+<th>状态</th>
+<th>媒介</th>
+<th>方式</th>
+<th>开始日期</th>
+<th>结束日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://book.douban.com/subject/34447865/">西方哲学史</a></td>
+<td>哲学</td>
+<td>已读</td>
+<td>实体书</td>
+<td>分析阅读</td>
+<td>2019/11/10</td>
+<td>2019/12/19</td>
 </tr>
 </tbody>
 </table>
 
-  </div>
-</article>
-        </div>
-        
+  </article>
+</section>
 
   
 
-  
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:zhonghuangao@gmail.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://twitter.com/gaozhonghuan" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="https://github.com/gzhh" class="iconfont icon-github" title="github"></a>
-      <a href="https://www.douban.com/people/146110510/" class="iconfont icon-douban" title="douban"></a>
-      <a href="https://www.instagram.com/zhonghuangao/" class="iconfont icon-instagram" title="instagram"></a>
-  <a href="https://gzhh.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2017 - 
-    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>gzhh</span>
-  </span>
-</div>
-
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
     </div>
-  </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2017 -
+    
+    2022
+     gzhh 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
   
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+  
+  <script src="/js/coder.min.08fc7a7924db1ae6786408cb68e12ff953e6329376a469f5f517f3769c19194d.js" integrity="sha256-CPx6eSTbGuZ4ZAjLaOEv&#43;VPmMpN2pGn19RfzdpwZGU0="></script>
+  
 
+  
 
+  
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  
 
+  
 
+  
 
+  
 
+  
 
-
-
-
+  
 </body>
+
 </html>
