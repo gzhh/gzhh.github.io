@@ -6,7 +6,7 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Jan 2022 16:38:52 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 17:00:00 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://gzhh.github.io/about/</link>
@@ -25,7 +25,16 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       
       <guid>https://gzhh.github.io/read/</guid>
-      <description>阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     深入理解计算机系统 计算机 在读 PDF &amp;amp; 实体书 分析阅读 2022/06/08    小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13    2021       书名 标签 状态 媒介 方式 开始日期 结束日期     数据密集型应用系统设计（DDIA） 计算机 已读 实体书 检视阅读 2021/12/19 2021/12/19   学习之道 逻辑 已读 微信阅读 分析阅读 2021/12/18 2021/12/18   Redis设计与实现 计算机 已读 实体书 分析阅读 2021/12/11 2021/12/12   中国近代史 历史 已读 PDF 分析阅读 2021/12/05 2022/01/03   HTTP/2 in Action 中文版 计算机 已读 实体书 分析阅读 2021/11/27 2021/12/04   思考，快与慢 逻辑 已读 微信阅读 检视阅读 2021/11/27 2021/11/27   Go语言学习笔记 计算机 已读 PDF 分析阅读 2021/10/17 2021/10/20   Go语言编程 计算机 已读 微信阅读 检视阅读 2021/10/11 2021/10/16   寻路中国 社科 已读 PDF 分析阅读 2021/10/03 2021/10/06   德米安 哲学 已读 微信阅读 分析阅读 2021/09/25 2021/09/25   你一定爱读的极简欧洲史 历史 已读 微信阅读 分析阅读 2021/06/05 2021/06/05   甘南纪事 社科 已读 PDF 分析阅读 2021/06/01 2021/09/22   MySQL是怎样运行的 计算机 已读 实体书 分析阅读 2021/05/23 2021/05/23   UNIX传奇 计算机 已读 实体书 分析阅读 2021/05/09 2021/05/09   定西.</description>
+      <description>阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     网络是怎样连接的 计算机 在读 PDF 分析阅读 2022/06/19    深入理解计算机系统 计算机 在读 PDF &amp;amp; 实体书 主题阅读 2022/06/08    小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13    2021       书名 标签 状态 媒介 方式 开始日期 结束日期     数据密集型应用系统设计（DDIA） 计算机 已读 实体书 检视阅读 2021/12/19 2021/12/19   学习之道 逻辑 已读 微信阅读 分析阅读 2021/12/18 2021/12/18   Redis设计与实现 计算机 已读 实体书 分析阅读 2021/12/11 2021/12/12   中国近代史 历史 已读 PDF 分析阅读 2021/12/05 2022/01/03   HTTP/2 in Action 中文版 计算机 已读 实体书 分析阅读 2021/11/27 2021/12/04   思考，快与慢 逻辑 已读 微信阅读 检视阅读 2021/11/27 2021/11/27   Go语言学习笔记 计算机 已读 PDF 分析阅读 2021/10/17 2021/10/20   Go语言编程 计算机 已读 微信阅读 检视阅读 2021/10/11 2021/10/16   寻路中国 社科 已读 PDF 分析阅读 2021/10/03 2021/10/06   德米安 哲学 已读 微信阅读 分析阅读 2021/09/25 2021/09/25   你一定爱读的极简欧洲史 历史 已读 微信阅读 分析阅读 2021/06/05 2021/06/05   甘南纪事 社科 已读 PDF 分析阅读 2021/06/01 2021/09/22   MySQL是怎样运行的 计算机 已读 实体书 分析阅读 2021/05/23 2021/05/23   UNIX传奇 计算机 已读 实体书 分析阅读 2021/05/09 2021/05/09   定西.</description>
+    </item>
+    
+    <item>
+      <title>理解Go函数中的切片传参</title>
+      <link>https://gzhh.github.io/posts/understand-slice-param-in-go-function/</link>
+      <pubDate>Sun, 19 Jun 2022 17:00:00 +0800</pubDate>
+      
+      <guid>https://gzhh.github.io/posts/understand-slice-param-in-go-function/</guid>
+      <description></description>
     </item>
     
     <item>
