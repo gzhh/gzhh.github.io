@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gzhh&#39;s blog</title>
-    <link>https://gzhh.github.io/</link>
+    <link>https://blog.gzhh.tech/</link>
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Jul 2022 17:38:50 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jul 2022 17:38:50 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://gzhh.github.io/about/</link>
+      <link>https://blog.gzhh.tech/about/</link>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/about/</guid>
+      <guid>https://blog.gzhh.tech/about/</guid>
       <description>嗨，我是 gzhh。
 我居住在中国，是一名后端开发工程师。
 Hi, I&amp;rsquo;m gzhh.
@@ -21,10 +21,10 @@ I live in China and work as an Backend Engineer.</description>
     
     <item>
       <title>Read</title>
-      <link>https://gzhh.github.io/read/</link>
+      <link>https://blog.gzhh.tech/read/</link>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/read/</guid>
+      <guid>https://blog.gzhh.tech/read/</guid>
       <description>阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     通往奴役之路 经济 想读  分析阅读     The Effective
 Engineer 方法论 在读 PDF 分析阅读 2022/07/13    计算广告 互联网 已读 微信阅读 分析阅读 2022/07/12 2022/07/12   Kubernetes
 生产化实践之路 计算机 在读 实体书 分析阅读 2022/07/07    微服务架构设计模式 计算机 已读 实体书 分析阅读 2022/06/20 2022/06/27   微服务设计 计算机 读过 实体书 检视阅读 2022/06/20 2022/06/20   网络是怎样连接的 计算机 在读 PDF 分析阅读 2022/06/19    深入理解计算机系统 计算机 在读 PDF &amp;amp; 实体书 主题阅读 2022/06/08    Redis开发与运维 计算机 读过 实体书 分析阅读 2022/02/12 2022/02/12   小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13    2021       书名 标签 状态 媒介 方式 开始日期 结束日期     数据密集型应用系统设计</description>
@@ -32,46 +32,46 @@ Engineer 方法论 在读 PDF 分析阅读 2022/07/13    计算广告 互联网 
     
     <item>
       <title>Gin生命周期</title>
-      <link>https://gzhh.github.io/posts/lifecycle-of-gin-framework/</link>
+      <link>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</link>
       <pubDate>Tue, 05 Jul 2022 17:38:50 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/lifecycle-of-gin-framework/</guid>
+      <guid>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</guid>
       <description></description>
     </item>
     
     <item>
       <title>微服务架构设计模式</title>
-      <link>https://gzhh.github.io/reads/microservices-patterns/</link>
+      <link>https://blog.gzhh.tech/reads/microservices-patterns/</link>
       <pubDate>Mon, 20 Jun 2022 17:58:50 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/microservices-patterns/</guid>
+      <guid>https://blog.gzhh.tech/reads/microservices-patterns/</guid>
       <description></description>
     </item>
     
     <item>
       <title>理解Go函数中的切片传参</title>
-      <link>https://gzhh.github.io/posts/understand-slice-param-in-go-function/</link>
+      <link>https://blog.gzhh.tech/posts/understand-slice-param-in-go-function/</link>
       <pubDate>Sun, 19 Jun 2022 17:00:00 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/understand-slice-param-in-go-function/</guid>
+      <guid>https://blog.gzhh.tech/posts/understand-slice-param-in-go-function/</guid>
       <description></description>
     </item>
     
     <item>
       <title>小狗钱钱</title>
-      <link>https://gzhh.github.io/reads/xiao-gou-qian-qian/</link>
+      <link>https://blog.gzhh.tech/reads/xiao-gou-qian-qian/</link>
       <pubDate>Thu, 13 Jan 2022 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/xiao-gou-qian-qian/</guid>
+      <guid>https://blog.gzhh.tech/reads/xiao-gou-qian-qian/</guid>
       <description>总结     每日记录成功日记，培养自信心 订好梦想，并持之以恒为之努力 养好下金蛋的鹅，把鹅养大，靠蛋生活  </description>
     </item>
     
     <item>
       <title>中国近代史</title>
-      <link>https://gzhh.github.io/reads/the-rise-of-modern-china/</link>
+      <link>https://blog.gzhh.tech/reads/the-rise-of-modern-china/</link>
       <pubDate>Mon, 03 Jan 2022 20:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/the-rise-of-modern-china/</guid>
+      <guid>https://blog.gzhh.tech/reads/the-rise-of-modern-china/</guid>
       <description>第一编1600-1800    明末-康雍乾盛世
 第二编1800-1864    第一、第二次鸦片战争及太平天国、捻军、回民内乱
  近代中国的历史可以被视为一步名族主义革命的历史 中国的名族主义，迷惑正常中国人，使其不能正视自己和未来 忠王李秀成自述 https://zh.wikipedia.org/wiki/李秀成自述  第三编1861-1895    恭亲王和李鸿章领导的洋务运动
@@ -83,19 +83,19 @@ Engineer 方法论 在读 PDF 分析阅读 2022/07/13    计算广告 互联网 
     
     <item>
       <title>2022新年计划</title>
-      <link>https://gzhh.github.io/posts/the-purpose-of-2022/</link>
+      <link>https://blog.gzhh.tech/posts/the-purpose-of-2022/</link>
       <pubDate>Fri, 31 Dec 2021 23:55:50 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/the-purpose-of-2022/</guid>
+      <guid>https://blog.gzhh.tech/posts/the-purpose-of-2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>学习之道</title>
-      <link>https://gzhh.github.io/reads/a-mind-for-numbers/</link>
+      <link>https://blog.gzhh.tech/reads/a-mind-for-numbers/</link>
       <pubDate>Sat, 18 Dec 2021 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/a-mind-for-numbers/</guid>
+      <guid>https://blog.gzhh.tech/reads/a-mind-for-numbers/</guid>
       <description>1. 思考的两种模式    专注模式（类似于思考快与慢中的慢思维）
  专注于某个问题的解决，不一定要有结果。  发散模式（类似于思考快与慢中的快思维）
  从不同的角度去思考问题  专注模式是左脑主导，发散模式是右脑主导。
@@ -113,10 +113,10 @@ Engineer 方法论 在读 PDF 分析阅读 2022/07/13    计算广告 互联网 
     
     <item>
       <title>思考，快与慢</title>
-      <link>https://gzhh.github.io/reads/thinking-fast-and-slow/</link>
+      <link>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</link>
       <pubDate>Sat, 27 Nov 2021 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/thinking-fast-and-slow/</guid>
+      <guid>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</guid>
       <description>总结    一、两种系统：系统1和系统2
 系统1：无意识的思考模式（直觉）
 系统2：有主动意识的思考模式思考过后所做的决定（但大多数时候会受到系统1的影响）
@@ -150,10 +150,10 @@ PDCA</description>
     
     <item>
       <title>如何阅读一本书</title>
-      <link>https://gzhh.github.io/reads/how-to-read-a-book/</link>
+      <link>https://blog.gzhh.tech/reads/how-to-read-a-book/</link>
       <pubDate>Sat, 06 Mar 2021 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/how-to-read-a-book/</guid>
+      <guid>https://blog.gzhh.tech/reads/how-to-read-a-book/</guid>
       <description>一、阅读方式    阅读层次     基础阅读 检视阅读 分析阅读 主题阅读  较高层次的阅读包含较低层次的阅读
 关于一本书阅读前需要提出的问题     整体来说，这本书到底在谈些什么 作者细说了什么，怎么说的 这本书说得有道理吗？ 这本书跟你有什么关系  阅读技巧、阅读习惯    连贯性，尽量不要打断阅读的连贯性
 做笔记技巧    在书的空白页做笔记
@@ -169,19 +169,19 @@ PDCA</description>
     
     <item>
       <title>2021新年计划</title>
-      <link>https://gzhh.github.io/posts/the-purpose-of-2021/</link>
+      <link>https://blog.gzhh.tech/posts/the-purpose-of-2021/</link>
       <pubDate>Fri, 01 Jan 2021 01:10:50 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/the-purpose-of-2021/</guid>
+      <guid>https://blog.gzhh.tech/posts/the-purpose-of-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>1984</title>
-      <link>https://gzhh.github.io/reads/1984/</link>
+      <link>https://blog.gzhh.tech/reads/1984/</link>
       <pubDate>Sat, 05 Dec 2020 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/1984/</guid>
+      <guid>https://blog.gzhh.tech/reads/1984/</guid>
       <description>内容    标签：极权主义
 角色：温斯顿、裘莉亚、奥勃良
 国家：大洋国、欧亚国、东亚国
@@ -210,10 +210,10 @@ PDCA</description>
     
     <item>
       <title>富爸爸，穷爸爸</title>
-      <link>https://gzhh.github.io/reads/rich-dad-poor-dad/</link>
+      <link>https://blog.gzhh.tech/reads/rich-dad-poor-dad/</link>
       <pubDate>Sat, 12 Sep 2020 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/rich-dad-poor-dad/</guid>
+      <guid>https://blog.gzhh.tech/reads/rich-dad-poor-dad/</guid>
       <description>随记    拥有两位我深爱的父亲，这促使我去思考，最终为自己选择其中一种思维方式。这一过程是我自己去选择而不是简单地接受或否定的过程，在后来的漫长岁月中被证明对我非常有益。
 我的一个爸爸总是习惯说“我可付不起”，而另一个爸爸则禁止我们说这样的话，他坚持让我这样说：“我怎样才能付得起？”这两句话，一句是陈述句，另一句是疑问句。一句让你放弃，而另一句则促使你去想办法。我那个在不久之后就富起来的爸爸解释，当你下意识地说出“我付不起”的时候，你的大脑就会停止思考；而如果你自问“我怎样才能付得起”，则会让你的大脑动起来。当然，他的意思并不是让你把每件想要的东西都买到手，这里只是强调要不停地锻炼你的大脑——它是世界上最强大的“计算机”。富爸爸说：“我的大脑越用越活，大脑越活，我挣的钱就越多。”他认为，下意识地说“我可付不起”意味着精神上的懒惰。
 贫穷和破产的区别是：破产是暂时的，而贫穷是永久的。
@@ -254,10 +254,10 @@ PDCA</description>
     
     <item>
       <title>邓小平时代</title>
-      <link>https://gzhh.github.io/reads/dengxiaoping-and-the-transformation-of-china/</link>
+      <link>https://blog.gzhh.tech/reads/dengxiaoping-and-the-transformation-of-china/</link>
       <pubDate>Thu, 10 Sep 2020 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/dengxiaoping-and-the-transformation-of-china/</guid>
+      <guid>https://blog.gzhh.tech/reads/dengxiaoping-and-the-transformation-of-china/</guid>
       <description>时间线    革命初期 1920-1927 - 法国和苏联
 地下党时期 1927-1930 - 负责上海中国地下党；养成凭记忆记录习惯
 根据地时期 1930-1937 - 参与江西、长征、西北根据地相关事务；拥护毛
@@ -283,19 +283,19 @@ PDCA</description>
     
     <item>
       <title>MySQL 锁</title>
-      <link>https://gzhh.github.io/posts/know_mysql_lock/</link>
+      <link>https://blog.gzhh.tech/posts/know_mysql_lock/</link>
       <pubDate>Sun, 23 Feb 2020 09:43:53 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/know_mysql_lock/</guid>
+      <guid>https://blog.gzhh.tech/posts/know_mysql_lock/</guid>
       <description></description>
     </item>
     
     <item>
       <title>西方哲学史（第9版）</title>
-      <link>https://gzhh.github.io/reads/a-historical-survey-with-essential-readings/</link>
+      <link>https://blog.gzhh.tech/reads/a-historical-survey-with-essential-readings/</link>
       <pubDate>Sun, 10 Nov 2019 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/a-historical-survey-with-essential-readings/</guid>
+      <guid>https://blog.gzhh.tech/reads/a-historical-survey-with-essential-readings/</guid>
       <description>古代哲学    希腊三哲：
 苏格拉底 https://zh.wikipedia.org/wiki/苏格拉底
 柏拉图 https://zh.wikipedia.org/wiki/柏拉图
@@ -330,136 +330,136 @@ PDCA</description>
     
     <item>
       <title>LaTeX学习记录</title>
-      <link>https://gzhh.github.io/posts/latex-usage-notes/</link>
+      <link>https://blog.gzhh.tech/posts/latex-usage-notes/</link>
       <pubDate>Sun, 20 Oct 2019 17:23:05 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/latex-usage-notes/</guid>
+      <guid>https://blog.gzhh.tech/posts/latex-usage-notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lua 语言入门（二）</title>
-      <link>https://gzhh.github.io/posts/play-lua-second/</link>
+      <link>https://blog.gzhh.tech/posts/play-lua-second/</link>
       <pubDate>Sun, 06 Oct 2019 09:22:54 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/play-lua-second/</guid>
+      <guid>https://blog.gzhh.tech/posts/play-lua-second/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lua 语言入门（一）</title>
-      <link>https://gzhh.github.io/posts/play-lua-first/</link>
+      <link>https://blog.gzhh.tech/posts/play-lua-first/</link>
       <pubDate>Sun, 29 Sep 2019 20:20:36 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/play-lua-first/</guid>
+      <guid>https://blog.gzhh.tech/posts/play-lua-first/</guid>
       <description></description>
     </item>
     
     <item>
       <title>【操作系统】3.内存memory(抽象的地址空间)</title>
-      <link>https://gzhh.github.io/posts/operating-system-3.memory/</link>
+      <link>https://blog.gzhh.tech/posts/operating-system-3.memory/</link>
       <pubDate>Mon, 11 Mar 2019 01:08:00 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/operating-system-3.memory/</guid>
+      <guid>https://blog.gzhh.tech/posts/operating-system-3.memory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>【操作系统】2.调度scheduling</title>
-      <link>https://gzhh.github.io/posts/operating-system-2.scheduling/</link>
+      <link>https://blog.gzhh.tech/posts/operating-system-2.scheduling/</link>
       <pubDate>Wed, 27 Feb 2019 16:37:33 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/operating-system-2.scheduling/</guid>
+      <guid>https://blog.gzhh.tech/posts/operating-system-2.scheduling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>【操作系统】1.进程process</title>
-      <link>https://gzhh.github.io/posts/operating-system-1.process/</link>
+      <link>https://blog.gzhh.tech/posts/operating-system-1.process/</link>
       <pubDate>Mon, 25 Feb 2019 23:00:39 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/operating-system-1.process/</guid>
+      <guid>https://blog.gzhh.tech/posts/operating-system-1.process/</guid>
       <description></description>
     </item>
     
     <item>
       <title>【操作系统】基础概念介绍</title>
-      <link>https://gzhh.github.io/posts/operating-system-0.basic-info/</link>
+      <link>https://blog.gzhh.tech/posts/operating-system-0.basic-info/</link>
       <pubDate>Sat, 23 Feb 2019 09:43:53 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/operating-system-0.basic-info/</guid>
+      <guid>https://blog.gzhh.tech/posts/operating-system-0.basic-info/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019新年计划</title>
-      <link>https://gzhh.github.io/posts/the-purpose-of-2019/</link>
+      <link>https://blog.gzhh.tech/posts/the-purpose-of-2019/</link>
       <pubDate>Tue, 01 Jan 2019 22:10:51 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/the-purpose-of-2019/</guid>
+      <guid>https://blog.gzhh.tech/posts/the-purpose-of-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>对于如何提升能力的一些思考</title>
-      <link>https://gzhh.github.io/posts/how-to-improve-yourself/</link>
+      <link>https://blog.gzhh.tech/posts/how-to-improve-yourself/</link>
       <pubDate>Thu, 06 Sep 2018 00:53:07 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/how-to-improve-yourself/</guid>
+      <guid>https://blog.gzhh.tech/posts/how-to-improve-yourself/</guid>
       <description>&lt;p&gt;如何在技术快速发展的时代成为逐浪者？随着接触越来越多的新技术新名词，内心就越会感觉到知识的空虚，恨不得一下子就多学一门新技术，但是对每个技术都是浅尝即止，很难深入．最近思来想去只能把问题集中在基础不扎实上．如果技术扎实，那么在尝试新技术的时候心里底气就会足一点，学起来也就不会那么吃力了．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>SSO 单点登录</title>
-      <link>https://gzhh.github.io/posts/sso/</link>
+      <link>https://blog.gzhh.tech/posts/sso/</link>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/sso/</guid>
+      <guid>https://blog.gzhh.tech/posts/sso/</guid>
       <description></description>
     </item>
     
     <item>
       <title>常见排序算法</title>
-      <link>https://gzhh.github.io/posts/sort-algorithm/</link>
+      <link>https://blog.gzhh.tech/posts/sort-algorithm/</link>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/sort-algorithm/</guid>
+      <guid>https://blog.gzhh.tech/posts/sort-algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>【VIM】vim常用操作</title>
-      <link>https://gzhh.github.io/posts/vim-skill/</link>
+      <link>https://blog.gzhh.tech/posts/vim-skill/</link>
       <pubDate>Fri, 23 Mar 2018 09:22:30 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/vim-skill/</guid>
+      <guid>https://blog.gzhh.tech/posts/vim-skill/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2018新年计划</title>
-      <link>https://gzhh.github.io/posts/the-purpose-of-2018/</link>
+      <link>https://blog.gzhh.tech/posts/the-purpose-of-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:43:02 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/the-purpose-of-2018/</guid>
+      <guid>https://blog.gzhh.tech/posts/the-purpose-of-2018/</guid>
       <description>&lt;p&gt;2018要来了，回想2017年出校门实习的这半年来，学到了挺多职场的知识，但是对自己还是不够满意，比自己的期望也低了好多，而且人也变得懒惰了，希望2018能改掉这些毛病，努力争取获取的一个更好的机会。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>玩转sed操作文本-基础篇</title>
-      <link>https://gzhh.github.io/posts/play-sed-first/</link>
+      <link>https://blog.gzhh.tech/posts/play-sed-first/</link>
       <pubDate>Fri, 17 Nov 2017 18:42:35 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/play-sed-first/</guid>
+      <guid>https://blog.gzhh.tech/posts/play-sed-first/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017新年计划</title>
-      <link>https://gzhh.github.io/posts/the-purpose-of-2017/</link>
+      <link>https://blog.gzhh.tech/posts/the-purpose-of-2017/</link>
       <pubDate>Sun, 01 Jan 2017 23:26:25 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/posts/the-purpose-of-2017/</guid>
+      <guid>https://blog.gzhh.tech/posts/the-purpose-of-2017/</guid>
       <description>&lt;p&gt;今天是2017年的第一天，度过了有很过欢笑也有很多悲伤的2016年，不管怎样，2016年都过去了，新生活还要继续，写点新年的计划吧，虽然知道很大部分很难完成，但还是写一下吧，万一完成了呢。&lt;/p&gt;</description>
     </item>
     

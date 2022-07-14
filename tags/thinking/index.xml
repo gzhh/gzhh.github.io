@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thinking on gzhh&#39;s blog</title>
-    <link>https://gzhh.github.io/tags/thinking/</link>
+    <link>https://blog.gzhh.tech/tags/thinking/</link>
     <description>Recent content in Thinking on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Dec 2021 16:38:52 +0800</lastBuildDate><atom:link href="https://gzhh.github.io/tags/thinking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Dec 2021 16:38:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/thinking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>学习之道</title>
-      <link>https://gzhh.github.io/reads/a-mind-for-numbers/</link>
+      <link>https://blog.gzhh.tech/reads/a-mind-for-numbers/</link>
       <pubDate>Sat, 18 Dec 2021 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/a-mind-for-numbers/</guid>
+      <guid>https://blog.gzhh.tech/reads/a-mind-for-numbers/</guid>
       <description>1. 思考的两种模式    专注模式（类似于思考快与慢中的慢思维）
  专注于某个问题的解决，不一定要有结果。  发散模式（类似于思考快与慢中的快思维）
  从不同的角度去思考问题  专注模式是左脑主导，发散模式是右脑主导。
@@ -30,10 +30,10 @@
     
     <item>
       <title>思考，快与慢</title>
-      <link>https://gzhh.github.io/reads/thinking-fast-and-slow/</link>
+      <link>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</link>
       <pubDate>Sat, 27 Nov 2021 16:38:52 +0800</pubDate>
       
-      <guid>https://gzhh.github.io/reads/thinking-fast-and-slow/</guid>
+      <guid>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</guid>
       <description>总结    一、两种系统：系统1和系统2
 系统1：无意识的思考模式（直觉）
 系统2：有主动意识的思考模式思考过后所做的决定（但大多数时候会受到系统1的影响）
