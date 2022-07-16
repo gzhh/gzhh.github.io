@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Methodology on gzhh&#39;s blog</title>
+    <link>https://blog.gzhh.tech/categories/methodology/</link>
+    <description>Recent content in Methodology on gzhh&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/methodology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【阅读笔记】The Effective Engineer</title>
+      <link>https://blog.gzhh.tech/posts/the-effective-engineer/</link>
+      <pubDate>Sat, 16 Jul 2022 18:30:07 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/posts/the-effective-engineer/</guid>
+      <description>Part 1: Adopt the Right Mindsets    1. Focus on High-Leverage Activities    Use Leverage as Your Yardstick for Effectiveness
+ 杠杆率 = 产出 / 投资时间
+  杠杆率大概就相当于 ROI，即投资回报比
+ Increase Your Leverage in Three Ways
+  减少做某件事的时间
+  增加做某件事的产出
+  换到有更高杠杆率的事情上
+ the-effective-engineer.| 15 &amp;gt; 杠杆率大概就相当于 ROI，即投**translate into three questions**    如何缩短完成这件事情的时间？
+  如何提高这件事情的产出价值？
+  有什么值得花费我时间的事情可以产出更多的价值？
+  Direct Energy Toward Leverage Points, Not Just Easy Wins</description>
+    </item>
+    
+    <item>
+      <title>对于如何提升能力的一些思考</title>
+      <link>https://blog.gzhh.tech/posts/how-to-improve-yourself/</link>
+      <pubDate>Thu, 06 Sep 2018 00:53:07 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/posts/how-to-improve-yourself/</guid>
+      <description>&lt;p&gt;如何在技术快速发展的时代成为逐浪者？随着接触越来越多的新技术新名词，内心就越会感觉到知识的空虚，恨不得一下子就多学一门新技术，但是对每个技术都是浅尝即止，很难深入．最近思来想去只能把问题集中在基础不扎实上．如果技术扎实，那么在尝试新技术的时候心里底气就会足一点，学起来也就不会那么吃力了．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

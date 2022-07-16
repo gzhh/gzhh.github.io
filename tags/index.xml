@@ -6,7 +6,16 @@
     <description>Recent content in Tags on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Jul 2022 17:38:50 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Methodology</title>
+      <link>https://blog.gzhh.tech/tags/methodology/</link>
+      <pubDate>Sat, 16 Jul 2022 18:30:07 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/tags/methodology/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Gin</title>
       <link>https://blog.gzhh.tech/tags/gin/</link>
@@ -139,15 +148,6 @@
       <pubDate>Mon, 11 Mar 2019 01:08:00 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/tags/os/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Work</title>
-      <link>https://blog.gzhh.tech/tags/work/</link>
-      <pubDate>Thu, 06 Sep 2018 00:53:07 +0800</pubDate>
-      
-      <guid>https://blog.gzhh.tech/tags/work/</guid>
       <description></description>
     </item>
     
