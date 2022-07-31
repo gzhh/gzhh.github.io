@@ -6,22 +6,31 @@
     <description>Recent content in Categories on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Methodology</title>
-      <link>https://blog.gzhh.tech/categories/methodology/</link>
-      <pubDate>Sat, 16 Jul 2022 18:30:07 +0800</pubDate>
+      <title>DistributedSystems</title>
+      <link>https://blog.gzhh.tech/categories/distributedsystems/</link>
+      <pubDate>Fri, 29 Jul 2022 18:30:07 +0800</pubDate>
       
-      <guid>https://blog.gzhh.tech/categories/methodology/</guid>
+      <guid>https://blog.gzhh.tech/categories/distributedsystems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Read</title>
       <link>https://blog.gzhh.tech/categories/read/</link>
-      <pubDate>Sat, 16 Jul 2022 18:30:07 +0800</pubDate>
+      <pubDate>Fri, 29 Jul 2022 18:30:07 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/categories/read/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methodology</title>
+      <link>https://blog.gzhh.tech/categories/methodology/</link>
+      <pubDate>Sat, 16 Jul 2022 18:30:07 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/categories/methodology/</guid>
       <description></description>
     </item>
     

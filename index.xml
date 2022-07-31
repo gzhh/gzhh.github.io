@@ -6,7 +6,7 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://blog.gzhh.tech/about/</link>
@@ -25,9 +25,22 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/read/</guid>
-      <description>阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     通往奴役之路 经济 想读  分析阅读     The Effective
-Engineer 方法论 已读 PDF 分析阅读 2022/07/13 2022/07/17   计算广告 互联网 已读 微信阅读 分析阅读 2022/07/12 2022/07/12   Kubernetes
-生产化实践之路 计算机 在读 实体书 分析阅读 2022/07/07    微服务架构设计模式 计算机 已读 实体书 分析阅读 2022/06/20 2022/06/27   微服务设计 计算机 读过 实体书 检视阅读 2022/06/20 2022/06/20   网络是怎样连接的 计算机 在读 PDF 分析阅读 2022/06/19    深入理解计算机系统 计算机 在读 PDF &amp;amp; 实体书 主题阅读 2022/06/08    Redis开发与运维 计算机 读过 实体书 分析阅读 2022/02/12 2022/02/12   小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13    2021       书名 标签 状态 媒介 方式 开始日期 结束日期     数据密集型应用系统设计</description>
+      <description>阅读记录    2022       书名 标签 状态 媒介 方式 开始日期 结束日期     Software Engineering at Google 计算机 想读 PDF 分析阅读     System Design Interview 计算机 想读 PDF 分析阅读     Understanding Distributed Systems 计算机 在读 PDF 分析阅读 2022/07/29    被讨厌的勇气 心理 想读 微信阅读 分析阅读     通往奴役之路 经济 想读  分析阅读     凤凰架构 计算机 已读 实体书 检视阅读 2022/07/18 2022/07/19   The Effective</description>
+    </item>
+    
+    <item>
+      <title>【阅读笔记】Understanding Distributed Systems</title>
+      <link>https://blog.gzhh.tech/posts/understanding-distributed-systems/</link>
+      <pubDate>Fri, 29 Jul 2022 18:30:07 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/posts/understanding-distributed-systems/</guid>
+      <description>Table Of Contents  I Communication  2. Reliable links 3. Secure links 4. Discovery 5. APIs   Reference    I Communication    2. Reliable links    使用 TCP 传输层协议，在 IP 的基础上为两个进程提供可靠的通信通道。
+可靠性 使用带序列号的段来传递数据，并引入重发和 checksum 机制确保数据传输不会被破坏。
+连接生命周期 TCP 三次握手的引入。
+流量控制 流量控制是TCP实现的一种回退机制，以防止发送方发送数据超过接收方处理能力的情况。
+拥塞控制 发送方维护一个拥塞窗口，它代表着可以在没有接收方确认的情况下发送的未完成段的总数。
+3. Secure links    在应用层和传输层之间引入 TLS 层来确保数据通信的安全性。
+ 加密：对称加密 认证：certificate 完整性：TLS HMAC TLS 握手  4. Discovery    使用 DNS 来解析服务的 IP 地址。</description>
     </item>
     
     <item>
