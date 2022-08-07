@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 29 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/distributedsystems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【阅读笔记】Understanding Distributed Systems</title>
-      <link>https://blog.gzhh.tech/posts/understanding-distributed-systems/</link>
+      <link>https://blog.gzhh.tech/reads/understanding-distributed-systems/</link>
       <pubDate>Fri, 29 Jul 2022 18:30:07 +0800</pubDate>
       
-      <guid>https://blog.gzhh.tech/posts/understanding-distributed-systems/</guid>
+      <guid>https://blog.gzhh.tech/reads/understanding-distributed-systems/</guid>
       <description>Table Of Contents  I Communication  2. Reliable links 3. Secure links 4. Discovery 5. APIs   Reference    I Communication    2. Reliable links    使用 TCP 传输层协议，在 IP 的基础上为两个进程提供可靠的通信通道。
 可靠性 使用带序列号的段来传递数据，并引入重发和 checksum 机制确保数据传输不会被破坏。
 连接生命周期 TCP 三次握手的引入。

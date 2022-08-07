@@ -20,22 +20,25 @@
     <loc>https://blog.gzhh.tech/</loc>
     <lastmod>2022-07-29T18:30:07+08:00</lastmod>
   </url><url>
-    <loc>https://blog.gzhh.tech/posts/</loc>
+    <loc>https://blog.gzhh.tech/categories/read/</loc>
     <lastmod>2022-07-29T18:30:07+08:00</lastmod>
   </url><url>
-    <loc>https://blog.gzhh.tech/categories/read/</loc>
+    <loc>https://blog.gzhh.tech/reads/</loc>
     <lastmod>2022-07-29T18:30:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/</loc>
     <lastmod>2022-07-29T18:30:07+08:00</lastmod>
   </url><url>
-    <loc>https://blog.gzhh.tech/posts/understanding-distributed-systems/</loc>
+    <loc>https://blog.gzhh.tech/reads/understanding-distributed-systems/</loc>
     <lastmod>2022-07-29T18:30:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/methodology/</loc>
     <lastmod>2022-07-16T18:30:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/methodology/</loc>
+    <lastmod>2022-07-16T18:30:07+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/posts/</loc>
     <lastmod>2022-07-16T18:30:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/posts/the-effective-engineer/</loc>
@@ -51,9 +54,6 @@
     <lastmod>2022-07-05T17:38:50+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/microservices/</loc>
-    <lastmod>2022-06-20T17:58:50+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/reads/</loc>
     <lastmod>2022-06-20T17:58:50+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/reads/microservices-patterns/</loc>
