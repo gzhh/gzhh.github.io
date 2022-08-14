@@ -6,22 +6,7 @@
     <description>Recent content in Reads on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Jul 2022 18:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/reads/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>【阅读笔记】Understanding Distributed Systems</title>
-      <link>https://blog.gzhh.tech/reads/understanding-distributed-systems/</link>
-      <pubDate>Fri, 29 Jul 2022 18:30:07 +0800</pubDate>
-      
-      <guid>https://blog.gzhh.tech/reads/understanding-distributed-systems/</guid>
-      <description>Table Of Contents  I Communication  2. Reliable links 3. Secure links 4. Discovery 5. APIs   Reference    I Communication    2. Reliable links    使用 TCP 传输层协议，在 IP 的基础上为两个进程提供可靠的通信通道。
-可靠性 使用带序列号的段来传递数据，并引入重发和 checksum 机制确保数据传输不会被破坏。
-连接生命周期 TCP 三次握手的引入。
-流量控制 流量控制是TCP实现的一种回退机制，以防止发送方发送数据超过接收方处理能力的情况。
-拥塞控制 发送方维护一个拥塞窗口，它代表着可以在没有接收方确认的情况下发送的未完成段的总数。
-3. Secure links    在应用层和传输层之间引入 TLS 层来确保数据通信的安全性。
- 加密：对称加密 认证：certificate 完整性：TLS HMAC TLS 握手  4. Discovery    使用 DNS 来解析服务的 IP 地址。</description>
-    </item>
-    
+    <lastBuildDate>Mon, 20 Jun 2022 17:58:50 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/reads/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>微服务架构设计模式</title>
       <link>https://blog.gzhh.tech/reads/microservices-patterns/</link>
