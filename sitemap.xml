@@ -8,6 +8,9 @@
     <loc>https://blog.gzhh.tech/read/</loc>
     <lastmod>2021-12-06T16:41:52+08:00</lastmod>
   </url><url>
+    <loc>https://blog.gzhh.tech/posts/understanding-distributed-systems/</loc>
+    <lastmod>2022-08-15T00:30:07+08:00</lastmod>
+  </url><url>
     <loc>https://blog.gzhh.tech/categories/</loc>
     <lastmod>2022-08-15T00:30:07+08:00</lastmod>
   </url><url>
@@ -29,16 +32,13 @@
     <loc>https://blog.gzhh.tech/tags/</loc>
     <lastmod>2022-08-15T00:30:07+08:00</lastmod>
   </url><url>
-    <loc>https://blog.gzhh.tech/posts/understanding-distributed-systems/</loc>
-    <lastmod>2022-08-15T00:30:07+08:00</lastmod>
+    <loc>https://blog.gzhh.tech/posts/the-effective-engineer/</loc>
+    <lastmod>2022-07-16T18:30:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/methodology/</loc>
     <lastmod>2022-07-16T18:30:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/methodology/</loc>
-    <lastmod>2022-07-16T18:30:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/posts/the-effective-engineer/</loc>
     <lastmod>2022-07-16T18:30:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/gin/</loc>
@@ -161,13 +161,13 @@
     <loc>https://blog.gzhh.tech/posts/play-lua-first/</loc>
     <lastmod>2019-09-29T20:20:36+08:00</lastmod>
   </url><url>
+    <loc>https://blog.gzhh.tech/posts/operating-system-3.memory/</loc>
+    <lastmod>2019-03-11T01:08:00+08:00</lastmod>
+  </url><url>
     <loc>https://blog.gzhh.tech/categories/operatingsystem/</loc>
     <lastmod>2019-03-11T01:08:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/os/</loc>
-    <lastmod>2019-03-11T01:08:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/posts/operating-system-3.memory/</loc>
     <lastmod>2019-03-11T01:08:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/posts/operating-system-2.scheduling/</loc>
@@ -203,13 +203,13 @@
     <loc>https://blog.gzhh.tech/posts/sort-algorithm/</loc>
     <lastmod>2018-04-01T23:24:03+08:00</lastmod>
   </url><url>
+    <loc>https://blog.gzhh.tech/posts/vim-skill/</loc>
+    <lastmod>2018-03-23T09:22:30+08:00</lastmod>
+  </url><url>
     <loc>https://blog.gzhh.tech/categories/linux/</loc>
     <lastmod>2018-03-23T09:22:30+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/vim/</loc>
-    <lastmod>2018-03-23T09:22:30+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/posts/vim-skill/</loc>
     <lastmod>2018-03-23T09:22:30+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/posts/the-purpose-of-2018/</loc>

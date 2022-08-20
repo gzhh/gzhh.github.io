@@ -13,7 +13,7 @@
       <pubDate>Mon, 15 Aug 2022 00:30:07 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/posts/understanding-distributed-systems/</guid>
-      <description>Table Of Contents  1. Introduction Part I: Communication  2. Reliable links 3. Secure links 4. Discovery 5. APIs   Part II: Coordination  8. Time 9. Leader election 10. Replication 11. Coordination avoidance 12 . Transactions 13. Asynchronous transactions   Part III: Scalability  14. HTTP caching 15. Content delivery networks 16. Partitioning 17. File storage 18. Network load balancing 19. Data storage 20. Caching 21.</description>
+      <description>Table Of Contents 1. Introduction Part I: Communication 2. Reliable links 3. Secure links 4. Discovery 5. APIs Part II: Coordination 8. Time 9. Leader election 10. Replication 11. Coordination avoidance 12 . Transactions 13. Asynchronous transactions Part III: Scalability 14. HTTP caching 15. Content delivery networks 16. Partitioning 17. File storage 18. Network load balancing 19. Data storage 20. Caching 21. Microservices 22. Control planes and data planes 23.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sat, 16 Jul 2022 18:30:07 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/posts/the-effective-engineer/</guid>
-      <description>Table Of Contents  Part 1: Adopt the Right Mindsets  1. Focus on High-Leverage Activities 2. Optimize for Learning 3. Prioritize Regularly   Part 2: Execute, Execute, Execute  4. Invest in Iteration Speed 5. Measure What You Want to Improve 6. Validate Your Ideas Early and Often 7. Improve Your Project Estimation Skills   Part 3: Build Long-Term Value  8. Balance Quality with Pragmatism 9.</description>
+      <description>Table Of Contents Part 1: Adopt the Right Mindsets 1. Focus on High-Leverage Activities 2. Optimize for Learning 3. Prioritize Regularly Part 2: Execute, Execute, Execute 4. Invest in Iteration Speed 5. Measure What You Want to Improve 6. Validate Your Ideas Early and Often 7. Improve Your Project Estimation Skills Part 3: Build Long-Term Value 8. Balance Quality with Pragmatism 9. Minimize Operational Burden 10. Invest in Your Team’s Growth Reference Part 1: Adopt the Right Mindsets 1.</description>
     </item>
     
     <item>
