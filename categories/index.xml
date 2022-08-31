@@ -6,22 +6,22 @@
     <description>Recent content in Categories on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Aug 2022 00:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 22:18:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Read</title>
+      <link>https://blog.gzhh.tech/categories/read/</link>
+      <pubDate>Tue, 30 Aug 2022 22:18:52 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/categories/read/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>DistributedSystems</title>
       <link>https://blog.gzhh.tech/categories/distributedsystems/</link>
       <pubDate>Mon, 15 Aug 2022 00:30:07 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/categories/distributedsystems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Read</title>
-      <link>https://blog.gzhh.tech/categories/read/</link>
-      <pubDate>Mon, 15 Aug 2022 00:30:07 +0800</pubDate>
-      
-      <guid>https://blog.gzhh.tech/categories/read/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,7 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Aug 2022 00:30:07 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 22:18:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://blog.gzhh.tech/about/</link>
@@ -25,14 +25,48 @@ I live in China and work as an Backend Engineer.</description>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/read/</guid>
-      <description>阅读记录 2022 书名 标签 状态 媒介 方式 开始日期 结束日期 Software
+      <description>阅读媒介 非技术书一半是微信读书，一半是 PDF，很小一部分是实体书；技术书主要是 PDF，少部分是微信阅读和纸质书。
+微信读书通过 Mac 网页版和 iPad app 来阅读；PDF 通过 z-library 下载倒入到 MarginNote 里来阅读。
+PS：Kindle 已经很久没用上，经典反复看的会买纸质书；因为已经有了蛮多的纸质书，搬家不方便，后续估计不太会买纸质书。
+阅读记录 2022 书名 标签 状态 媒介 方式 开始日期 结束日期 用Go语言自制
+编译器 计算机 想读 微信阅读 主题阅读 用Go语言自制
+解释器 计算机 想读 微信阅读 主题阅读 Programming
+Kubernetes 计算机 想读 PDF 分析阅读 Software
 Engineering at
-Google 计算机 想读 PDF 分析阅读 System Design
-Interview 计算机 在读 PDF 分析阅读 2022/08/16 Understanding
-Distributed
-Systems 计算机 已读 PDF 分析阅读 2022/07/29 2022/08/15 被讨厌的勇气 心理 想读 微信阅读 分析阅读 通往奴役之路 经济 想读 分析阅读 凤凰架构 计算机 已读 实体书 检视阅读 2022/07/18 2022/07/19 The Effective
-Engineer 方法论 已读 PDF 分析阅读 2022/07/13 2022/07/17 计算广告 互联网 已读 微信阅读 分析阅读 2022/07/12 2022/07/12 Kubernetes
-生产化实践之路 计算机 在读 实体书 分析阅读 2022/07/07 微服务架构设计模式 计算机 已读 实体书 分析阅读 2022/06/20 2022/06/27 微服务设计 计算机 读过 实体书 检视阅读 2022/06/20 2022/06/20 网络是怎样连接的 计算机 在读 PDF 分析阅读 2022/06/19 深入理解计算机系统 计算机 在读 PDF &amp;amp; 实体书 主题阅读 2022/06/08 Redis开发与运维 计算机 读过 实体书 分析阅读 2022/02/12 2022/02/12 小狗钱钱 经济 已读 微信阅读 分析阅读 2022/01/09 2022/01/13 2021 书名 标签 状态 媒介 方式 开始日期 结束日期 数据密集型应用系统设计</description>
+Google 计算机 想读 PDF 分析阅读 非暴力沟通 心理 想读 分析阅读 被讨厌的勇气 心理 想读 微信阅读 分析阅读 通往奴役之路 经济 想读 分析阅读 叫魂 历史 已读 PDF 分析阅读 2022/08/27 2022/08/30 System Design</description>
+    </item>
+    
+    <item>
+      <title>叫魂</title>
+      <link>https://blog.gzhh.tech/reads/soulstealers/</link>
+      <pubDate>Tue, 30 Aug 2022 22:18:52 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/reads/soulstealers/</guid>
+      <description>评价 由小窥大的讲述了一个历史事件（即乾隆年间席卷多个省的叫魂事件）的发生及其背后涉及到的种种因素，历史资料的引用也非常详细。
+最后总结为对专制社会下最高统治者、官僚及普通平民三者如何并存的思考。</description>
+    </item>
+    
+    <item>
+      <title>非暴力沟通</title>
+      <link>https://blog.gzhh.tech/reads/nonviolent-communication/</link>
+      <pubDate>Tue, 30 Aug 2022 22:18:52 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/reads/nonviolent-communication/</guid>
+      <description>第一章 非暴力沟通四要素：
+观察
+感受
+需求
+请求
+非暴力沟通例子：
+我看到客厅很乱，我不是很喜欢这样，我希望可能能经常保持清洁，你能帮我收拾一下吗
+非暴力沟通适用场景：
+工作、生活、交流等很多场景
+第二章 是什么蒙蔽了爱 1.道德批判
+将自己的意志强加给别人
+2.进行比较
+3.回避责任
+我不得不的借口&amp;hellip;
+4.强人所难</description>
     </item>
     
     <item>
@@ -64,11 +98,16 @@ Engineer 方法论 已读 PDF 分析阅读 2022/07/13 2022/07/17 计算广告 �
     
     <item>
       <title>微服务架构设计模式</title>
-      <link>https://blog.gzhh.tech/reads/microservices-patterns/</link>
+      <link>https://blog.gzhh.tech/posts/microservices-patterns/</link>
       <pubDate>Mon, 20 Jun 2022 17:58:50 +0800</pubDate>
       
-      <guid>https://blog.gzhh.tech/reads/microservices-patterns/</guid>
-      <description></description>
+      <guid>https://blog.gzhh.tech/posts/microservices-patterns/</guid>
+      <description>Table Of Contents 一、系统架构设计介绍 单体架构 微服务架构 二、服务的拆分策略 拆分规范 拆分策略 拆分难点 三、微服务架构中的进程间通信 RPC（同步通信机制） 同步通信机制局部故障问题 服务发现 消息代理 MQ（异步消息通信机制） 四、管理事务 Saga 五、微服务架构中的业务逻辑设计 业务逻辑组织模式 领域驱动设计 DDD 六、使用事件溯源开发业务逻辑 七、在微服务架构中实现查询 使用API组合模式进行查询 使用CQRS模式 八、外部API模式 九 &amp;amp; 十、微服务架构中的测试策略 自动化测试的四个阶段 测试的不同类型 测试金字塔 使用测试象限进行分类 十一、开发面向生产环境的微服务应用 安全性 可配置 设计可观测的服务 使用微服务基底模式开发服务 服务网格 十二：部署微服务应用 虚拟机 docker k8s 容器部署 Serverless 部署 十三、微服务架构的重构策略 需要考虑的问题 重构策略 设计服务与单体的协作方式 将新功能实现为服务 从单体中提取功能到独立服务 参考 一、系统架构设计介绍 单体架构 定义：一个系统的所有子模块都被部署在同一台服务器上。
+单体架构的好处
+应用的开发简单 易于对应用程序进行大规模的更改 测试相对简单直观 部署简单 横向扩展容易 单体地狱
+随着不断的在单体架构的基础上扩展，每一次实现更多功能的时候，就会导致代码库膨胀。并且随着研发团队规模的不断壮大，团队的管理成本也不断提高，开发变得缓慢和痛苦。
+单体架构的弊端
+过度的复杂性会吓退开发者 开发速度缓慢 从代码提交到实际部署的周期很长，而且容易出问题 难以扩展 交付可靠的单体应用是一项挑战 需要长期依赖某个可能过时的技术栈 微服务架构 定义：将一个单体应用按照不同的功能模块进行分解，拆分成一个个小的服务，每个服务实现了一组相关的功能。</description>
     </item>
     
     <item>

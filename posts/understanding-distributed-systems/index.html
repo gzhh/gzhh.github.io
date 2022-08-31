@@ -69,7 +69,7 @@
 
   
 
-  <meta name="generator" content="Hugo 0.101.0" />
+  <meta name="generator" content="Hugo 0.102.1" />
 
 
   
@@ -505,7 +505,7 @@ TCP 三次握手的引入。</p>
 </ul>
 <p><strong>Application layer load balancing</strong></p>
 <ul>
-<li>使用网络栈的 TCP 协议来实现负载均衡，也叫七层负载均衡，是一个 HTTP 反向代理。</li>
+<li>使用网络栈的 HTTP 协议来实现负载均衡，也叫七层负载均衡，是一个 HTTP 反向代理。</li>
 <li>可以让多个 HTTP 请求可以共用一个 TCP 连接</li>
 <li>可以在流量控制方面做的更智能：
 <ul>
@@ -569,18 +569,22 @@ TCP 三次握手的引入。</p>
 <li>维护：CI/CD</li>
 <li>最终一致性</li>
 </ul>
-<p><strong>API gateway</strong>
-暴露公网 API 的服务叫做 API gateway（一种反向代理）</p>
+<p><strong>API gateway</strong></p>
 <ul>
-<li>核心职责
+<li>
+<p>暴露公网 API 的服务叫做 API gateway（一种反向代理）</p>
+</li>
+<li>
+<p>核心职责</p>
 <ul>
-<li>Routing：路请求到具体的子服务</li>
+<li>Routing：路由请求到具体的子服务</li>
 <li>Composition：组合多个子服务返回的数据</li>
-<li>Translation：可以转化 IPC 的机制，例如将 Restful HTTP 请求转换为 内部 RPC 调用</li>
+<li>Translation：可以转化 IPC 的机制，例如将 Restful HTTP 请求转换为内部 RPC 调用</li>
 </ul>
 </li>
-<li>Cross-cutting concerns 横切关注点
-<br>软件系统，可看作由一组关注点组成。其中，直接的业务关注点，是直切关注点。而为直切关注点提供服务的，就是横切关注点。
+<li>
+<p>Cross-cutting concerns 横切关注点
+<br>软件系统，可看作由一组关注点组成。其中，直接的业务关注点，是直切关注点。而为直切关注点提供服务的，就是横切关注点。</p>
 <ul>
 <li>日志</li>
 <li>监控</li>
@@ -588,7 +592,8 @@ TCP 三次握手的引入。</p>
 <li>认证授权</li>
 </ul>
 </li>
-<li>注意点
+<li>
+<p>注意点</p>
 <ul>
 <li>API gateway 最大的缺点是可能成为开发瓶颈，因为其与内部服务是高度耦合的</li>
 </ul>
@@ -607,7 +612,7 @@ TCP 三次握手的引入。</p>
 </ul>
 <p>总结：</p>
 <ul>
-<li>More generally, a data plane includes any functionality on the criti- cal path that needs to run for each client request. Therefore, it must be highly available, fast, and scale with the number of requests. In contrast, a control plane is not on the critical path and has less strict scaling requirements. Its main job is to help the data plane do its work by managing metadata or configuration and coordinating complex and infrequent operations. And since it generally needs to offer a consistent view of its state to the data plane, it favors consistency over availability.</li>
+<li>More generally, a data plane includes any functionality on the critical path that needs to run for each client request. Therefore, it must be highly available, fast, and scale with the number of requests. In contrast, a control plane is not on the critical path and has less strict scaling requirements. Its main job is to help the data plane do its work by managing metadata or configuration and coordinating complex and infrequent operations. And since it generally needs to offer a consistent view of its state to the data plane, it favors consistency over availability.</li>
 <li>Try to make the control plane more reliable, but more importantly, we should ensure that the data plane can withstand control plane failures.</li>
 </ul>
 <p><strong>Scale imbalance</strong></p>

@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="gzhh">
+<meta name="description" content="Table Of Contents 一、系统架构设计介绍 单体架构 微服务架构 二、服务的拆分策略 拆分规范 拆分策略 拆分难点 三、微服务架构中的进程间通信 RPC（同步通信机制） 同步通信机制局部故障问题 服务发现 消息代理 MQ（异步消息通信机制） 四、管理事务 Saga 五、微服务架构中的业务逻辑设计 业务逻辑组织模式 领域驱动设计 DDD 六、使用事件溯源开发业务逻辑 七、在微服务架构中实现查询 使用API组合模式进行查询 使用CQRS模式 八、外部API模式 九 &amp; 十、微服务架构中的测试策略 自动化测试的四个阶段 测试的不同类型 测试金字塔 使用测试象限进行分类 十一、开发面向生产环境的微服务应用 安全性 可配置 设计可观测的服务 使用微服务基底模式开发服务 服务网格 十二：部署微服务应用 虚拟机 docker k8s 容器部署 Serverless 部署 十三、微服务架构的重构策略 需要考虑的问题 重构策略 设计服务与单体的协作方式 将新功能实现为服务 从单体中提取功能到独立服务 参考 一、系统架构设计介绍 单体架构 定义：一个系统的所有子模块都被部署在同一台服务器上。
+单体架构的好处
+应用的开发简单 易于对应用程序进行大规模的更改 测试相对简单直观 部署简单 横向扩展容易 单体地狱
+随着不断的在单体架构的基础上扩展，每一次实现更多功能的时候，就会导致代码库膨胀。并且随着研发团队规模的不断壮大，团队的管理成本也不断提高，开发变得缓慢和痛苦。
+单体架构的弊端
+过度的复杂性会吓退开发者 开发速度缓慢 从代码提交到实际部署的周期很长，而且容易出问题 难以扩展 交付可靠的单体应用是一项挑战 需要长期依赖某个可能过时的技术栈 微服务架构 定义：将一个单体应用按照不同的功能模块进行分解，拆分成一个个小的服务，每个服务实现了一组相关的功能。">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="微服务架构设计模式"/>
+<meta name="twitter:description" content="Table Of Contents 一、系统架构设计介绍 单体架构 微服务架构 二、服务的拆分策略 拆分规范 拆分策略 拆分难点 三、微服务架构中的进程间通信 RPC（同步通信机制） 同步通信机制局部故障问题 服务发现 消息代理 MQ（异步消息通信机制） 四、管理事务 Saga 五、微服务架构中的业务逻辑设计 业务逻辑组织模式 领域驱动设计 DDD 六、使用事件溯源开发业务逻辑 七、在微服务架构中实现查询 使用API组合模式进行查询 使用CQRS模式 八、外部API模式 九 &amp; 十、微服务架构中的测试策略 自动化测试的四个阶段 测试的不同类型 测试金字塔 使用测试象限进行分类 十一、开发面向生产环境的微服务应用 安全性 可配置 设计可观测的服务 使用微服务基底模式开发服务 服务网格 十二：部署微服务应用 虚拟机 docker k8s 容器部署 Serverless 部署 十三、微服务架构的重构策略 需要考虑的问题 重构策略 设计服务与单体的协作方式 将新功能实现为服务 从单体中提取功能到独立服务 参考 一、系统架构设计介绍 单体架构 定义：一个系统的所有子模块都被部署在同一台服务器上。
+单体架构的好处
+应用的开发简单 易于对应用程序进行大规模的更改 测试相对简单直观 部署简单 横向扩展容易 单体地狱
+随着不断的在单体架构的基础上扩展，每一次实现更多功能的时候，就会导致代码库膨胀。并且随着研发团队规模的不断壮大，团队的管理成本也不断提高，开发变得缓慢和痛苦。
+单体架构的弊端
+过度的复杂性会吓退开发者 开发速度缓慢 从代码提交到实际部署的周期很长，而且容易出问题 难以扩展 交付可靠的单体应用是一项挑战 需要长期依赖某个可能过时的技术栈 微服务架构 定义：将一个单体应用按照不同的功能模块进行分解，拆分成一个个小的服务，每个服务实现了一组相关的功能。"/>
+
+<meta property="og:title" content="微服务架构设计模式" />
+<meta property="og:description" content="Table Of Contents 一、系统架构设计介绍 单体架构 微服务架构 二、服务的拆分策略 拆分规范 拆分策略 拆分难点 三、微服务架构中的进程间通信 RPC（同步通信机制） 同步通信机制局部故障问题 服务发现 消息代理 MQ（异步消息通信机制） 四、管理事务 Saga 五、微服务架构中的业务逻辑设计 业务逻辑组织模式 领域驱动设计 DDD 六、使用事件溯源开发业务逻辑 七、在微服务架构中实现查询 使用API组合模式进行查询 使用CQRS模式 八、外部API模式 九 &amp; 十、微服务架构中的测试策略 自动化测试的四个阶段 测试的不同类型 测试金字塔 使用测试象限进行分类 十一、开发面向生产环境的微服务应用 安全性 可配置 设计可观测的服务 使用微服务基底模式开发服务 服务网格 十二：部署微服务应用 虚拟机 docker k8s 容器部署 Serverless 部署 十三、微服务架构的重构策略 需要考虑的问题 重构策略 设计服务与单体的协作方式 将新功能实现为服务 从单体中提取功能到独立服务 参考 一、系统架构设计介绍 单体架构 定义：一个系统的所有子模块都被部署在同一台服务器上。
+单体架构的好处
+应用的开发简单 易于对应用程序进行大规模的更改 测试相对简单直观 部署简单 横向扩展容易 单体地狱
+随着不断的在单体架构的基础上扩展，每一次实现更多功能的时候，就会导致代码库膨胀。并且随着研发团队规模的不断壮大，团队的管理成本也不断提高，开发变得缓慢和痛苦。
+单体架构的弊端
+过度的复杂性会吓退开发者 开发速度缓慢 从代码提交到实际部署的周期很长，而且容易出问题 难以扩展 交付可靠的单体应用是一项挑战 需要长期依赖某个可能过时的技术栈 微服务架构 定义：将一个单体应用按照不同的功能模块进行分解，拆分成一个个小的服务，每个服务实现了一组相关的功能。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gzhh.tech/posts/microservices-patterns/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-20T17:58:50+08:00" />
+<meta property="article:modified_time" content="2022-06-20T17:58:50+08:00" />
+
+
+
+
+  <title>gzhh&#39;s blog</title>
+
+  
+  <link rel="canonical" href="https://blog.gzhh.tech/posts/microservices-patterns/">
+  
+
+  <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.102.1" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      gzhh&#39;s blog
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/read/">Read</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://blog.gzhh.tech/posts/microservices-patterns/">
+              微服务架构设计模式
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-06-20T17:58:50&#43;08:00">
+                June 20, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/microservices/">Microservices</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一系统架构设计介绍">一、系统架构设计介绍</a>
+      <ul>
+        <li><a href="#单体架构">单体架构</a></li>
+        <li><a href="#微服务架构">微服务架构</a></li>
+      </ul>
+    </li>
+    <li><a href="#二服务的拆分策略">二、服务的拆分策略</a>
+      <ul>
+        <li><a href="#拆分规范">拆分规范</a></li>
+        <li><a href="#拆分策略">拆分策略</a></li>
+        <li><a href="#拆分难点">拆分难点</a></li>
+      </ul>
+    </li>
+    <li><a href="#三微服务架构中的进程间通信">三、微服务架构中的进程间通信</a>
+      <ul>
+        <li><a href="#rpc同步通信机制">RPC（同步通信机制）</a></li>
+        <li><a href="#同步通信机制局部故障问题">同步通信机制局部故障问题</a></li>
+        <li><a href="#服务发现">服务发现</a></li>
+        <li><a href="#消息代理-mq异步消息通信机制">消息代理 MQ（异步消息通信机制）</a></li>
+      </ul>
+    </li>
+    <li><a href="#四管理事务">四、管理事务</a>
+      <ul>
+        <li><a href="#saga">Saga</a></li>
+      </ul>
+    </li>
+    <li><a href="#五微服务架构中的业务逻辑设计">五、微服务架构中的业务逻辑设计</a>
+      <ul>
+        <li><a href="#业务逻辑组织模式">业务逻辑组织模式</a></li>
+        <li><a href="#领域驱动设计-ddd">领域驱动设计 DDD</a></li>
+      </ul>
+    </li>
+    <li><a href="#六使用事件溯源开发业务逻辑">六、使用事件溯源开发业务逻辑</a></li>
+    <li><a href="#七在微服务架构中实现查询">七、在微服务架构中实现查询</a>
+      <ul>
+        <li><a href="#使用api组合模式进行查询">使用API组合模式进行查询</a></li>
+        <li><a href="#使用cqrs模式">使用CQRS模式</a></li>
+      </ul>
+    </li>
+    <li><a href="#八外部api模式">八、外部API模式</a></li>
+    <li><a href="#九--十微服务架构中的测试策略">九 &amp; 十、微服务架构中的测试策略</a>
+      <ul>
+        <li><a href="#自动化测试的四个阶段">自动化测试的四个阶段</a></li>
+        <li><a href="#测试的不同类型">测试的不同类型</a></li>
+        <li><a href="#测试金字塔">测试金字塔</a></li>
+        <li><a href="#使用测试象限进行分类">使用测试象限进行分类</a></li>
+      </ul>
+    </li>
+    <li><a href="#十一开发面向生产环境的微服务应用">十一、开发面向生产环境的微服务应用</a>
+      <ul>
+        <li><a href="#安全性">安全性</a></li>
+        <li><a href="#可配置">可配置</a></li>
+        <li><a href="#设计可观测的服务">设计可观测的服务</a></li>
+        <li><a href="#使用微服务基底模式开发服务">使用微服务基底模式开发服务</a></li>
+        <li><a href="#服务网格">服务网格</a></li>
+      </ul>
+    </li>
+    <li><a href="#十二部署微服务应用">十二：部署微服务应用</a>
+      <ul>
+        <li><a href="#虚拟机">虚拟机</a></li>
+        <li><a href="#docker-k8s-容器部署">docker k8s 容器部署</a></li>
+        <li><a href="#serverless-部署">Serverless 部署</a></li>
+      </ul>
+    </li>
+    <li><a href="#十三微服务架构的重构策略">十三、微服务架构的重构策略</a>
+      <ul>
+        <li><a href="#需要考虑的问题">需要考虑的问题</a></li>
+        <li><a href="#重构策略">重构策略</a></li>
+        <li><a href="#设计服务与单体的协作方式">设计服务与单体的协作方式</a></li>
+        <li><a href="#将新功能实现为服务">将新功能实现为服务</a></li>
+        <li><a href="#从单体中提取功能到独立服务">从单体中提取功能到独立服务</a></li>
+      </ul>
+    </li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
+</nav>
+</div>
+
+<h2 id="一系统架构设计介绍">
+  一、系统架构设计介绍
+  <a class="heading-link" href="#%e4%b8%80%e7%b3%bb%e7%bb%9f%e6%9e%b6%e6%9e%84%e8%ae%be%e8%ae%a1%e4%bb%8b%e7%bb%8d">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="单体架构">
+  单体架构
+  <a class="heading-link" href="#%e5%8d%95%e4%bd%93%e6%9e%b6%e6%9e%84">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>定义：一个系统的所有子模块都被部署在同一台服务器上。</p>
+<p><strong>单体架构的好处</strong></p>
+<ol>
+<li>应用的开发简单</li>
+<li>易于对应用程序进行大规模的更改</li>
+<li>测试相对简单直观</li>
+<li>部署简单</li>
+<li>横向扩展容易</li>
+</ol>
+<p><strong>单体地狱</strong></p>
+<p>随着不断的在单体架构的基础上扩展，每一次实现更多功能的时候，就会导致代码库膨胀。并且随着研发团队规模的不断壮大，团队的管理成本也不断提高，开发变得缓慢和痛苦。</p>
+<p><strong>单体架构的弊端</strong></p>
+<ol>
+<li>过度的复杂性会吓退开发者</li>
+<li>开发速度缓慢</li>
+<li>从代码提交到实际部署的周期很长，而且容易出问题</li>
+<li>难以扩展</li>
+<li>交付可靠的单体应用是一项挑战</li>
+<li>需要长期依赖某个可能过时的技术栈</li>
+</ol>
+<h3 id="微服务架构">
+  微服务架构
+  <a class="heading-link" href="#%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>定义：将一个单体应用按照不同的功能模块进行分解，拆分成一个个小的服务，每个服务实现了一组相关的功能。</p>
+<p><strong>微服务架构的好处</strong></p>
+<ol>
+<li>使大型的复杂应用程序可以持续交付和持续部署</li>
+<li>每个服务都相对较小并容易维护</li>
+<li>服务可以独立部署</li>
+<li>服务可以独立扩展</li>
+<li>微服务架构可以实现团队的自治</li>
+<li>更容易实验和采纳新的技术</li>
+<li>更好的容错性</li>
+</ol>
+<p><strong>微服务架构的弊端</strong></p>
+<ol>
+<li>服务的拆分和定义是一项挑战</li>
+<li>分布式系统带来的各种复杂性，使开发、测试和部署变得更困难</li>
+<li>当部署跨越多个服务的功能时需要谨慎地协调更多的开发团队</li>
+<li>开发者需要思考到底应该在应用的什么阶段使用微服务架构</li>
+</ol>
+<h2 id="二服务的拆分策略">
+  二、服务的拆分策略
+  <a class="heading-link" href="#%e4%ba%8c%e6%9c%8d%e5%8a%a1%e7%9a%84%e6%8b%86%e5%88%86%e7%ad%96%e7%95%a5">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="拆分规范">
+  拆分规范
+  <a class="heading-link" href="#%e6%8b%86%e5%88%86%e8%a7%84%e8%8c%83">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><strong>拆分规范</strong></p>
+<ol>
+<li>高内聚、低耦合</li>
+<li>服务拆分正交性</li>
+<li>服务拆分层级最多三层</li>
+<li>服务粒度适中、演进式拆分</li>
+<li>避免环形依赖、双向依赖</li>
+<li>通用化接口设计，减少定制化设计</li>
+<li>将串行调用改为并行调用，或者异步化</li>
+<li>接口应该实现幂等性</li>
+<li>接口数据定义严禁内嵌，透传</li>
+<li>避免服务间共享数据库</li>
+<li>同时应当考虑团队结构</li>
+</ol>
+<p><strong>拆分时机</strong></p>
+<ol>
+<li>快速迭代</li>
+<li>高并发、性能要求</li>
+<li>提交代码频繁出现大量冲突</li>
+<li>小功能要积累到大版本才能上线</li>
+</ol>
+<p>拆分规范参考</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/333393446">参考1</a></li>
+<li><a href="https://mp.weixin.qq.com/s/mojOSgEUaHWGU3H3j7WjlQ">参考2</a></li>
+</ul>
+<h3 id="拆分策略">
+  拆分策略
+  <a class="heading-link" href="#%e6%8b%86%e5%88%86%e7%ad%96%e7%95%a5">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><strong>根据业务能力进行拆分</strong></p>
+<p><strong>根据子域进行服务拆分</strong></p>
+<ul>
+<li>领域驱动设计 DDD
+<ul>
+<li><a href="https://tech.meituan.com/2017/12/22/ddd-in-practice.html">参考1</a></li>
+<li><a href="https://www.infoq.cn/article/mf3sggvvf69fidl26ie6">参考2</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="拆分难点">
+  拆分难点
+  <a class="heading-link" href="#%e6%8b%86%e5%88%86%e9%9a%be%e7%82%b9">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>网络延迟</li>
+<li>同步进程间通信导致可用性降低</li>
+<li>在服务之间维持数据一致性</li>
+<li>获取一致的数据视图</li>
+<li>上帝类阻碍了拆分（上帝类是在整个应用程序中使用的全局类）</li>
+</ul>
+<h2 id="三微服务架构中的进程间通信">
+  三、微服务架构中的进程间通信
+  <a class="heading-link" href="#%e4%b8%89%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e4%b8%ad%e7%9a%84%e8%bf%9b%e7%a8%8b%e9%97%b4%e9%80%9a%e4%bf%a1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="rpc同步通信机制">
+  RPC（同步通信机制）
+  <a class="heading-link" href="#rpc%e5%90%8c%e6%ad%a5%e9%80%9a%e4%bf%a1%e6%9c%ba%e5%88%b6">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><strong>gRPC api 实现</strong></p>
+<ol>
+<li>接口定义语言 IDL</li>
+</ol>
+<ul>
+<li>protocol buffer</li>
+</ul>
+<ol start="2">
+<li>通信协议 grpc</li>
+</ol>
+<ul>
+<li>基于 http2 实现的二进制消息的协议</li>
+</ul>
+<ol start="3">
+<li>http2</li>
+</ol>
+<ul>
+<li>客户端和服务端使用 http/2 以 protocol buffer 格式交换二进制消息</li>
+</ul>
+<p><strong>好处</strong></p>
+<ul>
+<li>设计具有复杂更新操作的API非常简单</li>
+<li>具有高效、紧凑的进程间通信机制，尤其是在交换大量消息时</li>
+<li>支持在远程过程调用和消息传递过程中使用双向流式消息方式</li>
+<li>实现了客户端和各种语言编写的服务端之间的互操作性</li>
+</ul>
+<p><strong>弊端</strong></p>
+<ul>
+<li>与基于 REST/JSON 的 API 机制相比，JavaScript 客户端使用基于 gPRC 的 API 需要做更多的工作。</li>
+<li>旧式防火墙可能不支持 HTTP/2</li>
+</ul>
+<h3 id="同步通信机制局部故障问题">
+  同步通信机制局部故障问题
+  <a class="heading-link" href="#%e5%90%8c%e6%ad%a5%e9%80%9a%e4%bf%a1%e6%9c%ba%e5%88%b6%e5%b1%80%e9%83%a8%e6%95%85%e9%9a%9c%e9%97%ae%e9%a2%98">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>限流
+<ul>
+<li>令牌桶 Token Bucket</li>
+<li>漏桶 Leaky Bucket</li>
+</ul>
+</li>
+<li>熔断
+<ul>
+<li>介绍
+<ul>
+<li>熔断器首先是关闭的，当主调失败到达了一定阈值后，此时熔断器打开（主调的请求不会再到被调了，压根就不会发出请求），过了一个&quot;冷却时间&quot;后，熔断器此时会处于一个半开的状态，会有请求到被调，如果请求成功就关闭熔断器（后端服务恢复），否则就继续打开熔断器。</li>
+<li>熔断强调的是服务之间的调用能实现自我恢复的状态。</li>
+</ul>
+</li>
+<li>主动熔断：通过服务发现组件来获取被调的实例，如果主调的失败达到了一个阈值，服务发现组件会熔断被调的实例</li>
+<li>被动熔断：cpu/内存/io 等超过了一定的阈值，那么就会触发熔断，将抛弃进来的请求</li>
+</ul>
+</li>
+<li>降级</li>
+<li>隔离</li>
+<li>重试</li>
+<li>超时监控</li>
+<li>监控</li>
+<li>报警</li>
+<li>预案</li>
+</ul>
+<h3 id="服务发现">
+  服务发现
+  <a class="heading-link" href="#%e6%9c%8d%e5%8a%a1%e5%8f%91%e7%8e%b0">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><strong>概念</strong></p>
+<ul>
+<li>其关键组件是服务注册表，它是包含服务实例网络位置信息的一个数据库。</li>
+<li>服务实例启动和停止时，服务发现机制会更新服务注册表。当客户端调用服务时，服务发现机制会查询服务注册表以获取可用服务实例的列表，并将请求路由到其中一个服务实例。</li>
+</ul>
+<p><strong>实现方式</strong></p>
+<ul>
+<li>服务及其客户端直接与服务注册表交互</li>
+<li>通过部署基础设施来处理服务发现，Docker 和 Kubernetes 等相关云原生组件</li>
+</ul>
+<h3 id="消息代理-mq异步消息通信机制">
+  消息代理 MQ（异步消息通信机制）
+  <a class="heading-link" href="#%e6%b6%88%e6%81%af%e4%bb%a3%e7%90%86-mq%e5%bc%82%e6%ad%a5%e6%b6%88%e6%81%af%e9%80%9a%e4%bf%a1%e6%9c%ba%e5%88%b6">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><strong>消息通道类型</strong></p>
+<ul>
+<li>点对点通道
+一对一交互</li>
+<li>发布订阅
+一对多交互</li>
+</ul>
+<p><strong>好处</strong></p>
+<ul>
+<li>松耦合</li>
+<li>消息缓存</li>
+<li>灵活的通信</li>
+<li>明确的进程间通信</li>
+</ul>
+<p><strong>弊端</strong></p>
+<ul>
+<li>潜在的性能瓶颈</li>
+<li>潜在的单点故障</li>
+<li>额外的操作复杂性</li>
+</ul>
+<p><strong>处理并发和消息顺序</strong></p>
+<p>场景：
+使用多个线程和服务实例来并发处理消息可以提高应用程序的吞吐量。</p>
+<p>挑战：
+确保每个消息植被处理一次，并且是按照它们发送的顺序来处理的。</p>
+<p>解决方案：Kafka 分片</p>
+<ul>
+<li>分片通道由两个或多个分片组成，每个分片的行为类似于一个通道。</li>
+<li>发送方在消息头部指定分片键，通常是任意字符串或字节序列。消息代理使用分片键将消息分片给特定的分片。例如，可以通过计算分片键的散列来选择分片。</li>
+<li>消息代理将接收方的多个实例组合在一起，并将它们视为相同的逻辑接收方。例如 Kafka 的使用术语消费者组。消息代理将每个分片分配给单个接收器。它在接收方启动和关闭时重新分配分片。</li>
+</ul>
+<p><strong>处理重复消息</strong></p>
+<p>解决方案</p>
+<ul>
+<li>编写幂等消息处理程序</li>
+<li>跟踪消息并丢弃重复项
+<ul>
+<li>消息接收方使用 message id 跟踪它已经处理的消息并丢弃任何重复项
+<ul>
+<li>依赖 rdms 的特性</li>
+<li>利用 nosql</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="四管理事务">
+  四、管理事务
+  <a class="heading-link" href="#%e5%9b%9b%e7%ae%a1%e7%90%86%e4%ba%8b%e5%8a%a1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="saga">
+  Saga
+  <a class="heading-link" href="#saga">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><a href="https://microservices.io/patterns/data/saga.html">参考</a></p>
+<h2 id="五微服务架构中的业务逻辑设计">
+  五、微服务架构中的业务逻辑设计
+  <a class="heading-link" href="#%e4%ba%94%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e4%b8%ad%e7%9a%84%e4%b8%9a%e5%8a%a1%e9%80%bb%e8%be%91%e8%ae%be%e8%ae%a1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="业务逻辑组织模式">
+  业务逻辑组织模式
+  <a class="heading-link" href="#%e4%b8%9a%e5%8a%a1%e9%80%bb%e8%be%91%e7%bb%84%e7%bb%87%e6%a8%a1%e5%bc%8f">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>事务脚本模式（高度面向过程）</li>
+<li>领域模型模式（面向对象设计）</li>
+</ul>
+<h3 id="领域驱动设计-ddd">
+  领域驱动设计 DDD
+  <a class="heading-link" href="#%e9%a2%86%e5%9f%9f%e9%a9%b1%e5%8a%a8%e8%ae%be%e8%ae%a1-ddd">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>DDD 是对面向对象设计的改进，是开发复杂业务逻辑的一种方法。子域概念有助于把应用程序分解为服务，每个服务都有自己的领域模型，这就避免了在单个应用程序全局范围内的领域模型问题。</p>
+<p><strong>DDD 的基本元素</strong></p>
+<ul>
+<li>实体 entity：具有持久化 ID 的对象</li>
+<li>值对象 value object：作为值集合的对象</li>
+<li>工厂 factory：负责实现对象创建逻辑的对象或方法，该逻辑过于复杂，无法由类的构造函数直接完成。</li>
+<li>存储库 repository：用来访问持久化实体的对象，储存库也封装了访问数据库的底层机制。</li>
+<li>服务 service：实现不属于实体或值对象的业务逻辑的对象。</li>
+</ul>
+<p><strong>使用聚合模式设计领域模型</strong></p>
+<p><strong>领域事件</strong></p>
+<ul>
+<li>在命名领域事件时，我们往往选择动词的过去分词，这样的命名能够明确表达事件的一些属性。领域事件的每个属性都是原始值或值对象。</li>
+<li>领域事件通常还具有元数据，例如事件 ID 和时间戳。</li>
+</ul>
+<h2 id="六使用事件溯源开发业务逻辑">
+  六、使用事件溯源开发业务逻辑
+  <a class="heading-link" href="#%e5%85%ad%e4%bd%bf%e7%94%a8%e4%ba%8b%e4%bb%b6%e6%ba%af%e6%ba%90%e5%bc%80%e5%8f%91%e4%b8%9a%e5%8a%a1%e9%80%bb%e8%be%91">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>事件溯源是一种以事件为中心的技术，用于实现业务逻辑和聚合的持久化。聚合作为一系列事件存储在数据库中。每个事件代表聚合的状态变化。聚合的业务逻辑围绕生成和使用这些事件的要求而构建。</p>
+<p>使用事件溯源开发业务逻辑：</p>
+<ul>
+<li>传统持久化技术的问题 （ORM）</li>
+<li>使用乐观锁处理并发更新</li>
+<li>事件溯源和发布事件（轮询发布）</li>
+<li>使用快照提升性能</li>
+<li>幂等方式处理消息</li>
+</ul>
+<p><strong>好处</strong>
+TODO</p>
+<p><strong>弊端</strong>
+TODO</p>
+<h2 id="七在微服务架构中实现查询">
+  七、在微服务架构中实现查询
+  <a class="heading-link" href="#%e4%b8%83%e5%9c%a8%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e4%b8%ad%e5%ae%9e%e7%8e%b0%e6%9f%a5%e8%af%a2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="使用api组合模式进行查询">
+  使用API组合模式进行查询
+  <a class="heading-link" href="#%e4%bd%bf%e7%94%a8api%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%9f%a5%e8%af%a2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>简单，应尽可能使用。工作原理是让拥有数据的服务的客户端负责调用服务，并组合服务返回的查询结果。</p>
+<p>实现方式：API 组合器调用不同的服务，并组合服务返回的结果。</p>
+<p>优点：</p>
+<ul>
+<li>简单直观</li>
+</ul>
+<p>缺点：</p>
+<ol>
+<li>增加了额外的开销</li>
+<li>带来可用性降低的风险</li>
+<li>缺乏事务数据一致性</li>
+</ol>
+<h3 id="使用cqrs模式">
+  使用CQRS模式
+  <a class="heading-link" href="#%e4%bd%bf%e7%94%a8cqrs%e6%a8%a1%e5%bc%8f">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>CQRS 隔离命令和查询：CQRS 是命令查询指责隔离（Command Query Responsibility Segregation）的简称，设计隔离或问题的分隔。</p>
+<p>它将持久化数据模型和使用数据的模块分为两部分：命令端和查询端。</p>
+<ol>
+<li>命令端模块和数据模型实现创建、更新和删除操作（缩写为CUD，例如 HTTP POST、PUT 和 DELETE）。</li>
+<li>查询端模块和数据模型实现查询（HTTP GET）</li>
+</ol>
+<p>查询端通过订阅命令端发布的事件，使其数据模型与命令端数据模型保持同步。</p>
+<p>好处：</p>
+<ol>
+<li>在微服务架构中高效地实现查询</li>
+<li>高效地实现多种不同的查询类型</li>
+<li>在基于事件溯源技术的应用程序中实现查询</li>
+<li>更进一步地实现问题隔离</li>
+</ol>
+<p>弊端：</p>
+<ol>
+<li>更加复杂的架构</li>
+<li>处理数据复制导致的延迟</li>
+</ol>
+<h2 id="八外部api模式">
+  八、外部API模式
+  <a class="heading-link" href="#%e5%85%ab%e5%a4%96%e9%83%a8api%e6%a8%a1%e5%bc%8f">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>直接访问服务的 API 会导致很多问题。客户端通过互联网完成 API 组合通常是不切实际的。缺乏封装使开发人员更难以更改服务分解和 API。服务有时会使用不适合防火墙之外的通信协议。所以就需要使用 API Gateway。</p>
+<p>API Gateway 是一种服务，它是外部世界进入应用程序的入口点。它负责请求路由、API 组合和身份验证等各项功能。</p>
+<p>API Gateway 功能：</p>
+<ul>
+<li>请求路由</li>
+<li>API 组合</li>
+<li>协议转换：REST 和 RPC</li>
+<li>为每一个客户端提供它们专用的 API</li>
+<li>实现边缘功能
+<ul>
+<li>身份验证</li>
+<li>访问授权</li>
+<li>速率限制</li>
+<li>缓存</li>
+<li>指标收集</li>
+<li>请求日志</li>
+</ul>
+</li>
+</ul>
+<p>API Gateway 的架构：</p>
+<ol>
+<li>API 层：由一个或多个独立的 API 模块组成，每个 API 模块都为特定客户端实现 API。</li>
+<li>公共层：实现共享功能，包括边缘功能，如身份验证。</li>
+</ol>
+<p>好处：封装了应用程序的内部结构</p>
+<p>弊端：它是一个必须开发、部署和管理的高可用组件，但存在成为开发瓶颈的风险。</p>
+<p>API Gateway 的设计难题：</p>
+<ol>
+<li>性能和可扩展性</li>
+<li>使用响应式编程抽象编写可维护的代码</li>
+<li>处理局部故障</li>
+<li>成为应用程序架构中的好公民</li>
+</ol>
+<h2 id="九--十微服务架构中的测试策略">
+  九 &amp; 十、微服务架构中的测试策略
+  <a class="heading-link" href="#%e4%b9%9d--%e5%8d%81%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e4%b8%ad%e7%9a%84%e6%b5%8b%e8%af%95%e7%ad%96%e7%95%a5">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="自动化测试的四个阶段">
+  自动化测试的四个阶段
+  <a class="heading-link" href="#%e8%87%aa%e5%8a%a8%e5%8c%96%e6%b5%8b%e8%af%95%e7%9a%84%e5%9b%9b%e4%b8%aa%e9%98%b6%e6%ae%b5">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ol>
+<li>设置环境</li>
+<li>执行测试</li>
+<li>验证结果</li>
+<li>清理环境</li>
+</ol>
+<h3 id="测试的不同类型">
+  测试的不同类型
+  <a class="heading-link" href="#%e6%b5%8b%e8%af%95%e7%9a%84%e4%b8%8d%e5%90%8c%e7%b1%bb%e5%9e%8b">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>单元测试：测试服务的一小部分，例如类</p>
+<p>集成测试：验证服务是否可以与基础设施服务（如数据库）或其他应用程序服务进行交互</p>
+<p>组件测试：单个服务的验收测试</p>
+<p>端到端测试：整个应用程序的验收测试</p>
+<h3 id="测试金字塔">
+  测试金字塔
+  <a class="heading-link" href="#%e6%b5%8b%e8%af%95%e9%87%91%e5%ad%97%e5%a1%94">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>从低层到高层测试规模需要依次减少</p>
+<p>单元测试 -&gt; 集成测试 -&gt; 组件测试 -&gt; 端到端测试</p>
+<h3 id="使用测试象限进行分类">
+  使用测试象限进行分类
+  <a class="heading-link" href="#%e4%bd%bf%e7%94%a8%e6%b5%8b%e8%af%95%e8%b1%a1%e9%99%90%e8%bf%9b%e8%a1%8c%e5%88%86%e7%b1%bb">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>测试面向业务还是面向技术</li>
+<li>测试的目标是协助开发还是寻找产品缺陷</li>
+</ul>
+<h2 id="十一开发面向生产环境的微服务应用">
+  十一、开发面向生产环境的微服务应用
+  <a class="heading-link" href="#%e5%8d%81%e4%b8%80%e5%bc%80%e5%8f%91%e9%9d%a2%e5%90%91%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83%e7%9a%84%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%ba%94%e7%94%a8">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="安全性">
+  安全性
+  <a class="heading-link" href="#%e5%ae%89%e5%85%a8%e6%80%a7">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>是否验证：jwt token</li>
+<li>访问授权：oauth2.0</li>
+<li>审计</li>
+<li>安全的进程间通信</li>
+</ul>
+<h3 id="可配置">
+  可配置
+  <a class="heading-link" href="#%e5%8f%af%e9%85%8d%e7%bd%ae">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>基于推送的外部化配置：环境变量</li>
+<li>基于拉取的外部化配置
+<ul>
+<li>集中配置</li>
+<li>敏感数据的透明解密</li>
+<li>动态重新配置</li>
+</ul>
+</li>
+</ul>
+<h3 id="设计可观测的服务">
+  设计可观测的服务
+  <a class="heading-link" href="#%e8%ae%be%e8%ae%a1%e5%8f%af%e8%a7%82%e6%b5%8b%e7%9a%84%e6%9c%8d%e5%8a%a1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>健康检查 API：Kubernetes health check</li>
+<li>日志聚合：ELK</li>
+<li>分布式跟踪：Zipkin、Jaeger</li>
+<li>异常跟踪：Sentry</li>
+<li>应用程序指标：Prometheus &amp; Grafana</li>
+<li>审核日志记录</li>
+</ul>
+<h3 id="使用微服务基底模式开发服务">
+  使用微服务基底模式开发服务
+  <a class="heading-link" href="#%e4%bd%bf%e7%94%a8%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%9f%ba%e5%ba%95%e6%a8%a1%e5%bc%8f%e5%bc%80%e5%8f%91%e6%9c%8d%e5%8a%a1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>微服务基底是一个框架或一组框架，可以处理许多问题</p>
+<ul>
+<li>外部化配置</li>
+<li>健康检查</li>
+<li>应用程序指标</li>
+<li>服务发现</li>
+<li>断路器</li>
+<li>分布式追踪</li>
+</ul>
+<h3 id="服务网格">
+  服务网格
+  <a class="heading-link" href="#%e6%9c%8d%e5%8a%a1%e7%bd%91%e6%a0%bc">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>概念：</p>
+<ul>
+<li>把所有进出服务的网络流量通过一个网络层进行路由，这个网络层负责解决包括断路器、分布式追踪、服务发现、负载均衡和基于规则的流量路由等具有共性的需求。</li>
+<li>使用服务网格后，微服务基底需要担负的责任就少了很多。</li>
+<li>服务网格旨在解决开发中的各种共性问题。</li>
+</ul>
+<p>常用技术：istio</p>
+<h2 id="十二部署微服务应用">
+  十二：部署微服务应用
+  <a class="heading-link" href="#%e5%8d%81%e4%ba%8c%e9%83%a8%e7%bd%b2%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%ba%94%e7%94%a8">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="虚拟机">
+  虚拟机
+  <a class="heading-link" href="#%e8%99%9a%e6%8b%9f%e6%9c%ba">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>主要用来部署单体应用</p>
+<h3 id="docker-k8s-容器部署">
+  docker k8s 容器部署
+  <a class="heading-link" href="#docker-k8s-%e5%ae%b9%e5%99%a8%e9%83%a8%e7%bd%b2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><strong>k8s</strong></p>
+<ul>
+<li>主要功能
+<ul>
+<li>资源管理</li>
+<li>调度</li>
+<li>服务调度</li>
+</ul>
+</li>
+<li>架构
+<ul>
+<li>主节点
+<ul>
+<li>API 服务器：用于部署和管理服务的 REST API</li>
+<li>Etcd：存储集群数据值的 NoSQL 数据库</li>
+<li>调度器：选择要运行的 Pod 的节点</li>
+<li>控制器管理：运行控制器，确保集群状态与预期状态匹配。</li>
+</ul>
+</li>
+<li>普通节点
+<ul>
+<li>Kubelet：创建和管理节点上运行的 Pod</li>
+<li>Kube-proxy：管理网络，包括跨 Pod 的负载均衡</li>
+<li>Pods：应用程序服务</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>关键概念
+<ul>
+<li>Pod：Kubernetes 的基本部署单元</li>
+<li>Deployment：Pod 的声明性规范，维护 Pod</li>
+<li>Service：向应用程序服务的客户端提供的一个静态/稳定的网络地址，是基础设施提供的服务发现的一种形式。</li>
+<li>ConfigMap：名称与值对的命名集合，用于定义一个或多个应用程序服务的外部化配置。</li>
+</ul>
+</li>
+</ul>
+<p><strong>服务网格 istio</strong></p>
+<ul>
+<li>部署发布介绍
+<ul>
+<li>部署：让服务开始在生产环境中运行</li>
+<li>发布：使最终用户可以使用（访问）服务</li>
+</ul>
+</li>
+<li>作用：将部署流程与发布流程分开
+<ul>
+<li>将新版本部署到生成环境中，而不向其路由任何最终用户请求。</li>
+<li>在生产中进行测试。</li>
+<li>将其发布给少数最终用户。</li>
+<li>逐步将其发布给越来越多的用户，直到它处理所有生产流量为止。</li>
+<li>任何时候出现问题，请恢复旧版本，否则，一旦你确信新版本正常工作，请删除旧版本。</li>
+</ul>
+</li>
+<li>主要功能
+<ul>
+<li>流量管理：包括服务发现、负载均衡、路由规则和断路器</li>
+<li>通信安全：使用传输层安全性（TLS）保护服务间通信</li>
+<li>遥测 Telemetry：捕获有关网络流量的指标并实施分布式跟踪</li>
+<li>策略执行：强制实施配额和费率限制</li>
+</ul>
+</li>
+</ul>
+<p><strong>部署流水线</strong></p>
+<ul>
+<li>提交前测试阶段</li>
+<li>提交测试阶段</li>
+<li>集成测试阶段</li>
+<li>组件测试阶段</li>
+<li>部署阶段</li>
+</ul>
+<h3 id="serverless-部署">
+  Serverless 部署
+  <a class="heading-link" href="#serverless-%e9%83%a8%e7%bd%b2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>介绍：</p>
+<ul>
+<li>使用公有云提供的 Serverless 部署机制部署服务。例如 AWS、阿里云的函数计算服务</li>
+<li>阿里云函数计算是事件驱动的全托管计算服务。通过函数计算，您无需管理服务器等基础设施，只需编写代码并上传。函数计算会为您准备好计算资源，以弹性、可靠的方式运行您的代码，并提供日志查询、性能监控、报警等功能。</li>
+</ul>
+<p>使用函数计算的好处：</p>
+<ul>
+<li>有许多公有云服务可供集成</li>
+<li>消除许多系统管理任务</li>
+<li>弹性</li>
+<li>基于使用情况定价</li>
+</ul>
+<p>使用函数计算的弊端：</p>
+<ul>
+<li>长尾延迟</li>
+<li>基于有限事件与请求的编程模型</li>
+</ul>
+<h2 id="十三微服务架构的重构策略">
+  十三、微服务架构的重构策略
+  <a class="heading-link" href="#%e5%8d%81%e4%b8%89%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e7%9a%84%e9%87%8d%e6%9e%84%e7%ad%96%e7%95%a5">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="需要考虑的问题">
+  需要考虑的问题
+  <a class="heading-link" href="#%e9%9c%80%e8%a6%81%e8%80%83%e8%99%91%e7%9a%84%e9%97%ae%e9%a2%98">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>将单体应用重构为微服务架构的时机
+<ul>
+<li>交付缓慢</li>
+<li>充满故障的软件交付</li>
+<li>可扩展性差</li>
+</ul>
+</li>
+<li>绞杀单体应用
+<ul>
+<li>逐步重构单体应用程序，而不是推倒重来。</li>
+<li>绞杀者应用程序由与单体应用程序结合使用的微服务组成，随着时机的推移，单体应用程序实现的功能数量会缩小，直到完全小时或者变成另一个微服务。</li>
+</ul>
+</li>
+<li>尽早并且频繁地体现出价值</li>
+<li>尽可能少对单体做出修改</li>
+<li>部署基础设施：这还为时尚早
+<ul>
+<li>开始先进行简单的部署方式</li>
+</ul>
+</li>
+</ul>
+<h3 id="重构策略">
+  重构策略
+  <a class="heading-link" href="#%e9%87%8d%e6%9e%84%e7%ad%96%e7%95%a5">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>将新功能实现为服务
+<ul>
+<li>具体还要看新功能是否能实现为新服务，避免与单体服务打交道。</li>
+</ul>
+</li>
+<li>隔离表现层与后端
+<ul>
+<li>将表现层与业务逻辑和数据访问层分开</li>
+</ul>
+</li>
+<li>从单体提取业务能力到独立服务中</li>
+<li>拆解领域模型 DDD
+<ul>
+<li>TODO 难点</li>
+</ul>
+</li>
+<li>重构数据库
+<ul>
+<li>将表从单体的数据库移动到服务的数据库</li>
+</ul>
+</li>
+<li>复制数据以避免更广泛的更改</li>
+<li>确定提取何种服务以及何时提取
+<ul>
+<li>根据提取应用程序模块获得的预期收益，对应用程序的模块进行排名</li>
+<li>提取服务的好处
+<ul>
+<li>加速开发</li>
+<li>解决性能、可扩展性和可靠性问题</li>
+<li>允许提取其他一些服务</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="设计服务与单体的协作方式">
+  设计服务与单体的协作方式
+  <a class="heading-link" href="#%e8%ae%be%e8%ae%a1%e6%9c%8d%e5%8a%a1%e4%b8%8e%e5%8d%95%e4%bd%93%e7%9a%84%e5%8d%8f%e4%bd%9c%e6%96%b9%e5%bc%8f">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>设计集成胶水：使服务能够与单体进行协作，集成胶水由服务和单体中的代码组成。</li>
+<li>维持服务和单体之间数据一致性：事务</li>
+<li>处理身份验证和访问授权：修改单体的登录处理程序以生成包含安全令牌的 cookie，然后由 API Gateway 转发给服务。</li>
+</ul>
+<h3 id="将新功能实现为服务">
+  将新功能实现为服务
+  <a class="heading-link" href="#%e5%b0%86%e6%96%b0%e5%8a%9f%e8%83%bd%e5%ae%9e%e7%8e%b0%e4%b8%ba%e6%9c%8d%e5%8a%a1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h3 id="从单体中提取功能到独立服务">
+  从单体中提取功能到独立服务
+  <a class="heading-link" href="#%e4%bb%8e%e5%8d%95%e4%bd%93%e4%b8%ad%e6%8f%90%e5%8f%96%e5%8a%9f%e8%83%bd%e5%88%b0%e7%8b%ac%e7%ab%8b%e6%9c%8d%e5%8a%a1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h2 id="参考">
+  参考
+  <a class="heading-link" href="#%e5%8f%82%e8%80%83">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><a href="https://book.douban.com/subject/33425123/">微服务架构设计模式</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gzhh-tech" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2017 -
+    
+    2022
+     gzhh 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  
+  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
