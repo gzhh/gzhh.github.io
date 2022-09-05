@@ -18,7 +18,7 @@
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="微服务架构设计模式"/>
+<meta name="twitter:title" content="【阅读笔记】微服务架构设计模式"/>
 <meta name="twitter:description" content="Table Of Contents 一、系统架构设计介绍 单体架构 微服务架构 二、服务的拆分策略 拆分规范 拆分策略 拆分难点 三、微服务架构中的进程间通信 RPC（同步通信机制） 同步通信机制局部故障问题 服务发现 消息代理 MQ（异步消息通信机制） 四、管理事务 Saga 五、微服务架构中的业务逻辑设计 业务逻辑组织模式 领域驱动设计 DDD 六、使用事件溯源开发业务逻辑 七、在微服务架构中实现查询 使用API组合模式进行查询 使用CQRS模式 八、外部API模式 九 &amp; 十、微服务架构中的测试策略 自动化测试的四个阶段 测试的不同类型 测试金字塔 使用测试象限进行分类 十一、开发面向生产环境的微服务应用 安全性 可配置 设计可观测的服务 使用微服务基底模式开发服务 服务网格 十二：部署微服务应用 虚拟机 docker k8s 容器部署 Serverless 部署 十三、微服务架构的重构策略 需要考虑的问题 重构策略 设计服务与单体的协作方式 将新功能实现为服务 从单体中提取功能到独立服务 参考 一、系统架构设计介绍 单体架构 定义：一个系统的所有子模块都被部署在同一台服务器上。
 单体架构的好处
 应用的开发简单 易于对应用程序进行大规模的更改 测试相对简单直观 部署简单 横向扩展容易 单体地狱
@@ -26,7 +26,7 @@
 单体架构的弊端
 过度的复杂性会吓退开发者 开发速度缓慢 从代码提交到实际部署的周期很长，而且容易出问题 难以扩展 交付可靠的单体应用是一项挑战 需要长期依赖某个可能过时的技术栈 微服务架构 定义：将一个单体应用按照不同的功能模块进行分解，拆分成一个个小的服务，每个服务实现了一组相关的功能。"/>
 
-<meta property="og:title" content="微服务架构设计模式" />
+<meta property="og:title" content="【阅读笔记】微服务架构设计模式" />
 <meta property="og:description" content="Table Of Contents 一、系统架构设计介绍 单体架构 微服务架构 二、服务的拆分策略 拆分规范 拆分策略 拆分难点 三、微服务架构中的进程间通信 RPC（同步通信机制） 同步通信机制局部故障问题 服务发现 消息代理 MQ（异步消息通信机制） 四、管理事务 Saga 五、微服务架构中的业务逻辑设计 业务逻辑组织模式 领域驱动设计 DDD 六、使用事件溯源开发业务逻辑 七、在微服务架构中实现查询 使用API组合模式进行查询 使用CQRS模式 八、外部API模式 九 &amp; 十、微服务架构中的测试策略 自动化测试的四个阶段 测试的不同类型 测试金字塔 使用测试象限进行分类 十一、开发面向生产环境的微服务应用 安全性 可配置 设计可观测的服务 使用微服务基底模式开发服务 服务网格 十二：部署微服务应用 虚拟机 docker k8s 容器部署 Serverless 部署 十三、微服务架构的重构策略 需要考虑的问题 重构策略 设计服务与单体的协作方式 将新功能实现为服务 从单体中提取功能到独立服务 参考 一、系统架构设计介绍 单体架构 定义：一个系统的所有子模块都被部署在同一台服务器上。
 单体架构的好处
 应用的开发简单 易于对应用程序进行大规模的更改 测试相对简单直观 部署简单 横向扩展容易 单体地狱
@@ -84,7 +84,7 @@
 
   
 
-  <meta name="generator" content="Hugo 0.102.1" />
+  <meta name="generator" content="Hugo 0.102.3" />
 
 
   
@@ -148,7 +148,7 @@
         <div class="post-title">
           <h1 class="title">
             <a class="title-link" href="https://blog.gzhh.tech/posts/microservices-patterns/">
-              微服务架构设计模式
+              【阅读笔记】微服务架构设计模式
             </a>
           </h1>
         </div>
@@ -354,8 +354,8 @@
 </ol>
 <p>拆分规范参考</p>
 <ul>
-<li><a href="https://zhuanlan.zhihu.com/p/333393446">参考1</a></li>
-<li><a href="https://mp.weixin.qq.com/s/mojOSgEUaHWGU3H3j7WjlQ">参考2</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/333393446">微服务拆分规范</a></li>
+<li><a href="https://mp.weixin.qq.com/s/mojOSgEUaHWGU3H3j7WjlQ">微服务拆分之道</a></li>
 </ul>
 <h3 id="拆分策略">
   拆分策略
@@ -368,8 +368,8 @@
 <ul>
 <li>领域驱动设计 DDD
 <ul>
-<li><a href="https://tech.meituan.com/2017/12/22/ddd-in-practice.html">参考1</a></li>
-<li><a href="https://www.infoq.cn/article/mf3sggvvf69fidl26ie6">参考2</a></li>
+<li><a href="https://tech.meituan.com/2017/12/22/ddd-in-practice.html">领域驱动设计在互联网业务开发中的实践</a></li>
+<li><a href="https://www.infoq.cn/article/mf3sggvvf69fidl26ie6">使用 DDD 指导微服务拆分的逻辑</a></li>
 </ul>
 </li>
 </ul>
