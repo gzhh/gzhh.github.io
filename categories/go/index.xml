@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Mon, 05 Jul 2021 17:38:50 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gin生命周期</title>
+      <title>Gin 生命周期</title>
       <link>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</link>
       <pubDate>Mon, 05 Jul 2021 17:38:50 +0800</pubDate>
       

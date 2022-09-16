@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="gzhh">
+<meta name="description" content="Table Of Contents 说在前面 博客搭建 首先跟着 Hugo 官方教程一步步操作 再将静态内容发布到 Github Page 使用 Github Action 优化部署 将本地博客项目同步到远程 Github 仓库 新建 workflow 配置域名及域名解析 博客图片 博客评论 参考 说在前面 年初将自己个人博客的部署方式改为 Github Actions 自动部署，其中碰到的坑一直没有空整理成文章输出出来，今天统一将内容整理到这篇文章。
+写之前顺便提下自己写技术博客的历程吧，最开始写博客的时候差不多是在大二的样子，当时主要是在 CSDN 上面写，内容差不多都是记录总结学习各个技术栈碰到的坑；后来大三快出来实习的时候，买了台阿里云的低配 ECS，使用 Wordpress 将自己的个人博客部署在上面；再后来觉得 Wordpress 需要数据库存储内容、且不太好能结合 Markdown 写博客、还有没有太好看的主题等原因，然后就换成在 Jekyll 和 Hexo 对比中选择了后者；Hexo 还是部署在阿里云的，部署方式是通过在 ECS 上搭建 Git 仓库，通过 Git 钩子将 Hexo 生成的博客静态页面文件，推送到 Nginx 服务的托管目录，完成部署。
+到了去年年底，用了几年的阿里云 ECS 到期了，由于续费太贵就没续费，于是就买了腾讯云的 Lighthouse 服务器，打算把博客也迁移过来。但是之前使用 Hexo 的那套部署方式比较麻烦，所以搜索了一番就决定使用 Hugo 和 Github Page 来部署静态博客。
+博客搭建 首先跟着 Hugo 官方教程一步步操作 Hugo quick-start">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 Hugo 和 Github Actions 部署静态网站"/>
+<meta name="twitter:description" content="Table Of Contents 说在前面 博客搭建 首先跟着 Hugo 官方教程一步步操作 再将静态内容发布到 Github Page 使用 Github Action 优化部署 将本地博客项目同步到远程 Github 仓库 新建 workflow 配置域名及域名解析 博客图片 博客评论 参考 说在前面 年初将自己个人博客的部署方式改为 Github Actions 自动部署，其中碰到的坑一直没有空整理成文章输出出来，今天统一将内容整理到这篇文章。
+写之前顺便提下自己写技术博客的历程吧，最开始写博客的时候差不多是在大二的样子，当时主要是在 CSDN 上面写，内容差不多都是记录总结学习各个技术栈碰到的坑；后来大三快出来实习的时候，买了台阿里云的低配 ECS，使用 Wordpress 将自己的个人博客部署在上面；再后来觉得 Wordpress 需要数据库存储内容、且不太好能结合 Markdown 写博客、还有没有太好看的主题等原因，然后就换成在 Jekyll 和 Hexo 对比中选择了后者；Hexo 还是部署在阿里云的，部署方式是通过在 ECS 上搭建 Git 仓库，通过 Git 钩子将 Hexo 生成的博客静态页面文件，推送到 Nginx 服务的托管目录，完成部署。
+到了去年年底，用了几年的阿里云 ECS 到期了，由于续费太贵就没续费，于是就买了腾讯云的 Lighthouse 服务器，打算把博客也迁移过来。但是之前使用 Hexo 的那套部署方式比较麻烦，所以搜索了一番就决定使用 Hugo 和 Github Page 来部署静态博客。
+博客搭建 首先跟着 Hugo 官方教程一步步操作 Hugo quick-start"/>
+
+<meta property="og:title" content="使用 Hugo 和 Github Actions 部署静态网站" />
+<meta property="og:description" content="Table Of Contents 说在前面 博客搭建 首先跟着 Hugo 官方教程一步步操作 再将静态内容发布到 Github Page 使用 Github Action 优化部署 将本地博客项目同步到远程 Github 仓库 新建 workflow 配置域名及域名解析 博客图片 博客评论 参考 说在前面 年初将自己个人博客的部署方式改为 Github Actions 自动部署，其中碰到的坑一直没有空整理成文章输出出来，今天统一将内容整理到这篇文章。
+写之前顺便提下自己写技术博客的历程吧，最开始写博客的时候差不多是在大二的样子，当时主要是在 CSDN 上面写，内容差不多都是记录总结学习各个技术栈碰到的坑；后来大三快出来实习的时候，买了台阿里云的低配 ECS，使用 Wordpress 将自己的个人博客部署在上面；再后来觉得 Wordpress 需要数据库存储内容、且不太好能结合 Markdown 写博客、还有没有太好看的主题等原因，然后就换成在 Jekyll 和 Hexo 对比中选择了后者；Hexo 还是部署在阿里云的，部署方式是通过在 ECS 上搭建 Git 仓库，通过 Git 钩子将 Hexo 生成的博客静态页面文件，推送到 Nginx 服务的托管目录，完成部署。
+到了去年年底，用了几年的阿里云 ECS 到期了，由于续费太贵就没续费，于是就买了腾讯云的 Lighthouse 服务器，打算把博客也迁移过来。但是之前使用 Hexo 的那套部署方式比较麻烦，所以搜索了一番就决定使用 Hugo 和 Github Page 来部署静态博客。
+博客搭建 首先跟着 Hugo 官方教程一步步操作 Hugo quick-start" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gzhh.tech/posts/deploy-static-site-with-hugo-and-github-actions/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-17T02:43:00+08:00" />
+<meta property="article:modified_time" content="2022-09-17T02:43:00+08:00" />
+
+
+
+
+  <title>gzhh&#39;s blog</title>
+
+  
+  <link rel="canonical" href="https://blog.gzhh.tech/posts/deploy-static-site-with-hugo-and-github-actions/">
+  
+
+  <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.103.0" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      gzhh&#39;s blog
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/read/">Read</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://blog.gzhh.tech/posts/deploy-static-site-with-hugo-and-github-actions/">
+              使用 Hugo 和 Github Actions 部署静态网站
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-09-17T02:43:00&#43;08:00">
+                September 17, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/blog/">Blog</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/hugo/">Hugo</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#说在前面">说在前面</a></li>
+    <li><a href="#博客搭建">博客搭建</a>
+      <ul>
+        <li><a href="#首先跟着-hugo-官方教程一步步操作">首先跟着 Hugo 官方教程一步步操作</a></li>
+        <li><a href="#再将静态内容发布到-github-page">再将静态内容发布到 Github Page</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用-github-action-优化部署">使用 Github Action 优化部署</a>
+      <ul>
+        <li><a href="#将本地博客项目同步到远程-github-仓库">将本地博客项目同步到远程 Github 仓库</a></li>
+        <li><a href="#新建-workflow">新建 workflow</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置域名及域名解析">配置域名及域名解析</a></li>
+    <li><a href="#博客图片">博客图片</a></li>
+    <li><a href="#博客评论">博客评论</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
+</nav>
+</div>
+
+<h2 id="说在前面">
+  说在前面
+  <a class="heading-link" href="#%e8%af%b4%e5%9c%a8%e5%89%8d%e9%9d%a2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>年初将自己个人博客的部署方式改为 Github Actions 自动部署，其中碰到的坑一直没有空整理成文章输出出来，今天统一将内容整理到这篇文章。</p>
+<p>写之前顺便提下自己写技术博客的历程吧，最开始写博客的时候差不多是在大二的样子，当时主要是在 CSDN 上面写，内容差不多都是记录总结学习各个技术栈碰到的坑；后来大三快出来实习的时候，买了台阿里云的低配 ECS，使用 Wordpress 将自己的个人博客部署在上面；再后来觉得 Wordpress 需要数据库存储内容、且不太好能结合 Markdown 写博客、还有没有太好看的主题等原因，然后就换成在 Jekyll 和 Hexo 对比中选择了后者；Hexo 还是部署在阿里云的，部署方式是通过在 ECS 上搭建 Git 仓库，通过 Git 钩子将 Hexo 生成的博客静态页面文件，推送到 Nginx 服务的托管目录，完成部署。</p>
+<p>到了去年年底，用了几年的阿里云 ECS 到期了，由于续费太贵就没续费，于是就买了腾讯云的 Lighthouse 服务器，打算把博客也迁移过来。但是之前使用 Hexo 的那套部署方式比较麻烦，所以搜索了一番就决定使用 Hugo 和 Github Page 来部署静态博客。</p>
+<h2 id="博客搭建">
+  博客搭建
+  <a class="heading-link" href="#%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="首先跟着-hugo-官方教程一步步操作">
+  首先跟着 Hugo 官方教程一步步操作
+  <a class="heading-link" href="#%e9%a6%96%e5%85%88%e8%b7%9f%e7%9d%80-hugo-%e5%ae%98%e6%96%b9%e6%95%99%e7%a8%8b%e4%b8%80%e6%ad%a5%e6%ad%a5%e6%93%8d%e4%bd%9c">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><a href="https://gohugo.io/getting-started/quick-start/">Hugo quick-start</a></p>
+<ul>
+<li>本地安装 Hugo</li>
+<li>新建本地 Hugo blog 项目</li>
+<li>添加主题及修改主题配置</li>
+<li>新建文章</li>
+<li>本地查看</li>
+<li>生成静态文件</li>
+</ul>
+<h3 id="再将静态内容发布到-github-page">
+  再将静态内容发布到 Github Page
+  <a class="heading-link" href="#%e5%86%8d%e5%b0%86%e9%9d%99%e6%80%81%e5%86%85%e5%ae%b9%e5%8f%91%e5%b8%83%e5%88%b0-github-page">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ol>
+<li>在 Github 新建项目 gzhh.github.io</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    Github 会将该仓库下的内容部署成静态网站
+</span></span></code></pre></div><ol start="2">
+<li>cd 到本地项目的 public 目录，执行下列命令，将生成的博客静态文件推送到远程 Github Page 仓库</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    git init
+</span></span><span style="display:flex;"><span>    git remote add origin [git@github.com](mailto:git@github.com):gzhh/gzhh.github.io.git
+</span></span><span style="display:flex;"><span>    git add .
+</span></span><span style="display:flex;"><span>    git commit -m &#34;first commit&#34;
+</span></span><span style="display:flex;"><span>    git push -f origin master
+</span></span></code></pre></div><ol start="3">
+<li>切换分支</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    将 master 切换到 main 分支
+</span></span><span style="display:flex;"><span>    git branch -m master main
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    推送到远端
+</span></span><span style="display:flex;"><span>    git push -u origin main
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    删除 master
+</span></span><span style="display:flex;"><span>    git push origin --delete master
+</span></span></code></pre></div><ol start="4">
+<li>至此，完成初步部署，可以通过访问 <a href="https://gzhh.github.io">https://gzhh.github.io</a> 来浏览博客内容</li>
+</ol>
+<h2 id="使用-github-action-优化部署">
+  使用 Github Action 优化部署
+  <a class="heading-link" href="#%e4%bd%bf%e7%94%a8-github-action-%e4%bc%98%e5%8c%96%e9%83%a8%e7%bd%b2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>按照上述方式，hugo -D 生成静态内容到 public 目录，再进入到 public 目录将修改提交并推送到远程 Github Page 仓库。</p>
+<p>始终觉得应该可以省掉一个步骤，于是偶然了解到可以通过强大的 Github Actions 实现自动化 workflow，类似 CI/CD 的特性，下面继续写使用其优化博客部署流程。</p>
+<h3 id="将本地博客项目同步到远程-github-仓库">
+  将本地博客项目同步到远程 Github 仓库
+  <a class="heading-link" href="#%e5%b0%86%e6%9c%ac%e5%9c%b0%e5%8d%9a%e5%ae%a2%e9%a1%b9%e7%9b%ae%e5%90%8c%e6%ad%a5%e5%88%b0%e8%bf%9c%e7%a8%8b-github-%e4%bb%93%e5%ba%93">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>新建远程博客模版仓库，并将本地博客项目与其同步</p>
+<ul>
+<li><a href="https://github.com/gzhh/hugo-template">https://github.com/gzhh/hugo-template</a></li>
+<li>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:gzhh/hugo-template</li>
+</ul>
+<h3 id="新建-workflow">
+  新建 workflow
+  <a class="heading-link" href="#%e6%96%b0%e5%bb%ba-workflow">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>在博客模版项目下新建 workflow 配置文件 .github/workflows/deploy.yml，可参考 <a href="https://github.com/gzhh/hugo-template/blob/main/.github/workflows/deploy.yml">deploy.yml</a></li>
+<li>大致流程就是监听博客模版项目的 main 分支是否有提交，如果有则执行静态博客构建任务
+<ul>
+<li>配置 ubuntu-latest 系统环境</li>
+<li>安装 hugo</li>
+<li>生成静态文件</li>
+<li>创建 CNAME 静态文件到 public 目录</li>
+<li>将生成的静态文件发布到 Github Page 仓库（注意这里需要配置 Actions secrets）</li>
+</ul>
+</li>
+<li>将修改提交到 Github 远程博客模版仓库
+<ul>
+<li>进入 Github 该博客模版仓库的 Actions，可看到名称为 deploy 的 workflow</li>
+<li>并且也能看到每次触发执行任务的日志，从日志中可以很清晰的查看任务调度流程及错误输出</li>
+<li>进入 Github Page 仓库，发现静态文件内容也随之更新</li>
+</ul>
+</li>
+</ul>
+<p>至此，我们已经完成使用 Hugo + Github Actions + Github Page 来部署我们的博客，后续新写文章只需要将本地博客模版仓库的 md 文件提交到 Github 远程仓库，就能通过 Github Actions 完成静态博客的内容发布。</p>
+<h2 id="配置域名及域名解析">
+  配置域名及域名解析
+  <a class="heading-link" href="#%e9%85%8d%e7%bd%ae%e5%9f%9f%e5%90%8d%e5%8f%8a%e5%9f%9f%e5%90%8d%e8%a7%a3%e6%9e%90">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>使用 Github Page 提供的域名 gzhh.github.io 浏览博客有时候会觉得不太个性化，于是在 Godaddy 上买了 gzhh.tech 域名，将 DNS 托管到 Cloudflare，新建一条 blog 指向 gzhh.github.io 的 CNAME 记录，那么生效后就可以通过 blog.gzhh.tech 来访问博客站点。</p>
+<p>前文已提到需要在 Github Page 项目的根目录添加一个 CNAME 文件，内容为 blog.gzhh.tech。</p>
+<h2 id="博客图片">
+  博客图片
+  <a class="heading-link" href="#%e5%8d%9a%e5%ae%a2%e5%9b%be%e7%89%87">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>最开始博客图片就直接放在 Github 仓库里，但是 Github 仓库的图片加载比较慢，所以就放弃了这种方案。</p>
+<p>然后也考虑了免费图床，例如 <a href="https://imgur.com">https://imgur.com</a>，不过觉得图片放在免费图床可能对隐私及使用权方面有些顾虑，也放弃了这种方案。</p>
+<p>再然后也考虑了付费对象存储，例如阿里云的 OSS，虽说花不了多少费用，但还是觉得文件放在别人那里不太自由，以后迁移的话还需要额外处理，也放弃了这方案。</p>
+<p>最后如果想各方面都满足自己的要求，那就自己动手自建个图床（还未开源）</p>
+<ul>
+<li>使用 Golang 和 Gin 搭建图片上传服务</li>
+<li>简单做了登录认证功能，并配置 https 以增加安全</li>
+<li>最后使用 Nginx 部署图片服务 <a href="https://cdn.gzhh.tech">https://cdn.gzhh.tech</a></li>
+</ul>
+<h2 id="博客评论">
+  博客评论
+  <a class="heading-link" href="#%e5%8d%9a%e5%ae%a2%e8%af%84%e8%ae%ba">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>博客评论使用的 Disqus</p>
+<ul>
+<li>注册 disqus 账号，并在 disqus 后台新建站点 <code>gzhh-tech</code></li>
+<li>然后在博客模版项目的 config.toml 配置文件中添加 <code>disqusShortname = &quot;gzhh-tech&quot;</code>，提交修改后就能将 Hugo 与 Disqus 绑定</li>
+</ul>
+<h2 id="参考">
+  参考
+  <a class="heading-link" href="#%e5%8f%82%e8%80%83">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li><a href="https://pages.github.com">https://pages.github.com</a></li>
+<li><a href="https://github.com/features/actions">https://github.com/features/actions</a></li>
+<li><a href="https://gohugo.io/documentation">https://gohugo.io/documentation</a></li>
+<li><a href="https://gohugo.io/getting-started/quick-start">https://gohugo.io/getting-started/quick-start</a></li>
+<li><a href="https://github.com/luizdepra/hugo-coder">https://github.com/luizdepra/hugo-coder</a></li>
+<li><a href="https://www.cloudflare.com">https://www.cloudflare.com</a></li>
+<li><a href="https://disqus.com">https://disqus.com</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gzhh-tech" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2017 -
+    
+    2022
+     gzhh 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  
+  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -6,7 +6,25 @@
     <description>Recent content in Tags on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Aug 2022 22:18:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 02:43:00 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://blog.gzhh.tech/tags/blog/</link>
+      <pubDate>Sat, 17 Sep 2022 02:43:00 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://blog.gzhh.tech/tags/hugo/</link>
+      <pubDate>Sat, 17 Sep 2022 02:43:00 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>History</title>
       <link>https://blog.gzhh.tech/tags/history/</link>
