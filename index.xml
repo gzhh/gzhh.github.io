@@ -28,13 +28,12 @@ I live in China and work as an Backend Engineer.</description>
       <description>阅读媒介 非技术书一半是微信读书，一半是 PDF，很小一部分是实体书；技术书主要是 PDF，少部分是微信阅读和纸质书。
 微信读书通过 Mac 网页版和 iPad app 来阅读；PDF 通过 z-library 下载导入到 MarginNote 里来阅读。
 PS：Kindle 已经很久没用上，经典反复看的会买纸质书；因为已经有了蛮多的纸质书，搬家不方便，后续估计不太会买纸质书。
-阅读记录 2022 书名 标签 状态 媒介 方式 开始日期 结束日期 Unix/Linux
+阅读记录 2022 书名 标签 状态 媒介 方式 开始日期 结束日期 NoSQL Distilled 计算机 想读 主题阅读 Unix/Linux
 编程实践教程 计算机 想读 主题阅读 Linux/UNIX
 系统编程手册 计算机 想读 PDF &amp;amp; 实体书 主题阅读 Unit Testing: Principles, Practices, and Patterns 计算机 想读 PDF 主题阅读 用Go语言自制
 编译器 计算机 想读 微信阅读 主题阅读 用Go语言自制
 解释器 计算机 想读 微信阅读 主题阅读 Programming
-Kubernetes 计算机 想读 PDF 分析阅读 Software
-Engineering at</description>
+Kubernetes 计算机 想读 PDF 分析阅读 Software</description>
     </item>
     
     <item>
@@ -422,7 +421,11 @@ PS:
       <pubDate>Sun, 23 Feb 2020 09:43:53 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/posts/know_mysql_lock/</guid>
-      <description></description>
+      <description>锁介绍 假设我们有一个商品表 item，里面有两个字段 id 和 store
++----+-------+ | id | store | +----+-------+ | 1 | 1 | +----+-------+ 一般我们在生成订单之前会先确定 store 商品库存是否大于你要购买的数量，然后更新库存
+-- 查询 SELECT store FROM item WHERE id = 1; -- 更新 UPDATE item SET store = store - 1 WHERE id = 1; 但是这样在用户大量并发操作的时候会是不安全的，比如第一个用户 SELECT 到的 store 是 1，但是当他准备 UPDATE 的时候，可能已经有人把库存 store 扣成了 0，那么第一个用户再去 UPDATE 的时候，就可能出现负库存的情况，因此我们必须通过事务和锁机制来确保读取及提交的数据都是正确的。
+在 MySQL 终端我们可以这样测试
+SET AUTOCOMMIT=0; BEGIN; SELECT store FROM item WHERE id=1 FOR UPDATE; 此时 item 表中 id=1 的这行数据被锁住（InnoDB 的 Row Lock 或 Table Lock）其他事务必须等待此次事务提交后才能执行； SELECT store FROM item WHERE id=1 FOR UPDATE; 可以确保库存 store 在别的事务读取到的数字是正确的； 然后我们修改库存，提交数据写入数据库，item 表中 id=1 的这行数据解锁。</description>
     </item>
     
     <item>
@@ -554,7 +557,12 @@ https://zh.wikipedia.org/wiki/格奥尔格·威廉·弗里德里希·黑格尔 (
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/posts/sso/</guid>
-      <description></description>
+      <description>说在前面 由于公司要开发几套系统，并且需要几套系统使用统一的用户管理功能，TM让我研究如何实现多系统的单点登录，这周零零碎碎研究了下，所以写下这篇文章，加深下理解，也方便以后回顾。
+介绍 Single sign-on(SSO) 是多个相关但彼此独立的软件系统访问控制的一个属性，也就是用户只使用一个账号和密码来访问多个系统。 单点登录在大型的系统中经常用到，例如：刚开始你的百度搜索 www.baidu.com 和百度云盘都是没有登录的，现在当你登录了百度搜索的系统后，再去刷新一下百度云盘的系统时，这时你会发现百度云盘这边也是显示登录的，这种情况就是使用 SSO 技术实现的。 CAS(Central Authentication Service) 旨在为 Web 应用系统提供一种可靠的单点登录解决方法（属于 Web SSO ）。
+HTTP 知识介绍 由于 HTTP 是无状态的协议，所以我们需要使用某些机制来保存web用户浏览的状态。Cookie 和 Session 都是用来保存web状态的两种技术，区别是 Cookie 是在客户端来保存用户状态，Session 是在服务端来保存用户状态。
+SSO 的几种情况 1.同域下的不同服务 例如我们有两个服务 test.com/site1 test.com/site2 这是最简单的一种情况(不过一般大型系统会用域来区分两个服务)，两个服务共享一个主机地址，且在同一个域下。这种情况下两个业务共享一 个 Cookie 和 Session，所以不用做特别的处理，按照常规的验证方式即可，当你在 site1 上登录了，在 site2 上自然而然也是登录的。
+2.同父域不同子域的服务 例如 site1.x.com site2.x.com 这种情况两个服务的主机是不相同的(父域相同，子域不同)，这种情况我们一般可以设置两个服务的 Cookie 都是在当前域的顶级域下的，也就是 x.com 域下。 cas.x.com 设置一个 CAS(Central Authentication Service)，所有的与登录和验证token和设置 Cookie 的 操作我们都放在 CAS 上面
+3.完全不同域的服务 例如 site1.com site2.com</description>
     </item>
     
     <item>
@@ -590,7 +598,10 @@ https://zh.wikipedia.org/wiki/格奥尔格·威廉·弗里德里希·黑格尔 (
       <pubDate>Fri, 17 Nov 2017 18:42:35 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/posts/play-sed-first/</guid>
-      <description></description>
+      <description>介绍 sed 全名是 stream editor，是文本流处理方面的强大工具，和另一个文本处理工具 awk 工具有的一比，接下来就让我们简单介绍下它的基本使用和适用场景。 我们这篇主要讲的是 Gnu sed，还有一个常用的是 BSD sed（Mac OS就是源自 BSD 的），两者略微有点不同，不过他们俩都是由 Posix sed 演化而来。
+基本格式 sed 命令的执行有两种基本格式 sed [-参数] command [file &amp;hellip;] sed [-参数] [-e command] [-f command_file] [-i extension]
+参数 默认情况下，sed 不会操作原来的文本，加上 -i 参数则会改变原文件的内容 sed -i command [file &amp;hellip;]
+替换 1.将文件中每行所有的字符 , 都替换为空字符(不加 g 标记则只替换每行第一个匹配) sed &#39;s/,/ /g&#39; file.txt 2.从第 N 处匹配开始替换 /ng sed &#39;s/,/ /2g&#39; file.txt 3.将字符 , 替换为空字符并保存替换后的内容 sed -i &#39;s/,/ /g&#39; file.</description>
     </item>
     
     <item>
