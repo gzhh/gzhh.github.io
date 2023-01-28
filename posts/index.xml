@@ -6,7 +6,16 @@
     <description>Recent content in Posts on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Sep 2022 02:43:00 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Jan 2023 23:59:30 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023新年计划</title>
+      <link>https://blog.gzhh.tech/posts/the-purpose-of-2023/</link>
+      <pubDate>Sat, 28 Jan 2023 23:59:30 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/posts/the-purpose-of-2023/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>使用 Hugo 和 Github Actions 部署静态网站</title>
       <link>https://blog.gzhh.tech/posts/deploy-static-site-with-hugo-and-github-actions/</link>
