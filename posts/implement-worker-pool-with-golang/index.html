@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="gzhh">
+<meta name="description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。maxWorkers 是最大并发数，JobQueue 为待执行 job 队列。
+实现 package main import ( &#34;fmt&#34; &#34;io&#34; &#34;log&#34; &#34;net/http&#34; &#34;strconv&#34; &#34;time&#34; ) func jobHandler(w http.ResponseWriter, req *http.Request) { id, _ := strconv.Atoi(req.URL.Query().Get(&#34;id&#34;)) // handle async logic job := Job{ Handle: jobRunHandler, ID: id, } JobQueue &lt;- job io.WriteString(w, &#34;do job ok!\n&#34;) } func jobRunHandler(params HandleParams) { time.Sleep(time.Second * 3) fmt.Printf(&#34;job %d executed \n\n&#34;, params.ID) } func main() { // init worker pool Setup() http.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 Golang 实现 worker pool"/>
+<meta name="twitter:description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。maxWorkers 是最大并发数，JobQueue 为待执行 job 队列。
+实现 package main import ( &#34;fmt&#34; &#34;io&#34; &#34;log&#34; &#34;net/http&#34; &#34;strconv&#34; &#34;time&#34; ) func jobHandler(w http.ResponseWriter, req *http.Request) { id, _ := strconv.Atoi(req.URL.Query().Get(&#34;id&#34;)) // handle async logic job := Job{ Handle: jobRunHandler, ID: id, } JobQueue &lt;- job io.WriteString(w, &#34;do job ok!\n&#34;) } func jobRunHandler(params HandleParams) { time.Sleep(time.Second * 3) fmt.Printf(&#34;job %d executed \n\n&#34;, params.ID) } func main() { // init worker pool Setup() http."/>
+
+<meta property="og:title" content="使用 Golang 实现 worker pool" />
+<meta property="og:description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。maxWorkers 是最大并发数，JobQueue 为待执行 job 队列。
+实现 package main import ( &#34;fmt&#34; &#34;io&#34; &#34;log&#34; &#34;net/http&#34; &#34;strconv&#34; &#34;time&#34; ) func jobHandler(w http.ResponseWriter, req *http.Request) { id, _ := strconv.Atoi(req.URL.Query().Get(&#34;id&#34;)) // handle async logic job := Job{ Handle: jobRunHandler, ID: id, } JobQueue &lt;- job io.WriteString(w, &#34;do job ok!\n&#34;) } func jobRunHandler(params HandleParams) { time.Sleep(time.Second * 3) fmt.Printf(&#34;job %d executed \n\n&#34;, params.ID) } func main() { // init worker pool Setup() http." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-08T16:00:00+08:00" />
+<meta property="article:modified_time" content="2023-02-08T16:00:00+08:00" />
+
+
+
+  <title>gzhh&#39;s blog</title>
+
+  
+  <link rel="canonical" href="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/">
+  
+
+  <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.110.0">
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      gzhh&#39;s blog
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/read/">Read</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/">
+              使用 Golang 实现 worker pool
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-02-08T16:00:00&#43;08:00">
+                February 8, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/concurrency/">Concurrency</a>
+      <span class="separator">•</span>
+    <a href="/categories/channel/">Channel</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/golang/">Golang</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="介绍">
+  介绍
+  <a class="heading-link" href="#%e4%bb%8b%e7%bb%8d">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。maxWorkers 是最大并发数，JobQueue 为待执行 job 队列。</p>
+<h2 id="实现">
+  实现
+  <a class="heading-link" href="#%e5%ae%9e%e7%8e%b0">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="font-weight:bold">package</span> main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> (
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">&#34;io&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">&#34;net/http&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">&#34;strconv&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">&#34;time&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> jobHandler(w http.ResponseWriter, req *http.Request) {
+</span></span><span style="display:flex;"><span>	id, _ := strconv.Atoi(req.URL.Query().Get(<span style="font-style:italic">&#34;id&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">// handle async logic
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>	job := Job{
+</span></span><span style="display:flex;"><span>		Handle: jobRunHandler,
+</span></span><span style="display:flex;"><span>		ID:     id,
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	JobQueue &lt;- job
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	io.WriteString(w, <span style="font-style:italic">&#34;do job ok!\n&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> jobRunHandler(params HandleParams) {
+</span></span><span style="display:flex;"><span>	time.Sleep(time.Second * 3)
+</span></span><span style="display:flex;"><span>	fmt.Printf(<span style="font-style:italic">&#34;job %d executed \n\n&#34;</span>, params.ID)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> main() {
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">// init worker pool
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>	Setup()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	http.HandleFunc(<span style="font-style:italic">&#34;/do-job&#34;</span>, jobHandler)
+</span></span><span style="display:flex;"><span>	log.Fatal(http.ListenAndServe(<span style="font-style:italic">&#34;:8081&#34;</span>, <span style="font-weight:bold">nil</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">var</span> (
+</span></span><span style="display:flex;"><span>	maxWorkers   = 3 <span style="font-style:italic">// The number of workers (currency number)
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>	maxQueueSize = 5 <span style="font-style:italic">// The size of job queue
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>
+</span></span><span style="display:flex;"><span>	JobQueue <span style="font-weight:bold">chan</span> Job
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> Setup() {
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">// Create the job queue.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>	JobQueue = make(<span style="font-weight:bold">chan</span> Job, maxQueueSize)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="font-style:italic">// Start the dispatcher.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>	dispatcher := NewDispatcher(JobQueue, maxWorkers)
+</span></span><span style="display:flex;"><span>	dispatcher.run()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">type</span> HandleParams <span style="font-weight:bold">struct</span> {
+</span></span><span style="display:flex;"><span>	ID <span style="">int</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// Job holds the attributes needed to perform unit of work.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">type</span> Job <span style="font-weight:bold">struct</span> {
+</span></span><span style="display:flex;"><span>	Handle <span style="font-weight:bold">func</span>(HandleParams)
+</span></span><span style="display:flex;"><span>	ID     <span style="">int</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// NewWorker creates takes a numeric id and a channel w/ worker pool.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">func</span> NewWorker(id <span style="">int</span>, workerPool <span style="font-weight:bold">chan</span> <span style="font-weight:bold">chan</span> Job) Worker {
+</span></span><span style="display:flex;"><span>	<span style="font-weight:bold">return</span> Worker{
+</span></span><span style="display:flex;"><span>		id:         id,
+</span></span><span style="display:flex;"><span>		jobQueue:   make(<span style="font-weight:bold">chan</span> Job),
+</span></span><span style="display:flex;"><span>		workerPool: workerPool,
+</span></span><span style="display:flex;"><span>		quitChan:   make(<span style="font-weight:bold">chan</span> <span style="">bool</span>),
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">type</span> Worker <span style="font-weight:bold">struct</span> {
+</span></span><span style="display:flex;"><span>	id         <span style="">int</span>
+</span></span><span style="display:flex;"><span>	jobQueue   <span style="font-weight:bold">chan</span> Job
+</span></span><span style="display:flex;"><span>	workerPool <span style="font-weight:bold">chan</span> <span style="font-weight:bold">chan</span> Job
+</span></span><span style="display:flex;"><span>	quitChan   <span style="font-weight:bold">chan</span> <span style="">bool</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> (w Worker) start() {
+</span></span><span style="display:flex;"><span>	<span style="font-weight:bold">go</span> <span style="font-weight:bold">func</span>() {
+</span></span><span style="display:flex;"><span>		<span style="font-weight:bold">for</span> {
+</span></span><span style="display:flex;"><span>			<span style="font-style:italic">// Add jobQueue to the worker pool.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>			w.workerPool &lt;- w.jobQueue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="font-weight:bold">select</span> {
+</span></span><span style="display:flex;"><span>			<span style="font-weight:bold">case</span> job := &lt;-w.jobQueue:
+</span></span><span style="display:flex;"><span>				<span style="font-style:italic">// Dispatcher has added a job to jobQueue.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>				log.Printf(<span style="font-style:italic">&#34;worker%d: started job_id %d\n&#34;</span>, w.id, job.ID)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				<span style="font-style:italic">// excute handler
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>				job.Handle(HandleParams{
+</span></span><span style="display:flex;"><span>					ID: job.ID,
+</span></span><span style="display:flex;"><span>				})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				log.Printf(<span style="font-style:italic">&#34;worker%d: completed job_id %d!\n&#34;</span>, w.id, job.ID)
+</span></span><span style="display:flex;"><span>			<span style="font-weight:bold">case</span> &lt;-w.quitChan:
+</span></span><span style="display:flex;"><span>				<span style="font-style:italic">// We have been asked to stop.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>				log.Printf(<span style="font-style:italic">&#34;worker%d stopping\n&#34;</span>, w.id)
+</span></span><span style="display:flex;"><span>				<span style="font-weight:bold">return</span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> (w Worker) stop() {
+</span></span><span style="display:flex;"><span>	<span style="font-weight:bold">go</span> <span style="font-weight:bold">func</span>() {
+</span></span><span style="display:flex;"><span>		w.quitChan &lt;- <span style="font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>	}()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// NewDispatcher creates, and returns a new Dispatcher object.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">func</span> NewDispatcher(jobQueue <span style="font-weight:bold">chan</span> Job, maxWorkers <span style="">int</span>) *Dispatcher {
+</span></span><span style="display:flex;"><span>	workerPool := make(<span style="font-weight:bold">chan</span> <span style="font-weight:bold">chan</span> Job, maxWorkers)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="font-weight:bold">return</span> &amp;Dispatcher{
+</span></span><span style="display:flex;"><span>		jobQueue:   jobQueue,
+</span></span><span style="display:flex;"><span>		maxWorkers: maxWorkers,
+</span></span><span style="display:flex;"><span>		workerPool: workerPool,
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">type</span> Dispatcher <span style="font-weight:bold">struct</span> {
+</span></span><span style="display:flex;"><span>	workerPool <span style="font-weight:bold">chan</span> <span style="font-weight:bold">chan</span> Job
+</span></span><span style="display:flex;"><span>	maxWorkers <span style="">int</span>
+</span></span><span style="display:flex;"><span>	jobQueue   <span style="font-weight:bold">chan</span> Job
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> (d *Dispatcher) run() {
+</span></span><span style="display:flex;"><span>	<span style="font-weight:bold">for</span> i := 0; i &lt; d.maxWorkers; i++ {
+</span></span><span style="display:flex;"><span>		worker := NewWorker(i+1, d.workerPool)
+</span></span><span style="display:flex;"><span>		worker.start()
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="font-weight:bold">go</span> d.dispatch()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> (d *Dispatcher) dispatch() {
+</span></span><span style="display:flex;"><span>	<span style="font-weight:bold">for</span> job := <span style="font-weight:bold">range</span> d.jobQueue {
+</span></span><span style="display:flex;"><span>		<span style="font-weight:bold">go</span> <span style="font-weight:bold">func</span>(job Job) {
+</span></span><span style="display:flex;"><span>			log.Printf(<span style="font-style:italic">&#34;fetching workerJobQueue for job %d\n&#34;</span>, job.ID)
+</span></span><span style="display:flex;"><span>			workerJobQueue := &lt;-d.workerPool
+</span></span><span style="display:flex;"><span>			log.Printf(<span style="font-style:italic">&#34;adding job %d to workerJobQueue\n&#34;</span>, job.ID)
+</span></span><span style="display:flex;"><span>			workerJobQueue &lt;- job
+</span></span><span style="display:flex;"><span>		}(job)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="命令行并发测试">
+  命令行并发测试
+  <a class="heading-link" href="#%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%b9%b6%e5%8f%91%e6%b5%8b%e8%af%95">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>for i in {1..10}; do curl http://127.0.0.1:8081/do-job?id=$i ; done
+</span></span></code></pre></div><h2 id="ref">
+  Ref
+  <a class="heading-link" href="#ref">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li><a href="https://gobyexample.com/worker-pools">Go by Example: Worker Pools</a></li>
+<li><a href="https://gist.github.com/harlow/49318d54f45d29f1a77cc641faf14054">Worker pool to control concurrency and collect results</a></li>
+<li><a href="https://gist.github.com/harlow/dbcd639cf8d396a2ab73">Job queues in Golang</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gzhh-tech" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2017 -
+    
+    2023
+     gzhh 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  
+  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
