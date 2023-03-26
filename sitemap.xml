@@ -9,7 +9,25 @@
     <lastmod>2021-12-06T16:41:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/</loc>
-    <lastmod>2023-02-08T16:00:00+08:00</lastmod>
+    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/categories/golang/</loc>
+    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</loc>
+    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/</loc>
+    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/tags/json/</loc>
+    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/posts/</loc>
+    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/tags/</loc>
+    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/channel/</loc>
     <lastmod>2023-02-08T16:00:00+08:00</lastmod>
@@ -18,15 +36,6 @@
     <lastmod>2023-02-08T16:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/golang/</loc>
-    <lastmod>2023-02-08T16:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/</loc>
-    <lastmod>2023-02-08T16:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/posts/</loc>
-    <lastmod>2023-02-08T16:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/tags/</loc>
     <lastmod>2023-02-08T16:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/</loc>
@@ -154,9 +163,6 @@
   </url><url>
     <loc>https://blog.gzhh.tech/reads/dengxiaoping-and-the-transformation-of-china/</loc>
     <lastmod>2020-09-10T16:41:52+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/categories/golang/</loc>
-    <lastmod>2020-06-19T17:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/slice/</loc>
     <lastmod>2020-06-19T17:00:00+08:00</lastmod>

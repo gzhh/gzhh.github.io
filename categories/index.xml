@@ -6,7 +6,16 @@
     <description>Recent content in Categories on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Feb 2023 16:00:00 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang</title>
+      <link>https://blog.gzhh.tech/categories/golang/</link>
+      <pubDate>Sun, 26 Mar 2023 13:00:00 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/categories/golang/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Channel</title>
       <link>https://blog.gzhh.tech/categories/channel/</link>
@@ -85,15 +94,6 @@
       <pubDate>Mon, 05 Jul 2021 17:38:50 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/categories/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://blog.gzhh.tech/categories/golang/</link>
-      <pubDate>Fri, 19 Jun 2020 17:00:00 +0800</pubDate>
-      
-      <guid>https://blog.gzhh.tech/categories/golang/</guid>
       <description></description>
     </item>
     
