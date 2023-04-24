@@ -27,7 +27,7 @@ I live in China and work as an backend engineer.</description>
       <guid>https://blog.gzhh.tech/read/</guid>
       <description>阅读媒介 非技术书主要是电子书，很小一部分是实体书；技术书大半是 PDF，另一半是纸质书。
 阅读方式主要是通过 iPad 上的微信阅读 APP 来阅读，一半是直接阅读上面已有的图书，另一半是将 PDF、EPUB 和 MOBI 格式的资源下载后导入到 MarginNote 微信读书里来阅读；Mac 也会用来看一些 PDF 形式的技术书，偶尔也会在微信读书网页版看书。
-PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看的会买纸质书，现在因为已经有了蛮多的纸质书，搬家不方便，后续会等有条件再买质书。
+PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看的会买纸质书，现在因为已经有了蛮多的纸质书，搬家不方便，后续会等有条件再买纸质书。
 阅读记录 2023 书名 标签 状态 媒介 方式 开始日期 结束日期 刀锋 小说 想读 翦商 历史 想读 置身事内 经济 想读 中国国家治理的
 制度逻辑 历史 想读 善恶的彼岸 哲学 想读 NoSQL Distilled 计算机 想读 主题阅读 Unix/Linux
 编程实践教程 计算机 想读 主题阅读 Linux/UNIX
@@ -52,8 +52,8 @@ PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看�
       <pubDate>Wed, 08 Feb 2023 16:00:00 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/</guid>
-      <description>介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。maxWorkers 是最大并发数，JobQueue 为待执行 job 队列。
-实现 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;time&amp;#34; ) func jobHandler(w http.ResponseWriter, req *http.Request) { id, _ := strconv.Atoi(req.URL.Query().Get(&amp;#34;id&amp;#34;)) // handle async logic job := Job{ Handle: jobRunHandler, ID: id, } JobQueue &amp;lt;- job io.WriteString(w, &amp;#34;do job ok!\n&amp;#34;) } func jobRunHandler(params HandleParams) { time.Sleep(time.Second * 3) fmt.Printf(&amp;#34;job %d executed \n\n&amp;#34;, params.ID) } func main() { // init worker pool Setup() http.</description>
+      <description>介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
+简单实现 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &amp;lt;- i } func consume() { for { i := &amp;lt;-mq time.Sleep(time.Second) fmt.Printf(&amp;#34;get i %d\n&amp;#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.</description>
     </item>
     
     <item>

@@ -13,8 +13,8 @@
       <pubDate>Wed, 08 Feb 2023 16:00:00 +0800</pubDate>
       
       <guid>https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/</guid>
-      <description>介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。maxWorkers 是最大并发数，JobQueue 为待执行 job 队列。
-实现 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;time&amp;#34; ) func jobHandler(w http.ResponseWriter, req *http.Request) { id, _ := strconv.Atoi(req.URL.Query().Get(&amp;#34;id&amp;#34;)) // handle async logic job := Job{ Handle: jobRunHandler, ID: id, } JobQueue &amp;lt;- job io.WriteString(w, &amp;#34;do job ok!\n&amp;#34;) } func jobRunHandler(params HandleParams) { time.Sleep(time.Second * 3) fmt.Printf(&amp;#34;job %d executed \n\n&amp;#34;, params.ID) } func main() { // init worker pool Setup() http.</description>
+      <description>介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
+简单实现 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &amp;lt;- i } func consume() { for { i := &amp;lt;-mq time.Sleep(time.Second) fmt.Printf(&amp;#34;get i %d\n&amp;#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.</description>
     </item>
     
   </channel>
