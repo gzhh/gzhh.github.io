@@ -74,7 +74,7 @@
 
   
 
-  <meta name="generator" content="Hugo 0.115.2">
+  <meta name="generator" content="Hugo 0.115.4">
 
 
   
@@ -152,7 +152,7 @@
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              One-minute read
+              2-minute read
             </span>
           </div>
           
@@ -245,6 +245,18 @@
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>	fmt.Printf(&#34;%+s\n&#34;, string(dataBytes))
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="golang-unmarshal-string-into-int64-or-marshal-int64-to-string">
+  golang unmarshal string into int64, or marshal int64 to string
+  <a class="heading-link" href="#golang-unmarshal-string-into-int64-or-marshal-int64-to-string">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>在和前端交互的时候，在 json 结构中放大整数的 uid，前端使用 javascript json 处理的时候会掉丢失精度，虽然 javascript 有解决方式，但是后端接口将 int64 转为 string 更直接。</p>
+<p>在 Golang 中的解决办法，就是在渲染 json 数据之前，将返回结构体中的 int64 类型的字段 json 标签类型设为 string 即可。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>type Data struct {
+</span></span><span style="display:flex;"><span>   ID   int64  `json:&#34;id,string,omitempty&#34;`
+</span></span><span style="display:flex;"><span>   Name string `json:&#34;name,omitempty&#34;`
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="ref">
   Ref
   <a class="heading-link" href="#ref">
@@ -258,6 +270,7 @@
 <li><a href="https://stackoverflow.com/questions/21197239/decoding-json-using-json-unmarshal-vs-json-newdecoder-decode">Decoding JSON using json.Unmarshal vs json.NewDecoder.Decode</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/467537027">深入理解Go Json.Unmarshal精度丢失之谜</a></li>
 <li><a href="https://rivers-shall.github.io/2020/06/23/golang-json-%E9%81%BF%E5%85%8D%E5%A4%A7%E6%95%B4%E6%95%B0%E5%8F%98%E4%B8%BA%E6%B5%AE%E7%82%B9%E6%95%B0/">golang json 避免大整数变为浮点数</a></li>
+<li><a href="https://stackoverflow.com/questions/21151765/cannot-unmarshal-string-into-go-value-of-type-int64">https://stackoverflow.com/questions/21151765/cannot-unmarshal-string-into-go-value-of-type-int64</a></li>
 </ul>
 
       </div>
