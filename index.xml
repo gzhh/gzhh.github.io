@@ -6,7 +6,7 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Mar 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 16:38:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://blog.gzhh.tech/about/</link>
@@ -32,6 +32,15 @@ PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看�
 制度逻辑 历史 想读 善恶的彼岸 哲学 想读 NoSQL Distilled 计算机 想读 主题阅读 Unix/Linux
 编程实践教程 计算机 想读 主题阅读 Linux/UNIX
 系统编程手册 计算机 想读 PDF &amp;amp; 实体书 主题阅读 Unit Testing: Principles, Practices, and Patterns 计算机 想读 PDF 主题阅读 用Go语言自制</description>
+    </item>
+    
+    <item>
+      <title>Python编程-从入门到实践（第2版）</title>
+      <link>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</link>
+      <pubDate>Mon, 07 Aug 2023 16:38:52 +0800</pubDate>
+      
+      <guid>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</guid>
+      <description>第一版大学读过了，工作几年后没怎么接触 Python，周末抽空重新读了下这第二版；项目1 和 项目2 跳过，项目3 Web 应用程序实践了下，第20章样式部分只快速过了下。</description>
     </item>
     
     <item>

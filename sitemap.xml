@@ -9,7 +9,28 @@
     <lastmod>2021-12-06T16:41:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/</loc>
-    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/tags/cs/</loc>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/</loc>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/tags/python/</loc>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</loc>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/categories/read/</loc>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/reads/</loc>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/tags/</loc>
+    <lastmod>2023-08-07T16:41:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/golang/</loc>
     <lastmod>2023-03-26T13:00:00+08:00</lastmod>
@@ -17,16 +38,10 @@
     <loc>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</loc>
     <lastmod>2023-03-26T13:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://blog.gzhh.tech/</loc>
-    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://blog.gzhh.tech/tags/json/</loc>
     <lastmod>2023-03-26T13:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/posts/</loc>
-    <lastmod>2023-03-26T13:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/tags/</loc>
     <lastmod>2023-03-26T13:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/channel/</loc>
@@ -54,12 +69,6 @@
     <lastmod>2022-11-06T20:00:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/logic/</loc>
-    <lastmod>2022-11-06T20:00:52+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/categories/read/</loc>
-    <lastmod>2022-11-06T20:00:52+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/reads/</loc>
     <lastmod>2022-11-06T20:00:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/blog/</loc>
