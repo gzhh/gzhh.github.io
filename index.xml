@@ -6,7 +6,7 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Nov 2023 13:06:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Nov 2023 16:10:00 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
@@ -30,6 +30,23 @@ PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看�
 制度逻辑 历史 想读 善恶的彼岸 哲学 想读 NoSQL Distilled 计算机 想读 主题阅读 Unix/Linux
 编程实践教程 计算机 想读 主题阅读 Linux/UNIX
 系统编程手册 计算机 想读 PDF &amp;amp; 实体书 主题阅读 Unit Testing: Principles, Practices, and Patterns 计算机 想读 PDF 主题阅读 用Go语言自制</description>
+    </item>
+    <item>
+      <title>Golang time.Time 和 MySQL datetime 互转问题</title>
+      <link>https://blog.gzhh.tech/posts/go-and-mysql-time/</link>
+      <pubDate>Sun, 05 Nov 2023 16:10:00 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/posts/go-and-mysql-time/</guid>
+      <description>一、时间概念 时间标准 某个时间系统的时间标准又称时间基准，是定义如何测量时间的一种规范，具体包括测量时间间隔的尺度基准和定义起始时刻的参考基准。
+UTC
+https://en.wikipedia.org/wiki/Coordinated_Universal_Time 标准时间 标准时间是在同一时区内的不同地区，舍弃地区性的子午线定出的太阳时或地方平时，而共同采用的同步时间。
+Time Zone
+https://en.wikipedia.org/wiki/Time_zone https://en.wikipedia.org/wiki/Tz_database https://en.wikipedia.org/wiki/List_of_tz_database_time_zones 国际标准 ISO 8610 国际标准化组织的日期和时间的表示方法。
+Date
+2023-11-05 Time in UTC
+06:50:41Z T065041Z Date and time in UTC
+2023-11-05T06:50:41Z 20231105T065041Z Date and time with the offset
+2023-11-04T23:50:41−07:00 UTC−07:00 2023-11-05T06:50:41+00:00 UTC+00:00 2023-11-05T13:50:41+07:00 UTC+07:00 Ref:
+The T is just a literal to separate the date from the time, and the Z means &amp;ldquo;zero hour offset&amp;rdquo; also known as &amp;ldquo;Zulu time&amp;rdquo; (UTC). UTC GMT Time in China - CST Time in the United States 二、Time in Linux 查看所在时区的日期和时间</description>
     </item>
     <item>
       <title>翦商</title>
