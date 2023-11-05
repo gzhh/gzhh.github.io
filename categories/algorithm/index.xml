@@ -6,15 +6,14 @@
     <description>Recent content in Algorithm on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Apr 2018 23:24:03 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Apr 2018 23:24:03 +0800</lastBuildDate>
+    <atom:link href="https://blog.gzhh.tech/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>常见排序算法</title>
       <link>https://blog.gzhh.tech/posts/sort-algorithm/</link>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/sort-algorithm/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

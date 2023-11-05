@@ -6,16 +6,15 @@
     <description>Recent content in Concurrency on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Feb 2023 16:00:00 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/categories/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 16:00:00 +0800</lastBuildDate>
+    <atom:link href="https://blog.gzhh.tech/categories/concurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Golang 实现 worker pool</title>
       <link>https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/</link>
       <pubDate>Wed, 08 Feb 2023 16:00:00 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/</guid>
       <description>介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
 简单实现 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &amp;lt;- i } func consume() { for { i := &amp;lt;-mq time.Sleep(time.Second) fmt.Printf(&amp;#34;get i %d\n&amp;#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.</description>
     </item>
-    
   </channel>
 </rss>

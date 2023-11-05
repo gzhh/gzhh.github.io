@@ -6,39 +6,44 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2023 10:50:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2023 13:06:52 +0800</lastBuildDate>
+    <atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://blog.gzhh.tech/about/</link>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/about/</guid>
       <description>嗨，我是 gzhh。
 我居住在中国，是一名后端开发工程师。
 Hi, I&amp;rsquo;m gzhh.
 I live in China and work as an backend engineer.</description>
     </item>
-    
     <item>
       <title>Read</title>
       <link>https://blog.gzhh.tech/read/</link>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/read/</guid>
       <description>阅读媒介 非技术书主要是电子书，很小一部分是实体书；技术书大半是 PDF，另一半是纸质书。
 阅读方式主要是通过 iPad 上的微信阅读 APP 来阅读，一半是直接阅读上面已有的图书，另一半是将 PDF、EPUB 和 MOBI 格式的资源下载后导入到 MarginNote 微信读书里来阅读；Mac 也会用来看一些 PDF 形式的技术书，偶尔也会在微信读书网页版看书。
 PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看的会买纸质书，现在因为已经有了蛮多的纸质书，搬家不方便，后续会等有条件再买纸质书。
-阅读记录 2023 书名 标签 状态 媒介 方式 开始日期 结束日期 芯片战争 科技 想读 暗淡蓝点 天文学 想读 宇宙 天文学 想读 原则 方法论 想读 翦商 历史 想读 中国国家治理的
+阅读记录 2023 书名 标签 状态 媒介 方式 开始日期 结束日期 芯片战争 科技 想读 暗淡蓝点 天文学 想读 宇宙 天文学 想读 原则 方法论 想读 中国国家治理的
 制度逻辑 历史 想读 善恶的彼岸 哲学 想读 NoSQL Distilled 计算机 想读 主题阅读 Unix/Linux
 编程实践教程 计算机 想读 主题阅读 Linux/UNIX
 系统编程手册 计算机 想读 PDF &amp;amp; 实体书 主题阅读 Unit Testing: Principles, Practices, and Patterns 计算机 想读 PDF 主题阅读 用Go语言自制</description>
     </item>
-    
+    <item>
+      <title>翦商</title>
+      <link>https://blog.gzhh.tech/reads/history/jian-shang/</link>
+      <pubDate>Sun, 05 Nov 2023 13:06:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/history/jian-shang/</guid>
+      <description>作者写的东西很多都存在主观的判断，没有很清晰的考古证据。
+作者判断《周易》是周文王用来占卜用的，书中由于涉及到灭商的信息，故而信息多隐讳，但还是有些许商人祭风俗的信息。而灭商后，周公为了统治，毁掉一切记录商朝的信息，除了周文王写的《周易》，但还是为这本书做过解读，使其理念符合周王朝的意识形态。而后世孔子在晚年研究《易经》后，编写六经的时候也沿用从周公这代不断耕深的周王朝典籍，进而衍生出儒家文化。
+《周易古经今注》这本书应该给作者写作本书提供了很多参考资料。</description>
+    </item>
     <item>
       <title>置身事内</title>
       <link>https://blog.gzhh.tech/reads/political-economy/zhi-shen-shi-nei/</link>
       <pubDate>Tue, 03 Oct 2023 10:50:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/political-economy/zhi-shen-shi-nei/</guid>
       <description>个人评价
 改革开放以来的这段时间经济政策归因讲的大致讲的比较清楚，可能由于敏感性问题细节没有讲的很深，最后对未来中国的经济政策给出了比较模糊的建议。
@@ -85,12 +90,10 @@ PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看�
 第四，银行风险会传导到其他金融部门。
 ◆ 第三节 中国的债务与风险</description>
     </item>
-    
     <item>
       <title>中央帝国的财政密码</title>
       <link>https://blog.gzhh.tech/reads/economics/zhong-yang-di-guo-de-cai-zheng-mi-ma/</link>
       <pubDate>Thu, 21 Sep 2023 09:50:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/economics/zhong-yang-di-guo-de-cai-zheng-mi-ma/</guid>
       <description>从汉武到清末，在中国中央集权的政治制度下，社会经济制度的演变与统治阶级密切相关。归因下来，每个朝代的强弱兴衰都大致决定这个朝代的经济制度走向，当然这都是作为后来者我们的评价。 结合钱穆的《中国历代政治得失》一起对照看，会对中国历史的理解更加透彻。
 《中央帝国的财政密码》 5个笔记
@@ -105,12 +108,10 @@ PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看�
 ◆ 第三部最完美的集权机器
 中国社会真正的问题不在于这些洋务企业，而在于第二波的民间资本主义经济没有完成接棒，而它们跟不上的原因也不是由于洋务运动，而是大部分集权制官僚仍然无法按照新商业模式转换头脑，因而抑制了民间经济的发展。</description>
     </item>
-    
     <item>
       <title>被讨厌的勇气</title>
       <link>https://blog.gzhh.tech/reads/psychology/the-courage-to-be-disliked/</link>
       <pubDate>Sat, 12 Aug 2023 16:48:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/psychology/the-courage-to-be-disliked/</guid>
       <description>《被讨厌的勇气：“自我启发之父”阿德勒的哲学课》
 ◆ 第一夜 我们的不幸是谁的错？
@@ -169,84 +170,68 @@ PS：Kindle 已经很久没用上，偶尔拿出来擦擦灰；经典反复看�
 并不是说将任何人都变成朋友或者像对待朋友一样去对待每一个人，不是这样的，重要的是意识上的平等以及坚持自己应有的主张。
 ◆ 第五夜 认真的人生“活在当下”</description>
     </item>
-    
     <item>
       <title>Python编程-从入门到实践（第2版）</title>
       <link>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</link>
       <pubDate>Mon, 07 Aug 2023 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</guid>
       <description>第一版大学读过了，工作几年后没怎么接触 Python，周末抽空重新读了下这第二版；项目1 和 项目2 跳过，项目3 Web 应用程序实践了下，第20章样式部分只快速过了下。</description>
     </item>
-    
     <item>
       <title>Golang json unmarshal 大整数为浮点数问题</title>
       <link>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</link>
       <pubDate>Sun, 26 Mar 2023 13:00:00 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</guid>
       <description>问题介绍 在 Golang 中使用 json Unmarshal 将一个 json 解析为不确定的结构 interface{} 时候，会将数字的接收类型默认设置为 float64。
 当原 json 结构中的整数太长，会导致转为 float64 超出精度，导致精度丢失。
 例子 package main import ( &amp;#34;bytes&amp;#34; &amp;#34;encoding/json&amp;#34; &amp;#34;fmt&amp;#34; ) var jsonstring = `{ &amp;#34;id&amp;#34;: 1130839459432311551, &amp;#34;id1&amp;#34;: 113083945943231, &amp;#34;id2&amp;#34;: 12344556, &amp;#34;create_time&amp;#34;: &amp;#34;2023-03-22 16:58:38&amp;#34;, &amp;#34;labels&amp;#34;: [] }` func f1() { var data interface{} err := json.Unmarshal([]byte(jsonstring), &amp;amp;data) if err != nil { panic(err) } fmt.Printf(&amp;#34;%+v\n&amp;#34;, data) dataBytes, err := json.Marshal(data) if err != nil { panic(err) } fmt.</description>
     </item>
-    
     <item>
       <title>使用 Golang 实现 worker pool</title>
       <link>https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/</link>
       <pubDate>Wed, 08 Feb 2023 16:00:00 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/</guid>
       <description>介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
 简单实现 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &amp;lt;- i } func consume() { for { i := &amp;lt;-mq time.Sleep(time.Second) fmt.Printf(&amp;#34;get i %d\n&amp;#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.</description>
     </item>
-    
     <item>
       <title>2023新年计划</title>
       <link>https://blog.gzhh.tech/posts/the-purpose-of-2023/</link>
       <pubDate>Sat, 28 Jan 2023 23:59:30 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/the-purpose-of-2023/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>1984</title>
       <link>https://blog.gzhh.tech/reads/okr/</link>
       <pubDate>Sun, 06 Nov 2022 20:00:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/okr/</guid>
       <description>OKR 解释 目标与关键结果 Objectives and key results，OKR
 OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；OKR包含一个目标（一个明确定义的目标）和3至5个关键结果（用于跟踪该目标实现情况的特定措施）。OKR的目标是定义如何通过具体和可衡量的行动来实现目标。关键结果的度量单位可以是0–100%，或任何数字单位。
 参考 OKR工作法 What is OKR</description>
     </item>
-    
     <item>
       <title>使用 Hugo 和 Github Actions 部署静态网站</title>
       <link>https://blog.gzhh.tech/posts/deploy-static-site-with-hugo-and-github-actions/</link>
       <pubDate>Sat, 17 Sep 2022 02:43:00 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/deploy-static-site-with-hugo-and-github-actions/</guid>
       <description>Table Of Contents 说在前面 博客搭建 首先跟着 Hugo 官方教程一步步操作 再将静态内容发布到 Github Page 使用 Github Action 优化部署 将本地博客项目同步到远程 Github 仓库 新建 workflow 配置域名及域名解析 博客图片 博客评论 参考 说在前面 年初将自己个人博客的部署方式改为 Github Actions 自动部署，其中碰到的坑一直没有空整理成文章输出出来，今天统一将内容整理到这篇文章。
 写之前顺便提下自己写技术博客的历程吧，最开始写博客的时候差不多是在大二的样子，当时主要是在 CSDN 上面写，内容差不多都是记录总结学习各个技术栈碰到的坑；后来大三快出来实习的时候，买了台阿里云的低配 ECS，使用 Wordpress 将自己的个人博客部署在上面；再后来觉得 Wordpress 需要数据库存储内容、且不太好能结合 Markdown 写博客、还有没有太好看的主题等原因，然后就换成在 Jekyll 和 Hexo 对比中选择了后者；Hexo 还是部署在阿里云的，部署方式是通过在 ECS 上搭建 Git 仓库，通过 Git 钩子将 Hexo 生成的博客静态页面文件，推送到 Nginx 服务的托管目录，完成部署。
 到了去年年底，用了几年的阿里云 ECS 到期了，由于续费太贵就没续费，于是就买了腾讯云的 Lighthouse 服务器，打算把博客也迁移过来。但是之前使用 Hexo 的那套部署方式比较麻烦，所以搜索了一番就决定使用 Hugo 和 Github Page 来部署静态博客。
 博客搭建 首先跟着 Hugo 官方教程一步步操作 Hugo quick-start</description>
     </item>
-    
     <item>
       <title>叫魂</title>
       <link>https://blog.gzhh.tech/reads/soulstealers/</link>
       <pubDate>Tue, 30 Aug 2022 22:18:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/soulstealers/</guid>
       <description>评价 由小窥大的讲述了一个历史事件（即乾隆年间席卷多个省的叫魂事件）的发生及其背后涉及到的种种因素，历史资料的引用也非常详细。
 最后总结为对专制社会下最高统治者、官僚及普通平民三者如何并存的思考。</description>
     </item>
-    
     <item>
       <title>非暴力沟通</title>
       <link>https://blog.gzhh.tech/reads/nonviolent-communication/</link>
       <pubDate>Tue, 30 Aug 2022 22:18:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/nonviolent-communication/</guid>
       <description>第一章 非暴力沟通四要素：
 观察
@@ -264,30 +249,24 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 我不得不的借口&amp;hellip;
 4.强人所难</description>
     </item>
-    
     <item>
       <title>【阅读笔记】Understanding Distributed Systems</title>
       <link>https://blog.gzhh.tech/posts/understanding-distributed-systems/</link>
       <pubDate>Mon, 15 Aug 2022 00:30:07 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/understanding-distributed-systems/</guid>
       <description>Table Of Contents 1. Introduction Part I: Communication 2. Reliable links 3. Secure links 4. Discovery 5. APIs Part II: Coordination 8. Time 9. Leader election 10. Replication 11. Coordination avoidance 12 . Transactions 13. Asynchronous transactions Part III: Scalability 14. HTTP caching 15. Content delivery networks 16. Partitioning 17. File storage 18. Network load balancing 19. Data storage 20. Caching 21. Microservices 22. Control planes and data planes 23.</description>
     </item>
-    
     <item>
       <title>【阅读笔记】The Effective Engineer</title>
       <link>https://blog.gzhh.tech/posts/the-effective-engineer/</link>
       <pubDate>Sat, 16 Jul 2022 18:30:07 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/the-effective-engineer/</guid>
       <description>Table Of Contents Part 1: Adopt the Right Mindsets 1. Focus on High-Leverage Activities 2. Optimize for Learning 3. Prioritize Regularly Part 2: Execute, Execute, Execute 4. Invest in Iteration Speed 5. Measure What You Want to Improve 6. Validate Your Ideas Early and Often 7. Improve Your Project Estimation Skills Part 3: Build Long-Term Value 8. Balance Quality with Pragmatism 9. Minimize Operational Burden 10. Invest in Your Team’s Growth Reference Part 1: Adopt the Right Mindsets 1.</description>
     </item>
-    
     <item>
       <title>【阅读笔记】微服务架构设计模式</title>
       <link>https://blog.gzhh.tech/posts/microservices-patterns/</link>
       <pubDate>Mon, 20 Jun 2022 17:58:50 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/microservices-patterns/</guid>
       <description>Table Of Contents 一、系统架构设计介绍 单体架构 微服务架构 二、服务的拆分策略 拆分规范 拆分策略 拆分难点 三、微服务架构中的进程间通信 RPC（同步通信机制） 同步通信机制局部故障问题 服务发现 消息代理 MQ（异步消息通信机制） 四、管理事务 Saga 五、微服务架构中的业务逻辑设计 业务逻辑组织模式 领域驱动设计 DDD 六、使用事件溯源开发业务逻辑 七、在微服务架构中实现查询 使用API组合模式进行查询 使用CQRS模式 八、外部API模式 九 &amp;amp; 十、微服务架构中的测试策略 自动化测试的四个阶段 测试的不同类型 测试金字塔 使用测试象限进行分类 十一、开发面向生产环境的微服务应用 安全性 可配置 设计可观测的服务 使用微服务基底模式开发服务 服务网格 十二：部署微服务应用 虚拟机 docker k8s 容器部署 Serverless 部署 十三、微服务架构的重构策略 需要考虑的问题 重构策略 设计服务与单体的协作方式 将新功能实现为服务 从单体中提取功能到独立服务 参考 一、系统架构设计介绍 单体架构 定义：一个系统的所有子模块都被部署在同一台服务器上。
 单体架构的好处
@@ -296,21 +275,17 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 单体架构的弊端
 过度的复杂性会吓退开发者 开发速度缓慢 从代码提交到实际部署的周期很长，而且容易出问题 难以扩展 交付可靠的单体应用是一项挑战 需要长期依赖某个可能过时的技术栈 微服务架构 定义：将一个单体应用按照不同的功能模块进行分解，拆分成一个个小的服务，每个服务实现了一组相关的功能。</description>
     </item>
-    
     <item>
       <title>小狗钱钱</title>
       <link>https://blog.gzhh.tech/reads/xiao-gou-qian-qian/</link>
       <pubDate>Thu, 13 Jan 2022 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/xiao-gou-qian-qian/</guid>
       <description> 总结 每日记录成功日记，培养自信心 订好梦想，并持之以恒为之努力 养好下金蛋的鹅，把鹅养大，靠蛋生活 </description>
     </item>
-    
     <item>
       <title>中国近代史</title>
       <link>https://blog.gzhh.tech/reads/the-rise-of-modern-china/</link>
       <pubDate>Mon, 03 Jan 2022 20:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/the-rise-of-modern-china/</guid>
       <description> 第一编1600-1800 明末-康雍乾盛世
 第二编1800-1864 第一、第二次鸦片战争及太平天国、捻军、回民内乱
@@ -320,21 +295,17 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 思想抗战 1917-1923 国民政府：挑战重重的十年 1928-1937 第六编 中华人民共和国的兴起
 反右 十年文革 学运 中美关系 总结 维护统治地位为第一目的，其他都可抛弃 和平时代的爱国主义是毒瘤，战争时期的爱国主义是良药 </description>
     </item>
-    
     <item>
       <title>2022新年计划</title>
       <link>https://blog.gzhh.tech/posts/the-purpose-of-2022/</link>
       <pubDate>Fri, 31 Dec 2021 23:55:50 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/the-purpose-of-2022/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>学习之道</title>
       <link>https://blog.gzhh.tech/reads/a-mind-for-numbers/</link>
       <pubDate>Sat, 18 Dec 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/a-mind-for-numbers/</guid>
       <description>1. 思考的两种模式 专注模式（类似于思考快与慢中的慢思维）
 专注于某个问题的解决，不一定要有结果。 发散模式（类似于思考快与慢中的快思维）
@@ -362,12 +333,10 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 5. 记忆技巧 图片记忆法 故事记忆法 &amp;hellip;
 6. 学习方法 输出式学习 自学，独立思考者 &amp;hellip;</description>
     </item>
-    
     <item>
       <title>思考，快与慢</title>
       <link>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</link>
       <pubDate>Sat, 27 Nov 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</guid>
       <description>总结 一、两种系统：系统1和系统2
 系统1：无意识的思考模式（直觉）
@@ -399,21 +368,17 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 参考 执行力
 PDCA</description>
     </item>
-    
     <item>
       <title>Gin 生命周期</title>
       <link>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</link>
       <pubDate>Mon, 05 Jul 2021 17:38:50 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>如何阅读一本书</title>
       <link>https://blog.gzhh.tech/reads/how-to-read-a-book/</link>
       <pubDate>Sat, 06 Mar 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/how-to-read-a-book/</guid>
       <description>一、阅读方式 阅读层次 基础阅读 检视阅读 分析阅读 主题阅读 较高层次的阅读包含较低层次的阅读
 关于一本书阅读前需要提出的问题 整体来说，这本书到底在谈些什么 作者细说了什么，怎么说的 这本书说得有道理吗？ 这本书跟你有什么关系 阅读技巧、阅读习惯 连贯性，尽量不要打断阅读的连贯性
@@ -458,21 +423,17 @@ PS:
 《小说的艺术》
 阅读不同类书的建议</description>
     </item>
-    
     <item>
       <title>2021新年计划</title>
       <link>https://blog.gzhh.tech/posts/the-purpose-of-2021/</link>
       <pubDate>Fri, 01 Jan 2021 01:10:50 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/the-purpose-of-2021/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>1984</title>
       <link>https://blog.gzhh.tech/reads/1984/</link>
       <pubDate>Sat, 05 Dec 2020 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/1984/</guid>
       <description>内容 标签：极权主义
 角色：温斯顿、裘莉亚、奥勃良
@@ -499,12 +460,10 @@ PS:
 三等人中只有下等人从来没有实现过自己的目标，哪怕是暂时实现自己的目标。若说整个历史从来没有物质方面的进步，那不免言之过甚。即使在今天这个衰亡时期，一般人在物质上也要比几百年前好一些。但是不论财富的增长，或态度的缓和，或改革和革命，都没有使人类接 等一步。从下等人的观点来看，历史若有变化，大不了是主子名字改变而已。
 中等人只要还在争取权力的时候，总是利用自由、正义、博爱这种好听的字眼，诱使下等人支持他们的事业。要建立一个公正和平的社会实际上是不可能的，但这种社会却是比较容易使人相信。好几千年以来人类梦寐以求的，就是实现一个人人友爱相处的人间天堂，既没有法律，也没有畜生一般的劳动。有些人纵使在每一次历史变化中都能得到实际好处，这种幻想也对他们有一定的吸引力。</description>
     </item>
-    
     <item>
       <title>富爸爸，穷爸爸</title>
       <link>https://blog.gzhh.tech/reads/rich-dad-poor-dad/</link>
       <pubDate>Sat, 12 Sep 2020 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/rich-dad-poor-dad/</guid>
       <description>随记 拥有两位我深爱的父亲，这促使我去思考，最终为自己选择其中一种思维方式。这一过程是我自己去选择而不是简单地接受或否定的过程，在后来的漫长岁月中被证明对我非常有益。
 我的一个爸爸总是习惯说“我可付不起”，而另一个爸爸则禁止我们说这样的话，他坚持让我这样说：“我怎样才能付得起？”这两句话，一句是陈述句，另一句是疑问句。一句让你放弃，而另一句则促使你去想办法。我那个在不久之后就富起来的爸爸解释，当你下意识地说出“我付不起”的时候，你的大脑就会停止思考；而如果你自问“我怎样才能付得起”，则会让你的大脑动起来。当然，他的意思并不是让你把每件想要的东西都买到手，这里只是强调要不停地锻炼你的大脑——它是世界上最强大的“计算机”。富爸爸说：“我的大脑越用越活，大脑越活，我挣的钱就越多。”他认为，下意识地说“我可付不起”意味着精神上的懒惰。
@@ -560,12 +519,10 @@ PS:
 最重要的专业技能是销售技能和营销技能。
 沟通能力，如书面表达、口头表达及谈判能力等对一个人的成功来说更是至关重要。</description>
     </item>
-    
     <item>
       <title>邓小平时代</title>
       <link>https://blog.gzhh.tech/reads/dengxiaoping-and-the-transformation-of-china/</link>
       <pubDate>Thu, 10 Sep 2020 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/dengxiaoping-and-the-transformation-of-china/</guid>
       <description>时间线 革命初期 1920-1927 - 法国和苏联
 地下党时期 1927-1930 - 负责上海中国地下党；养成凭记忆记录习惯
@@ -589,21 +546,17 @@ PS:
 叶剑英：军队派系资深领导人、前期拥护华国锋
 相关线索 毛让继承者公开场合承认文革，是不想继任者在他死后推翻他，如果公开承认了，那么继承者就不会公开推翻他，所以在邓迟迟没有拥护文革后的一段时间，逐渐不信任邓</description>
     </item>
-    
     <item>
       <title>理解 Go 函数中的切片传参</title>
       <link>https://blog.gzhh.tech/posts/understand-slice-param-in-go-function/</link>
       <pubDate>Fri, 19 Jun 2020 17:00:00 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/understand-slice-param-in-go-function/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MySQL 锁</title>
       <link>https://blog.gzhh.tech/posts/know_mysql_lock/</link>
       <pubDate>Sun, 23 Feb 2020 09:43:53 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/know_mysql_lock/</guid>
       <description>锁介绍 假设我们有一个商品表 item，里面有两个字段 id 和 store
 +----+-------+ | id | store | +----+-------+ | 1 | 1 | +----+-------+ 一般我们在生成订单之前会先确定 store 商品库存是否大于你要购买的数量，然后更新库存
@@ -611,12 +564,10 @@ PS:
 在 MySQL 终端我们可以这样测试
 SET AUTOCOMMIT=0; BEGIN; SELECT store FROM item WHERE id=1 FOR UPDATE; 此时 item 表中 id=1 的这行数据被锁住（InnoDB 的 Row Lock 或 Table Lock）其他事务必须等待此次事务提交后才能执行； SELECT store FROM item WHERE id=1 FOR UPDATE; 可以确保库存 store 在别的事务读取到的数字是正确的； 然后我们修改库存，提交数据写入数据库，item 表中 id=1 的这行数据解锁。</description>
     </item>
-    
     <item>
       <title>西方哲学史（第9版）</title>
       <link>https://blog.gzhh.tech/reads/a-historical-survey-with-essential-readings/</link>
       <pubDate>Sun, 10 Nov 2019 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/a-historical-survey-with-essential-readings/</guid>
       <description>古代哲学 希腊三哲：
 苏格拉底 https://zh.wikipedia.org/wiki/苏格拉底
@@ -653,93 +604,73 @@ SET AUTOCOMMIT=0; BEGIN; SELECT store FROM item WHERE id=1 FOR UPDATE; 此时 it
 https://zh.wikipedia.org/wiki/格奥尔格·威廉·弗里德里希·黑格尔 (德国唯心主义)
 当代哲学： 时期：十九世纪开始</description>
     </item>
-    
     <item>
       <title>LaTeX 学习记录</title>
       <link>https://blog.gzhh.tech/posts/latex-usage-notes/</link>
       <pubDate>Sun, 20 Oct 2019 17:23:05 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/latex-usage-notes/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Lua 语言入门（二）</title>
       <link>https://blog.gzhh.tech/posts/play-lua-second/</link>
       <pubDate>Sun, 06 Oct 2019 09:22:54 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/play-lua-second/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Lua 语言入门（一）</title>
       <link>https://blog.gzhh.tech/posts/play-lua-first/</link>
       <pubDate>Sun, 29 Sep 2019 20:20:36 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/play-lua-first/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>【操作系统】3.内存memory(抽象的地址空间)</title>
       <link>https://blog.gzhh.tech/posts/operating-system-3.memory/</link>
       <pubDate>Mon, 11 Mar 2019 01:08:00 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/operating-system-3.memory/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>【操作系统】2.调度scheduling</title>
       <link>https://blog.gzhh.tech/posts/operating-system-2.scheduling/</link>
       <pubDate>Wed, 27 Feb 2019 16:37:33 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/operating-system-2.scheduling/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>【操作系统】1.进程process</title>
       <link>https://blog.gzhh.tech/posts/operating-system-1.process/</link>
       <pubDate>Mon, 25 Feb 2019 23:00:39 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/operating-system-1.process/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>【操作系统】基础概念介绍</title>
       <link>https://blog.gzhh.tech/posts/operating-system-0.basic-info/</link>
       <pubDate>Sat, 23 Feb 2019 09:43:53 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/operating-system-0.basic-info/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>2019新年计划</title>
       <link>https://blog.gzhh.tech/posts/the-purpose-of-2019/</link>
       <pubDate>Tue, 01 Jan 2019 22:10:51 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/the-purpose-of-2019/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>对于如何提升能力的一些思考</title>
       <link>https://blog.gzhh.tech/posts/how-to-improve-yourself/</link>
       <pubDate>Thu, 06 Sep 2018 00:53:07 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/how-to-improve-yourself/</guid>
       <description>&lt;p&gt;如何在技术快速发展的时代成为逐浪者？随着接触越来越多的新技术新名词，内心就越会感觉到知识的空虚，恨不得一下子就多学一门新技术，但是对每个技术都是浅尝即止，很难深入．最近思来想去只能把问题集中在基础不扎实上．如果技术扎实，那么在尝试新技术的时候心里底气就会足一点，学起来也就不会那么吃力了．&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SSO 单点登录</title>
       <link>https://blog.gzhh.tech/posts/sso/</link>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/sso/</guid>
       <description>说在前面 由于公司要开发几套系统，并且需要几套系统使用统一的用户管理功能，TM让我研究如何实现多系统的单点登录，这周零零碎碎研究了下，所以写下这篇文章，加深下理解，也方便以后回顾。
 介绍 Single sign-on(SSO) 是多个相关但彼此独立的软件系统访问控制的一个属性，也就是用户只使用一个账号和密码来访问多个系统。 单点登录在大型的系统中经常用到，例如：刚开始你的百度搜索 www.baidu.com 和百度云盘都是没有登录的，现在当你登录了百度搜索的系统后，再去刷新一下百度云盘的系统时，这时你会发现百度云盘这边也是显示登录的，这种情况就是使用 SSO 技术实现的。 CAS(Central Authentication Service) 旨在为 Web 应用系统提供一种可靠的单点登录解决方法（属于 Web SSO ）。
@@ -748,54 +679,43 @@ SSO 的几种情况 1.同域下的不同服务 例如我们有两个服务 test.
 2.同父域不同子域的服务 例如 site1.x.com site2.x.com 这种情况两个服务的主机是不相同的(父域相同，子域不同)，这种情况我们一般可以设置两个服务的 Cookie 都是在当前域的顶级域下的，也就是 x.com 域下。 cas.x.com 设置一个 CAS(Central Authentication Service)，所有的与登录和验证token和设置 Cookie 的 操作我们都放在 CAS 上面
 3.完全不同域的服务 例如 site1.com site2.com</description>
     </item>
-    
     <item>
       <title>常见排序算法</title>
       <link>https://blog.gzhh.tech/posts/sort-algorithm/</link>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/sort-algorithm/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>【VIM】vim常用操作</title>
       <link>https://blog.gzhh.tech/posts/vim-skill/</link>
       <pubDate>Fri, 23 Mar 2018 09:22:30 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/vim-skill/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>2018新年计划</title>
       <link>https://blog.gzhh.tech/posts/the-purpose-of-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:43:02 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/the-purpose-of-2018/</guid>
       <description>&lt;p&gt;2018要来了，回想2017年出校门实习的这半年来，学到了挺多职场的知识，但是对自己还是不够满意，比自己的期望也低了好多，而且人也变得懒惰了，希望2018能改掉这些毛病，努力争取获取的一个更好的机会。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>玩转sed操作文本-基础篇</title>
       <link>https://blog.gzhh.tech/posts/play-sed-first/</link>
       <pubDate>Fri, 17 Nov 2017 18:42:35 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/play-sed-first/</guid>
       <description>介绍 sed 全名是 stream editor，是文本流处理方面的强大工具，和另一个文本处理工具 awk 工具有的一比，接下来就让我们简单介绍下它的基本使用和适用场景。 我们这篇主要讲的是 Gnu sed，还有一个常用的是 BSD sed（Mac OS就是源自 BSD 的），两者略微有点不同，不过他们俩都是由 Posix sed 演化而来。
 基本格式 sed 命令的执行有两种基本格式 sed [-参数] command [file &amp;hellip;] sed [-参数] [-e command] [-f command_file] [-i extension]
 参数 默认情况下，sed 不会操作原来的文本，加上 -i 参数则会改变原文件的内容 sed -i command [file &amp;hellip;]
 替换 1.将文件中每行所有的字符 , 都替换为空字符(不加 g 标记则只替换每行第一个匹配) sed &#39;s/,/ /g&#39; file.txt 2.从第 N 处匹配开始替换 /ng sed &#39;s/,/ /2g&#39; file.txt 3.将字符 , 替换为空字符并保存替换后的内容 sed -i &#39;s/,/ /g&#39; file.</description>
     </item>
-    
     <item>
       <title>2017新年计划</title>
       <link>https://blog.gzhh.tech/posts/the-purpose-of-2017/</link>
       <pubDate>Sun, 01 Jan 2017 23:26:25 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/the-purpose-of-2017/</guid>
       <description>&lt;p&gt;今天是2017年的第一天，度过了有很过欢笑也有很多悲伤的2016年，不管怎样，2016年都过去了，新生活还要继续，写点新年的计划吧，虽然知道很大部分很难完成，但还是写一下吧，万一完成了呢。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

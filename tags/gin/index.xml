@@ -6,15 +6,14 @@
     <description>Recent content in Gin on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Jul 2021 17:38:50 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/gin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 17:38:50 +0800</lastBuildDate>
+    <atom:link href="https://blog.gzhh.tech/tags/gin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gin 生命周期</title>
       <link>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</link>
       <pubDate>Mon, 05 Jul 2021 17:38:50 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

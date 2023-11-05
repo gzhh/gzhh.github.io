@@ -6,12 +6,21 @@
     <description>Recent content in Reads on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2023 10:50:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/reads/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2023 13:06:52 +0800</lastBuildDate>
+    <atom:link href="https://blog.gzhh.tech/reads/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>翦商</title>
+      <link>https://blog.gzhh.tech/reads/history/jian-shang/</link>
+      <pubDate>Sun, 05 Nov 2023 13:06:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/history/jian-shang/</guid>
+      <description>作者写的东西很多都存在主观的判断，没有很清晰的考古证据。
+作者判断《周易》是周文王用来占卜用的，书中由于涉及到灭商的信息，故而信息多隐讳，但还是有些许商人祭风俗的信息。而灭商后，周公为了统治，毁掉一切记录商朝的信息，除了周文王写的《周易》，但还是为这本书做过解读，使其理念符合周王朝的意识形态。而后世孔子在晚年研究《易经》后，编写六经的时候也沿用从周公这代不断耕深的周王朝典籍，进而衍生出儒家文化。
+《周易古经今注》这本书应该给作者写作本书提供了很多参考资料。</description>
+    </item>
     <item>
       <title>置身事内</title>
       <link>https://blog.gzhh.tech/reads/political-economy/zhi-shen-shi-nei/</link>
       <pubDate>Tue, 03 Oct 2023 10:50:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/political-economy/zhi-shen-shi-nei/</guid>
       <description>个人评价
 改革开放以来的这段时间经济政策归因讲的大致讲的比较清楚，可能由于敏感性问题细节没有讲的很深，最后对未来中国的经济政策给出了比较模糊的建议。
@@ -58,12 +67,10 @@
 第四，银行风险会传导到其他金融部门。
 ◆ 第三节 中国的债务与风险</description>
     </item>
-    
     <item>
       <title>中央帝国的财政密码</title>
       <link>https://blog.gzhh.tech/reads/economics/zhong-yang-di-guo-de-cai-zheng-mi-ma/</link>
       <pubDate>Thu, 21 Sep 2023 09:50:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/economics/zhong-yang-di-guo-de-cai-zheng-mi-ma/</guid>
       <description>从汉武到清末，在中国中央集权的政治制度下，社会经济制度的演变与统治阶级密切相关。归因下来，每个朝代的强弱兴衰都大致决定这个朝代的经济制度走向，当然这都是作为后来者我们的评价。 结合钱穆的《中国历代政治得失》一起对照看，会对中国历史的理解更加透彻。
 《中央帝国的财政密码》 5个笔记
@@ -78,12 +85,10 @@
 ◆ 第三部最完美的集权机器
 中国社会真正的问题不在于这些洋务企业，而在于第二波的民间资本主义经济没有完成接棒，而它们跟不上的原因也不是由于洋务运动，而是大部分集权制官僚仍然无法按照新商业模式转换头脑，因而抑制了民间经济的发展。</description>
     </item>
-    
     <item>
       <title>被讨厌的勇气</title>
       <link>https://blog.gzhh.tech/reads/psychology/the-courage-to-be-disliked/</link>
       <pubDate>Sat, 12 Aug 2023 16:48:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/psychology/the-courage-to-be-disliked/</guid>
       <description>《被讨厌的勇气：“自我启发之父”阿德勒的哲学课》
 ◆ 第一夜 我们的不幸是谁的错？
@@ -142,42 +147,34 @@
 并不是说将任何人都变成朋友或者像对待朋友一样去对待每一个人，不是这样的，重要的是意识上的平等以及坚持自己应有的主张。
 ◆ 第五夜 认真的人生“活在当下”</description>
     </item>
-    
     <item>
       <title>Python编程-从入门到实践（第2版）</title>
       <link>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</link>
       <pubDate>Mon, 07 Aug 2023 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</guid>
       <description>第一版大学读过了，工作几年后没怎么接触 Python，周末抽空重新读了下这第二版；项目1 和 项目2 跳过，项目3 Web 应用程序实践了下，第20章样式部分只快速过了下。</description>
     </item>
-    
     <item>
       <title>1984</title>
       <link>https://blog.gzhh.tech/reads/okr/</link>
       <pubDate>Sun, 06 Nov 2022 20:00:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/okr/</guid>
       <description>OKR 解释 目标与关键结果 Objectives and key results，OKR
 OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；OKR包含一个目标（一个明确定义的目标）和3至5个关键结果（用于跟踪该目标实现情况的特定措施）。OKR的目标是定义如何通过具体和可衡量的行动来实现目标。关键结果的度量单位可以是0–100%，或任何数字单位。
 参考 OKR工作法 What is OKR</description>
     </item>
-    
     <item>
       <title>叫魂</title>
       <link>https://blog.gzhh.tech/reads/soulstealers/</link>
       <pubDate>Tue, 30 Aug 2022 22:18:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/soulstealers/</guid>
       <description>评价 由小窥大的讲述了一个历史事件（即乾隆年间席卷多个省的叫魂事件）的发生及其背后涉及到的种种因素，历史资料的引用也非常详细。
 最后总结为对专制社会下最高统治者、官僚及普通平民三者如何并存的思考。</description>
     </item>
-    
     <item>
       <title>非暴力沟通</title>
       <link>https://blog.gzhh.tech/reads/nonviolent-communication/</link>
       <pubDate>Tue, 30 Aug 2022 22:18:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/nonviolent-communication/</guid>
       <description>第一章 非暴力沟通四要素：
 观察
@@ -195,21 +192,17 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 我不得不的借口&amp;hellip;
 4.强人所难</description>
     </item>
-    
     <item>
       <title>小狗钱钱</title>
       <link>https://blog.gzhh.tech/reads/xiao-gou-qian-qian/</link>
       <pubDate>Thu, 13 Jan 2022 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/xiao-gou-qian-qian/</guid>
       <description> 总结 每日记录成功日记，培养自信心 订好梦想，并持之以恒为之努力 养好下金蛋的鹅，把鹅养大，靠蛋生活 </description>
     </item>
-    
     <item>
       <title>中国近代史</title>
       <link>https://blog.gzhh.tech/reads/the-rise-of-modern-china/</link>
       <pubDate>Mon, 03 Jan 2022 20:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/the-rise-of-modern-china/</guid>
       <description> 第一编1600-1800 明末-康雍乾盛世
 第二编1800-1864 第一、第二次鸦片战争及太平天国、捻军、回民内乱
@@ -219,12 +212,10 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 思想抗战 1917-1923 国民政府：挑战重重的十年 1928-1937 第六编 中华人民共和国的兴起
 反右 十年文革 学运 中美关系 总结 维护统治地位为第一目的，其他都可抛弃 和平时代的爱国主义是毒瘤，战争时期的爱国主义是良药 </description>
     </item>
-    
     <item>
       <title>学习之道</title>
       <link>https://blog.gzhh.tech/reads/a-mind-for-numbers/</link>
       <pubDate>Sat, 18 Dec 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/a-mind-for-numbers/</guid>
       <description>1. 思考的两种模式 专注模式（类似于思考快与慢中的慢思维）
 专注于某个问题的解决，不一定要有结果。 发散模式（类似于思考快与慢中的快思维）
@@ -252,12 +243,10 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 5. 记忆技巧 图片记忆法 故事记忆法 &amp;hellip;
 6. 学习方法 输出式学习 自学，独立思考者 &amp;hellip;</description>
     </item>
-    
     <item>
       <title>思考，快与慢</title>
       <link>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</link>
       <pubDate>Sat, 27 Nov 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</guid>
       <description>总结 一、两种系统：系统1和系统2
 系统1：无意识的思考模式（直觉）
@@ -289,12 +278,10 @@ OKR 是一套明确和跟踪目标及其完成情况的管理工具和方法；O
 参考 执行力
 PDCA</description>
     </item>
-    
     <item>
       <title>如何阅读一本书</title>
       <link>https://blog.gzhh.tech/reads/how-to-read-a-book/</link>
       <pubDate>Sat, 06 Mar 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/how-to-read-a-book/</guid>
       <description>一、阅读方式 阅读层次 基础阅读 检视阅读 分析阅读 主题阅读 较高层次的阅读包含较低层次的阅读
 关于一本书阅读前需要提出的问题 整体来说，这本书到底在谈些什么 作者细说了什么，怎么说的 这本书说得有道理吗？ 这本书跟你有什么关系 阅读技巧、阅读习惯 连贯性，尽量不要打断阅读的连贯性
@@ -339,12 +326,10 @@ PS:
 《小说的艺术》
 阅读不同类书的建议</description>
     </item>
-    
     <item>
       <title>1984</title>
       <link>https://blog.gzhh.tech/reads/1984/</link>
       <pubDate>Sat, 05 Dec 2020 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/1984/</guid>
       <description>内容 标签：极权主义
 角色：温斯顿、裘莉亚、奥勃良
@@ -371,12 +356,10 @@ PS:
 三等人中只有下等人从来没有实现过自己的目标，哪怕是暂时实现自己的目标。若说整个历史从来没有物质方面的进步，那不免言之过甚。即使在今天这个衰亡时期，一般人在物质上也要比几百年前好一些。但是不论财富的增长，或态度的缓和，或改革和革命，都没有使人类接 等一步。从下等人的观点来看，历史若有变化，大不了是主子名字改变而已。
 中等人只要还在争取权力的时候，总是利用自由、正义、博爱这种好听的字眼，诱使下等人支持他们的事业。要建立一个公正和平的社会实际上是不可能的，但这种社会却是比较容易使人相信。好几千年以来人类梦寐以求的，就是实现一个人人友爱相处的人间天堂，既没有法律，也没有畜生一般的劳动。有些人纵使在每一次历史变化中都能得到实际好处，这种幻想也对他们有一定的吸引力。</description>
     </item>
-    
     <item>
       <title>富爸爸，穷爸爸</title>
       <link>https://blog.gzhh.tech/reads/rich-dad-poor-dad/</link>
       <pubDate>Sat, 12 Sep 2020 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/rich-dad-poor-dad/</guid>
       <description>随记 拥有两位我深爱的父亲，这促使我去思考，最终为自己选择其中一种思维方式。这一过程是我自己去选择而不是简单地接受或否定的过程，在后来的漫长岁月中被证明对我非常有益。
 我的一个爸爸总是习惯说“我可付不起”，而另一个爸爸则禁止我们说这样的话，他坚持让我这样说：“我怎样才能付得起？”这两句话，一句是陈述句，另一句是疑问句。一句让你放弃，而另一句则促使你去想办法。我那个在不久之后就富起来的爸爸解释，当你下意识地说出“我付不起”的时候，你的大脑就会停止思考；而如果你自问“我怎样才能付得起”，则会让你的大脑动起来。当然，他的意思并不是让你把每件想要的东西都买到手，这里只是强调要不停地锻炼你的大脑——它是世界上最强大的“计算机”。富爸爸说：“我的大脑越用越活，大脑越活，我挣的钱就越多。”他认为，下意识地说“我可付不起”意味着精神上的懒惰。
@@ -432,12 +415,10 @@ PS:
 最重要的专业技能是销售技能和营销技能。
 沟通能力，如书面表达、口头表达及谈判能力等对一个人的成功来说更是至关重要。</description>
     </item>
-    
     <item>
       <title>邓小平时代</title>
       <link>https://blog.gzhh.tech/reads/dengxiaoping-and-the-transformation-of-china/</link>
       <pubDate>Thu, 10 Sep 2020 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/dengxiaoping-and-the-transformation-of-china/</guid>
       <description>时间线 革命初期 1920-1927 - 法国和苏联
 地下党时期 1927-1930 - 负责上海中国地下党；养成凭记忆记录习惯
@@ -461,12 +442,10 @@ PS:
 叶剑英：军队派系资深领导人、前期拥护华国锋
 相关线索 毛让继承者公开场合承认文革，是不想继任者在他死后推翻他，如果公开承认了，那么继承者就不会公开推翻他，所以在邓迟迟没有拥护文革后的一段时间，逐渐不信任邓</description>
     </item>
-    
     <item>
       <title>西方哲学史（第9版）</title>
       <link>https://blog.gzhh.tech/reads/a-historical-survey-with-essential-readings/</link>
       <pubDate>Sun, 10 Nov 2019 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/a-historical-survey-with-essential-readings/</guid>
       <description>古代哲学 希腊三哲：
 苏格拉底 https://zh.wikipedia.org/wiki/苏格拉底
@@ -503,6 +482,5 @@ PS:
 https://zh.wikipedia.org/wiki/格奥尔格·威廉·弗里德里希·黑格尔 (德国唯心主义)
 当代哲学： 时期：十九世纪开始</description>
     </item>
-    
   </channel>
 </rss>

@@ -25,6 +25,7 @@
 
 
 
+
   <title>gzhh&#39;s blog</title>
 
   
@@ -68,7 +69,7 @@
 
   
 
-  <meta name="generator" content="Hugo 0.119.0">
+  <meta name="generator" content="Hugo 0.120.3">
 
 
   
@@ -316,58 +317,58 @@ tonumber(str) // 如果str可以解释为number值，返回integers或floats，�
 </span></span></code></pre></div></li>
 <li>
 <p>15.Tables</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>可以用 tables 表示 arrays, sets, structs, records
-</span></span><span style="display:flex;"><span>// 数组
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="">可以用</span> tables <span style="">表示</span> arrays, sets, structs, records
+</span></span><span style="display:flex;"><span>// <span style="">数组</span>
 </span></span><span style="display:flex;"><span>a = {}
-</span></span><span style="display:flex;"><span>a[&#34;x&#34;] = 10
-</span></span><span style="display:flex;"><span>b = a						-- &#39;b&#39; refers to the same table as &#39;a&#39;
-</span></span><span style="display:flex;"><span>b[&#34;x&#34;]
-</span></span><span style="display:flex;"><span>b[&#34;x&#34;] = 20
-</span></span><span style="display:flex;"><span>a[&#34;x&#34;]						-- 20
-</span></span><span style="display:flex;"><span>a = nil						-- only &#39;b&#39; still refers to the table
+</span></span><span style="display:flex;"><span>a[<span style="font-style:italic">&#34;x&#34;</span>] = 10
+</span></span><span style="display:flex;"><span>b = a						-- <span style="font-style:italic">&#39;b&#39;</span> refers to the same table as <span style="font-style:italic">&#39;a&#39;</span>
+</span></span><span style="display:flex;"><span>b[<span style="font-style:italic">&#34;x&#34;</span>]
+</span></span><span style="display:flex;"><span>b[<span style="font-style:italic">&#34;x&#34;</span>] = 20
+</span></span><span style="display:flex;"><span>a[<span style="font-style:italic">&#34;x&#34;</span>]						-- 20
+</span></span><span style="display:flex;"><span>a = nil						-- only <span style="font-style:italic">&#39;b&#39;</span> still refers to the table
 </span></span><span style="display:flex;"><span>b = nil						-- no references left to the table
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>// 结构体
+</span></span><span style="display:flex;"><span>// <span style="">结构体</span>
 </span></span><span style="display:flex;"><span>&gt; a = {}					-- empty table
-</span></span><span style="display:flex;"><span>&gt; a.x = 10				    -- same as a[&#34;x&#34;] = 10
-</span></span><span style="display:flex;"><span>&gt; a.x						-- same as a[&#34;x&#34;]
-</span></span><span style="display:flex;"><span>&gt; a.y						-- same as a[&#34;y&#34;]
+</span></span><span style="display:flex;"><span>&gt; a.x = 10				    -- same as a[<span style="font-style:italic">&#34;x&#34;</span>] = 10
+</span></span><span style="display:flex;"><span>&gt; a.x						-- same as a[<span style="font-style:italic">&#34;x&#34;</span>]
+</span></span><span style="display:flex;"><span>&gt; a.y						-- same as a[<span style="font-style:italic">&#34;y&#34;</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>// table constructors (可以不同形式，不同类型，可以多层嵌套)
-</span></span><span style="display:flex;"><span>days = {&#34;Sunday&#34;, &#34;Monday&#34;, &#34;Tuesday&#34;, &#34;Wednesday&#34;, &#34;Thursday&#34;, &#34;Friday&#34;, &#34;Saturday&#34;}
+</span></span><span style="display:flex;"><span>// table constructors (<span style="">可以不同形式，不同类型，可以多层嵌套</span>)
+</span></span><span style="display:flex;"><span>days = {<span style="font-style:italic">&#34;Sunday&#34;</span>, <span style="font-style:italic">&#34;Monday&#34;</span>, <span style="font-style:italic">&#34;Tuesday&#34;</span>, <span style="font-style:italic">&#34;Wednesday&#34;</span>, <span style="font-style:italic">&#34;Thursday&#34;</span>, <span style="font-style:italic">&#34;Friday&#34;</span>, <span style="font-style:italic">&#34;Saturday&#34;</span>}
 </span></span><span style="display:flex;"><span>print(days[4])  --&gt; Wednesday
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>a = {x = 10, y = 20}
 </span></span><span style="display:flex;"><span>a = {}; a.x = 10; a.y = 20
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>a = {[1] = &#34;red&#34;, [2] = &#34;green&#34;, [3] = &#34;blue&#34;,}
+</span></span><span style="display:flex;"><span>a = {[1] = <span style="font-style:italic">&#34;red&#34;</span>, [2] = <span style="font-style:italic">&#34;green&#34;</span>, [3] = <span style="font-style:italic">&#34;blue&#34;</span>,}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>// array or list
-</span></span><span style="display:flex;"><span>-- read 10 lines, storing them in a table
+</span></span><span style="display:flex;"><span>// array <span style="font-weight:bold">or</span> list
+</span></span><span style="display:flex;"><span>-- read 10 lines, storing them <span style="font-weight:bold">in</span> a table
 </span></span><span style="display:flex;"><span>a = {}
-</span></span><span style="display:flex;"><span>for i = 1, 10 do
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">for</span> i = 1, 10 <span style="font-weight:bold">do</span>
 </span></span><span style="display:flex;"><span>	a[i] = io.read()
 </span></span><span style="display:flex;"><span>end
-</span></span><span style="display:flex;"><span> -- print the lines, from 1 to #a
-</span></span><span style="display:flex;"><span>for i = 1, #a do
+</span></span><span style="display:flex;"><span> -- print the lines, from 1 to <span style="font-style:italic">#a</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">for</span> i = 1, <span style="font-style:italic">#a do</span>
 </span></span><span style="display:flex;"><span>  print(a[i])
 </span></span><span style="display:flex;"><span>end
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>// table 遍历
-</span></span><span style="display:flex;"><span>// key–value pairs
-</span></span><span style="display:flex;"><span>t = {10, print, x = 12, k = &#34;hi&#34;}
-</span></span><span style="display:flex;"><span>for k, v in pairs(t) do
+</span></span><span style="display:flex;"><span>// table <span style="">遍历</span>
+</span></span><span style="display:flex;"><span>// key<span style="">–</span>value pairs
+</span></span><span style="display:flex;"><span>t = {10, print, x = 12, k = <span style="font-style:italic">&#34;hi&#34;</span>}
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">for</span> k, v <span style="font-weight:bold">in</span> pairs(t) <span style="font-weight:bold">do</span>
 </span></span><span style="display:flex;"><span>	print(k, v)
 </span></span><span style="display:flex;"><span>end
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>// list
-</span></span><span style="display:flex;"><span>t = {10, print, 12, &#34;hi&#34;}
-</span></span><span style="display:flex;"><span>for k, v in ipairs(t) do
+</span></span><span style="display:flex;"><span>t = {10, print, 12, <span style="font-style:italic">&#34;hi&#34;</span>}
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">for</span> k, v <span style="font-weight:bold">in</span> ipairs(t) <span style="font-weight:bold">do</span>
 </span></span><span style="display:flex;"><span>	print(k, v)
 </span></span><span style="display:flex;"><span>end
-</span></span><span style="display:flex;"><span>for k = 1, #t do
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">for</span> k = 1, <span style="font-style:italic">#t do</span>
 </span></span><span style="display:flex;"><span>	print(k, t[k])
 </span></span><span style="display:flex;"><span>end
 </span></span></code></pre></div></li>

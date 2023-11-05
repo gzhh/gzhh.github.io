@@ -6,17 +6,16 @@
     <description>Recent content in json on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Mar 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2023 13:00:00 +0800</lastBuildDate>
+    <atom:link href="https://blog.gzhh.tech/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang json unmarshal 大整数为浮点数问题</title>
       <link>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</link>
       <pubDate>Sun, 26 Mar 2023 13:00:00 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</guid>
       <description>问题介绍 在 Golang 中使用 json Unmarshal 将一个 json 解析为不确定的结构 interface{} 时候，会将数字的接收类型默认设置为 float64。
 当原 json 结构中的整数太长，会导致转为 float64 超出精度，导致精度丢失。
 例子 package main import ( &amp;#34;bytes&amp;#34; &amp;#34;encoding/json&amp;#34; &amp;#34;fmt&amp;#34; ) var jsonstring = `{ &amp;#34;id&amp;#34;: 1130839459432311551, &amp;#34;id1&amp;#34;: 113083945943231, &amp;#34;id2&amp;#34;: 12344556, &amp;#34;create_time&amp;#34;: &amp;#34;2023-03-22 16:58:38&amp;#34;, &amp;#34;labels&amp;#34;: [] }` func f1() { var data interface{} err := json.Unmarshal([]byte(jsonstring), &amp;amp;data) if err != nil { panic(err) } fmt.Printf(&amp;#34;%+v\n&amp;#34;, data) dataBytes, err := json.Marshal(data) if err != nil { panic(err) } fmt.</description>
     </item>
-    
   </channel>
 </rss>

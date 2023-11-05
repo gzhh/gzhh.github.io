@@ -6,12 +6,12 @@
     <description>Recent content in Thinking on gzhh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Dec 2021 16:38:52 +0800</lastBuildDate><atom:link href="https://blog.gzhh.tech/tags/thinking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Dec 2021 16:38:52 +0800</lastBuildDate>
+    <atom:link href="https://blog.gzhh.tech/tags/thinking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>学习之道</title>
       <link>https://blog.gzhh.tech/reads/a-mind-for-numbers/</link>
       <pubDate>Sat, 18 Dec 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/a-mind-for-numbers/</guid>
       <description>1. 思考的两种模式 专注模式（类似于思考快与慢中的慢思维）
 专注于某个问题的解决，不一定要有结果。 发散模式（类似于思考快与慢中的快思维）
@@ -39,12 +39,10 @@
 5. 记忆技巧 图片记忆法 故事记忆法 &amp;hellip;
 6. 学习方法 输出式学习 自学，独立思考者 &amp;hellip;</description>
     </item>
-    
     <item>
       <title>思考，快与慢</title>
       <link>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</link>
       <pubDate>Sat, 27 Nov 2021 16:38:52 +0800</pubDate>
-      
       <guid>https://blog.gzhh.tech/reads/thinking-fast-and-slow/</guid>
       <description>总结 一、两种系统：系统1和系统2
 系统1：无意识的思考模式（直觉）
@@ -76,6 +74,5 @@
 参考 执行力
 PDCA</description>
     </item>
-    
   </channel>
 </rss>

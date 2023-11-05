@@ -25,6 +25,7 @@
 
 
 
+
   <title>gzhh&#39;s blog</title>
 
   
@@ -68,7 +69,7 @@
 
   
 
-  <meta name="generator" content="Hugo 0.119.0">
+  <meta name="generator" content="Hugo 0.120.3">
 
 
   
@@ -487,16 +488,16 @@
 </span></span><span style="display:flex;"><span>	<span style="font-weight:bold">return</span> server.ListenAndServe()
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>5.2 gin.ServeHTTP() 的实现</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>// ServeHTTP conforms to the http.Handler interface.
-</span></span><span style="display:flex;"><span>func (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request) {
-</span></span><span style="display:flex;"><span>	c := engine.pool.Get().(*Context) // 从对象池 pool 获取 context 上下文对象
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>// ServeHTTP conforms to the http.Handler interface.
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request) {
+</span></span><span style="display:flex;"><span>	c := engine.pool.Get().(*Context) // <span style="">从对象池</span> pool <span style="">获取</span> context <span style="">上下文对象</span>
 </span></span><span style="display:flex;"><span>	c.writermem.reset(w)
 </span></span><span style="display:flex;"><span>	c.Request = req
 </span></span><span style="display:flex;"><span>	c.reset()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	engine.handleHTTPRequest(c) // 处理 HTTP 请求
+</span></span><span style="display:flex;"><span>	engine.handleHTTPRequest(c) // <span style="">处理</span> HTTP <span style="">请求</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	engine.pool.Put(c) // 处理完请求将 context 对象归还给对象池 pool
+</span></span><span style="display:flex;"><span>	engine.pool.Put(c) // <span style="">处理完请求将</span> context <span style="">对象归还给对象池</span> pool
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>5.3 gin.handleHTTPRequest()</p>
 <p>接下来我们看下 gin 处理 HTTP 请求的具体实现</p>
@@ -543,33 +544,33 @@
 </span></span></code></pre></div><p><strong>5.4 gin.Context{}</strong></p>
 <p>上面我们提到了 gin.Context 对象池 pool 概念，以及使用 Context 对象 c.Next 方法调用具体 handler，接下来我们具体看下 gin 的 Context 对象：</p>
 <p>Context 是 gin 最重要的部分，我们可以通过 Context 在中间件之间传递参数、管理请求流、验证 json，以及返回响应 json</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>// Context is the most important part of gin. It allows us to pass variables between middleware,
-</span></span><span style="display:flex;"><span>// manage the flow, validate the JSON of a request and render a JSON response for example.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>// Context is the most important part of gin. It allows us to <span style="font-weight:bold">pass</span> variables between middleware,
+</span></span><span style="display:flex;"><span>// manage the flow, validate the JSON of a request <span style="font-weight:bold">and</span> render a JSON response <span style="font-weight:bold">for</span> example.
 </span></span><span style="display:flex;"><span>type Context struct {
 </span></span><span style="display:flex;"><span>	writermem responseWriter
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	Request   *http.Request // HTTP 请求
-</span></span><span style="display:flex;"><span>	Writer    ResponseWriter // HTTP 响应
+</span></span><span style="display:flex;"><span>	Request   *http.Request // HTTP <span style="">请求</span>
+</span></span><span style="display:flex;"><span>	Writer    ResponseWriter // HTTP <span style="">响应</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	Params   Params
-</span></span><span style="display:flex;"><span>	handlers HandlersChain // handler 处理数组
+</span></span><span style="display:flex;"><span>	handlers HandlersChain // handler <span style="">处理数组</span>
 </span></span><span style="display:flex;"><span>	index    int8
 </span></span><span style="display:flex;"><span>	fullPath string
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	engine       *Engine // 关联 gin.Engine 对象
+</span></span><span style="display:flex;"><span>	engine       *Engine // <span style="">关联</span> gin.Engine <span style="">对象</span>
 </span></span><span style="display:flex;"><span>	params       *Params
 </span></span><span style="display:flex;"><span>	skippedNodes *[]skippedNode
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	// This mutex protects Keys map.
 </span></span><span style="display:flex;"><span>	mu sync.RWMutex
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	// Keys is a key/value pair exclusively for the context of each request.
+</span></span><span style="display:flex;"><span>	// Keys is a key/value pair exclusively <span style="font-weight:bold">for</span> the context of each request.
 </span></span><span style="display:flex;"><span>	Keys map[string]any
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	// Errors is a list of errors attached to all the handlers/middlewares who used this context.
 </span></span><span style="display:flex;"><span>	Errors errorMsgs
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	// Accepted defines a list of manually accepted formats for content negotiation.
+</span></span><span style="display:flex;"><span>	// Accepted defines a list of manually accepted formats <span style="font-weight:bold">for</span> content negotiation.
 </span></span><span style="display:flex;"><span>	Accepted []string
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    ...
