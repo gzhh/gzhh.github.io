@@ -20,7 +20,7 @@
       <link>https://blog.gzhh.tech/read/</link>
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       <guid>https://blog.gzhh.tech/read/</guid>
-      <description>阅读媒介 非技术书主要是电子书，很小一部分是实体书；技术书大半是 PDF，小半是纸质书。经典反复看的会买纸质书，现在因为已经有了蛮多的纸质书，搬家不方便，后续会等有条件再买纸质书。&#xA;阅读方式主要是通过 iPad 上的 Books 和 微信读书 APP 来阅读；Mac 也会用预览 APP 来看一些 PDF 形式的技术书；Kindle 偶尔拿出来擦擦灰，有时候出去玩户外多天会带上。&#xA;阅读记录 2024 书名 标签 状态 媒介 方式 开始日期 结束日期 太白金星有点烦 小说 想读 长安的荔枝 小说 想读 芯片战争 科技 想读 暗淡蓝点 天文学 想读 宇宙 天文学 想读 原则 方法论 想读 善恶的彼岸 哲学 想读 NoSQL Distilled 计算机 想读 主题阅读 Unix/Linux&#xA;编程实践教程 计算机 想读 主题阅读 Linux/UNIX&#xA;系统编程手册 计算机 想读 PDF &amp;amp; 实体书 主题阅读 Unit Testing: Principles, Practices, and Patterns 计算机 想读 PDF 主题阅读 用Go语言自制</description>
+      <description>阅读媒介 非技术书主要是电子书，很小一部分是实体书；技术书大半是 PDF，小半是纸质书。经典反复看的会买纸质书，现在因为已经有了蛮多的纸质书，搬家不方便，后续会等有条件再买纸质书。&#xA;阅读方式主要是通过 iPad 上的 Books 和 微信读书 APP 来阅读；Mac 也会用预览 APP 来看一些 PDF 形式的技术书；Kindle 偶尔拿出来擦擦灰，有时候出去玩户外多天会带上。&#xA;阅读记录 2024 书名 标签 状态 媒介 方式 开始日期 结束日期 太白金星有点烦 小说 想读 长安的荔枝 小说 想读 芯片战争 科技 想读 暗淡蓝点 天文学 想读 宇宙 天文学 想读 原则 方法论 想读 善恶的彼岸 哲学 想读 NoSQL Distilled 计算机 想读 主题阅读 Unix/Linux&#xA;编程实践教程 计算机 想读 主题阅读 Linux/UNIX&#xA;系统编程手册 计算机 想读 PDF &amp;amp; 实体书 主题阅读 System Design&#xA;Interview: Volume 2 计算机 想读 PDF 分析阅读 用Go语言自制</description>
     </item>
     <item>
       <title>东晋门阀政治</title>
@@ -70,6 +70,13 @@
       <pubDate>Mon, 07 Aug 2023 16:38:52 +0800</pubDate>
       <guid>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</guid>
       <description>第一版大学读过了，工作几年后没怎么接触 Python，周末抽空重新读了下这第二版；项目1 和 项目2 跳过，项目3 Web 应用程序实践了下，第20章样式部分只快速过了下。</description>
+    </item>
+    <item>
+      <title>纳瓦尔宝典</title>
+      <link>https://blog.gzhh.tech/reads/life/the-almanack-of-naval-ravikant/</link>
+      <pubDate>Sun, 07 May 2023 16:48:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/life/the-almanack-of-naval-ravikant/</guid>
+      <description> 一、人生重要目标-财富 1. 避免内卷 游戏类型有&#xA;零和游戏：在零和游戏中，有输必有赢，&amp;ldquo;赢家&amp;rdquo; 的成果都是从 &amp;ldquo;输家&amp;rdquo; 那里得来的，最后的总和为零。 正和游戏：而在正和游戏中，可以做到所有人都是赢家，因为最后的总和是 &amp;ldquo;正&amp;rdquo; 的。 避免内卷那么就要“成为自己”。&#xA;2. 成功方法 世界上只有两种人: 利用杠杆的人和没有杠杆的人。&#xA;杠杆类型&#xA;劳动力杠杆：管理员工，让员工劳动 资本杠杆：投资 作品杠杆：自己的作用 用自己最擅长的方式创造价值, 并且通过最适合的杠杆去放大价值。&#xA;二、人生重要目标-幸福 1. 幸福就是平和的心态 人的欲求是永远无法满足的&#xA;2. 方法 冥想 饮食 追寻内在的成功 总结参考&#xA;https://mp.weixin.qq.com/s/O7Wkyu1D8xyZ34Lns9muNA </description>
     </item>
     <item>
       <title>Golang json unmarshal 大整数为浮点数问题</title>
