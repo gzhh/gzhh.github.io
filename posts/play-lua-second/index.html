@@ -9,14 +9,20 @@
 
 
 <meta name="author" content="gzhh">
-<meta name="description" content="gzhh&#39;s personal website">
+<meta name="description" content="说在前面 这一篇接着 Lua 语言入门（一） 继续写，主要是 lua 稍微高级一点的编程方式。
+1.Closure 闭包
+-- 普通函数 function foo (x) return 2*x end print(foo(1)) -- 将函数复制给一个变量 bar = function (x) return 3*x end print(bar(1)) -- 匿名函数 network = { {name = &#34;grauna&#34;, IP = &#34;210.26.30.34&#34;}, {name = &#34;arraial&#34;, IP = &#34;210.26.30.23&#34;}, {name = &#34;lua&#34;, IP = &#34;210.26.23.12&#34;}, {name = &#34;derain&#34;, IP = &#34;210.26.23.20&#34;}, } table.sort(network, function (a, b) return (a.name &gt; b.name) end) for _, item in ipairs(network) do print(&#34;name:&#34;, item.">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Lua 语言入门（二）"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="说在前面 这一篇接着 Lua 语言入门（一） 继续写，主要是 lua 稍微高级一点的编程方式。
+1.Closure 闭包
+-- 普通函数 function foo (x) return 2*x end print(foo(1)) -- 将函数复制给一个变量 bar = function (x) return 3*x end print(bar(1)) -- 匿名函数 network = { {name = &#34;grauna&#34;, IP = &#34;210.26.30.34&#34;}, {name = &#34;arraial&#34;, IP = &#34;210.26.30.23&#34;}, {name = &#34;lua&#34;, IP = &#34;210.26.23.12&#34;}, {name = &#34;derain&#34;, IP = &#34;210.26.23.20&#34;}, } table.sort(network, function (a, b) return (a.name &gt; b.name) end) for _, item in ipairs(network) do print(&#34;name:&#34;, item."/>
 
 <meta property="og:title" content="Lua 语言入门（二）" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="说在前面 这一篇接着 Lua 语言入门（一） 继续写，主要是 lua 稍微高级一点的编程方式。
+1.Closure 闭包
+-- 普通函数 function foo (x) return 2*x end print(foo(1)) -- 将函数复制给一个变量 bar = function (x) return 3*x end print(bar(1)) -- 匿名函数 network = { {name = &#34;grauna&#34;, IP = &#34;210.26.30.34&#34;}, {name = &#34;arraial&#34;, IP = &#34;210.26.30.23&#34;}, {name = &#34;lua&#34;, IP = &#34;210.26.23.12&#34;}, {name = &#34;derain&#34;, IP = &#34;210.26.23.20&#34;}, } table.sort(network, function (a, b) return (a.name &gt; b.name) end) for _, item in ipairs(network) do print(&#34;name:&#34;, item." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.gzhh.tech/posts/play-lua-second/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-10-06T09:22:54+08:00" />
@@ -66,9 +72,10 @@
 <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
-  
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="gzhh's blog" />
 
-  <meta name="generator" content="Hugo 0.122.0">
+
+  <meta name="generator" content="Hugo 0.123.0">
 
 
   

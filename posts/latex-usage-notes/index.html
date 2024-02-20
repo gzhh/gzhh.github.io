@@ -9,14 +9,74 @@
 
 
 <meta name="author" content="gzhh">
-<meta name="description" content="gzhh&#39;s personal website">
+<meta name="description" content="说在前面 最早接触的文字排版是 markdown，当时在 sublime 上面装了个插件就能把 .md 后缀文件生成 pdf，后来陆续读了 一些 LaTeX 排版的电子书籍(当时并不知道是 LaTeX 排版的)，觉得这样的排版很简洁，一直想使用这样的排版工具 写一些文档之类的东西，后来了解到 LaTeX 是 Lamport 基于 Knuth 发明的 TeX 演变开发出来的排版工具，现在笔者就把 LaTeX 的简单使用记录下来，方便 读者和自己查阅。
+LaTeX 文本介绍 1.空格
+多个空格和 tab 都被当作一个空格，多个空行被当作一个空行，一个空行表示两个段落之间的分隔
+2.特殊字符
+特殊字符的显示可以在前面加反斜线 \
+3.LaTeX 命令
+LaTeX 命令只由反斜线 \ 和大小写字母组成，命令名通过空格、数字或其他非字母字符结束
+LaTeX 忽略命令后面的空格，可以使用命令加上 {} 再加上空格来保留空格
+4.注释
+单行注释：一行中 % 后面的字符都会被注释
+多行注释：\begin{comment} 和 \end{comment} 直接的文本会被注释
+LaTeX 文本结构 1.开始命令
+\documentclass{&hellip;}
+2.加载包命令
+\usepackage{&hellip;}
+3.开始文本主体命令
+\begin{document}
+4.结束文本主体命令
+\end{document}
+例子一：
+\documentclass{article} \begin{document} This is a text. \end{document} 例子二：">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="LaTeX 学习记录"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="说在前面 最早接触的文字排版是 markdown，当时在 sublime 上面装了个插件就能把 .md 后缀文件生成 pdf，后来陆续读了 一些 LaTeX 排版的电子书籍(当时并不知道是 LaTeX 排版的)，觉得这样的排版很简洁，一直想使用这样的排版工具 写一些文档之类的东西，后来了解到 LaTeX 是 Lamport 基于 Knuth 发明的 TeX 演变开发出来的排版工具，现在笔者就把 LaTeX 的简单使用记录下来，方便 读者和自己查阅。
+LaTeX 文本介绍 1.空格
+多个空格和 tab 都被当作一个空格，多个空行被当作一个空行，一个空行表示两个段落之间的分隔
+2.特殊字符
+特殊字符的显示可以在前面加反斜线 \
+3.LaTeX 命令
+LaTeX 命令只由反斜线 \ 和大小写字母组成，命令名通过空格、数字或其他非字母字符结束
+LaTeX 忽略命令后面的空格，可以使用命令加上 {} 再加上空格来保留空格
+4.注释
+单行注释：一行中 % 后面的字符都会被注释
+多行注释：\begin{comment} 和 \end{comment} 直接的文本会被注释
+LaTeX 文本结构 1.开始命令
+\documentclass{&hellip;}
+2.加载包命令
+\usepackage{&hellip;}
+3.开始文本主体命令
+\begin{document}
+4.结束文本主体命令
+\end{document}
+例子一：
+\documentclass{article} \begin{document} This is a text. \end{document} 例子二："/>
 
 <meta property="og:title" content="LaTeX 学习记录" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="说在前面 最早接触的文字排版是 markdown，当时在 sublime 上面装了个插件就能把 .md 后缀文件生成 pdf，后来陆续读了 一些 LaTeX 排版的电子书籍(当时并不知道是 LaTeX 排版的)，觉得这样的排版很简洁，一直想使用这样的排版工具 写一些文档之类的东西，后来了解到 LaTeX 是 Lamport 基于 Knuth 发明的 TeX 演变开发出来的排版工具，现在笔者就把 LaTeX 的简单使用记录下来，方便 读者和自己查阅。
+LaTeX 文本介绍 1.空格
+多个空格和 tab 都被当作一个空格，多个空行被当作一个空行，一个空行表示两个段落之间的分隔
+2.特殊字符
+特殊字符的显示可以在前面加反斜线 \
+3.LaTeX 命令
+LaTeX 命令只由反斜线 \ 和大小写字母组成，命令名通过空格、数字或其他非字母字符结束
+LaTeX 忽略命令后面的空格，可以使用命令加上 {} 再加上空格来保留空格
+4.注释
+单行注释：一行中 % 后面的字符都会被注释
+多行注释：\begin{comment} 和 \end{comment} 直接的文本会被注释
+LaTeX 文本结构 1.开始命令
+\documentclass{&hellip;}
+2.加载包命令
+\usepackage{&hellip;}
+3.开始文本主体命令
+\begin{document}
+4.结束文本主体命令
+\end{document}
+例子一：
+\documentclass{article} \begin{document} This is a text. \end{document} 例子二：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.gzhh.tech/posts/latex-usage-notes/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-10-20T17:23:05+08:00" />
@@ -66,9 +126,10 @@
 <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
-  
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="gzhh's blog" />
 
-  <meta name="generator" content="Hugo 0.122.0">
+
+  <meta name="generator" content="Hugo 0.123.0">
 
 
   

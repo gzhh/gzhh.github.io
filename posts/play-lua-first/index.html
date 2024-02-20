@@ -9,14 +9,29 @@
 
 
 <meta name="author" content="gzhh">
-<meta name="description" content="gzhh&#39;s personal website">
+<meta name="description" content="说在前面 由于前段时间使用 Redis 相关技术接触到了 Lua 脚本用于提升 Redis 性能，再加上之前对 Nginx 可以使用 Lua 技术进行扩展非常感兴趣，所以这段时间抽空学习了下Lua，现在把自己初学 Lua 的 经历记录下来，供自己与各位同行参考和交流。
+1.代码块 进入交互模式 lua 执行 lua 脚本后进入交互模式 Lua -i test.lua 交互模式中执行 lua 脚本 dofile(&ldquo;test.lua&rdquo;)
+2.词法惯例 标识符：大小写敏感 注释：单行&ndash;，多行&ndash;[[]]&ndash;，只有第一行和最后一行被注释&mdash;[[]]&ndash; 分号：两条语句之间可写可不写
+3.全局变量 默认 nil
+4.变量和类型 由于 Lua 是动态语言，所以变量没有类型，但是每个值都有它们自己的类型 八个基本类型：
+value: &gt; type(nil)	--&gt; nil &gt; type(true) --&gt; boolean &gt; type(10.4 * 3) --&gt; number &gt; type(&#34;Hello world&#34;) --&gt; string &gt; type(io.stdin) --&gt; userdata &gt; type(print) --&gt; function &gt; type(type) --&gt; function &gt; type({}) --&gt; table &gt; type(type(X)) --&gt; string 5.">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Lua 语言入门（一）"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="说在前面 由于前段时间使用 Redis 相关技术接触到了 Lua 脚本用于提升 Redis 性能，再加上之前对 Nginx 可以使用 Lua 技术进行扩展非常感兴趣，所以这段时间抽空学习了下Lua，现在把自己初学 Lua 的 经历记录下来，供自己与各位同行参考和交流。
+1.代码块 进入交互模式 lua 执行 lua 脚本后进入交互模式 Lua -i test.lua 交互模式中执行 lua 脚本 dofile(&ldquo;test.lua&rdquo;)
+2.词法惯例 标识符：大小写敏感 注释：单行&ndash;，多行&ndash;[[]]&ndash;，只有第一行和最后一行被注释&mdash;[[]]&ndash; 分号：两条语句之间可写可不写
+3.全局变量 默认 nil
+4.变量和类型 由于 Lua 是动态语言，所以变量没有类型，但是每个值都有它们自己的类型 八个基本类型：
+value: &gt; type(nil)	--&gt; nil &gt; type(true) --&gt; boolean &gt; type(10.4 * 3) --&gt; number &gt; type(&#34;Hello world&#34;) --&gt; string &gt; type(io.stdin) --&gt; userdata &gt; type(print) --&gt; function &gt; type(type) --&gt; function &gt; type({}) --&gt; table &gt; type(type(X)) --&gt; string 5."/>
 
 <meta property="og:title" content="Lua 语言入门（一）" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="说在前面 由于前段时间使用 Redis 相关技术接触到了 Lua 脚本用于提升 Redis 性能，再加上之前对 Nginx 可以使用 Lua 技术进行扩展非常感兴趣，所以这段时间抽空学习了下Lua，现在把自己初学 Lua 的 经历记录下来，供自己与各位同行参考和交流。
+1.代码块 进入交互模式 lua 执行 lua 脚本后进入交互模式 Lua -i test.lua 交互模式中执行 lua 脚本 dofile(&ldquo;test.lua&rdquo;)
+2.词法惯例 标识符：大小写敏感 注释：单行&ndash;，多行&ndash;[[]]&ndash;，只有第一行和最后一行被注释&mdash;[[]]&ndash; 分号：两条语句之间可写可不写
+3.全局变量 默认 nil
+4.变量和类型 由于 Lua 是动态语言，所以变量没有类型，但是每个值都有它们自己的类型 八个基本类型：
+value: &gt; type(nil)	--&gt; nil &gt; type(true) --&gt; boolean &gt; type(10.4 * 3) --&gt; number &gt; type(&#34;Hello world&#34;) --&gt; string &gt; type(io.stdin) --&gt; userdata &gt; type(print) --&gt; function &gt; type(type) --&gt; function &gt; type({}) --&gt; table &gt; type(type(X)) --&gt; string 5." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.gzhh.tech/posts/play-lua-first/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-09-29T20:20:36+08:00" />
@@ -66,9 +81,10 @@
 <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
-  
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="gzhh's blog" />
 
-  <meta name="generator" content="Hugo 0.122.0">
+
+  <meta name="generator" content="Hugo 0.123.0">
 
 
   
