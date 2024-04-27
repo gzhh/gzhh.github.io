@@ -4,7 +4,7 @@
     <title>Quick-Sort on gzhh&#39;s blog</title>
     <link>https://blog.gzhh.tech/tags/quick-sort/</link>
     <description>Recent content in Quick-Sort on gzhh&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Apr 2018 23:24:03 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/tags/quick-sort/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://blog.gzhh.tech/posts/sort-algorithm/</link>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
       <guid>https://blog.gzhh.tech/posts/sort-algorithm/</guid>
-      <description>简介：八大排序算法 插入排序【直接插入排序和希尔排序】&#xA;交换排序【冒泡排序和快速排序】&#xA;选择排序【选择排序和堆排序】&#xA;归并排序&#xA;基数排序&#xA;一、直接插入排序 假设这里有一数组&#xA;n = 9; a[n] = {6,7,1,9,5,2,8,3,4}; // 从当前位置向前遍历 6 6 7 1 6 7 1 6 7 9 1 5 6 7 9 1 2 5 6 7 9 1 2 5 6 7 8 9 1 2 3 5 6 7 8 9 1 2 3 4 5 6 7 8 9 代码&#xA;#include&amp;lt;iostream&amp;gt; using namespace std; // 直接插入排序 void insertSort(int a[], int n) { for (int i = 1; i &amp;lt; n; i++) { int j = i, m = a[i]; while (a[j-1] &amp;gt; m) { a[j] = a[j-1]; j--; } a[j] = m; } } int main() { int n = 9; int a[n] = {6,7,1,9,5,2,8,3,4}; insertSort(a, n); for (int i = 0; i &amp;lt; n; i++) cout &amp;lt;&amp;lt; a[i] &amp;lt;&amp;lt; &amp;quot; &amp;quot;; cout &amp;lt;&amp;lt; endl; } 二、希尔排序 希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：</description>
+      <description></description>
     </item>
   </channel>
 </rss>

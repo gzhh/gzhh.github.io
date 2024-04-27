@@ -4,7 +4,7 @@
     <title>Lua on gzhh&#39;s blog</title>
     <link>https://blog.gzhh.tech/tags/lua/</link>
     <description>Recent content in Lua on gzhh&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 06 Oct 2019 09:22:54 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/tags/lua/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://blog.gzhh.tech/posts/play-lua-second/</link>
       <pubDate>Sun, 06 Oct 2019 09:22:54 +0800</pubDate>
       <guid>https://blog.gzhh.tech/posts/play-lua-second/</guid>
-      <description>说在前面 这一篇接着 Lua 语言入门（一） 继续写，主要是 lua 稍微高级一点的编程方式。&#xA;1.Closure 闭包&#xA;-- 普通函数 function foo (x) return 2*x end print(foo(1)) -- 将函数复制给一个变量 bar = function (x) return 3*x end print(bar(1)) -- 匿名函数 network = { {name = &amp;#34;grauna&amp;#34;, IP = &amp;#34;210.26.30.34&amp;#34;}, {name = &amp;#34;arraial&amp;#34;, IP = &amp;#34;210.26.30.23&amp;#34;}, {name = &amp;#34;lua&amp;#34;, IP = &amp;#34;210.26.23.12&amp;#34;}, {name = &amp;#34;derain&amp;#34;, IP = &amp;#34;210.26.23.20&amp;#34;}, } table.sort(network, function (a, b) return (a.name &amp;gt; b.name) end) for _, item in ipairs(network) do print(&amp;#34;name:&amp;#34;, item.</description>
+      <description></description>
     </item>
     <item>
       <title>Lua 语言入门（一）</title>
       <link>https://blog.gzhh.tech/posts/play-lua-first/</link>
       <pubDate>Sun, 29 Sep 2019 20:20:36 +0800</pubDate>
       <guid>https://blog.gzhh.tech/posts/play-lua-first/</guid>
-      <description>说在前面 由于前段时间使用 Redis 相关技术接触到了 Lua 脚本用于提升 Redis 性能，再加上之前对 Nginx 可以使用 Lua 技术进行扩展非常感兴趣，所以这段时间抽空学习了下Lua，现在把自己初学 Lua 的 经历记录下来，供自己与各位同行参考和交流。&#xA;1.代码块 进入交互模式 lua 执行 lua 脚本后进入交互模式 Lua -i test.lua 交互模式中执行 lua 脚本 dofile(&amp;ldquo;test.lua&amp;rdquo;)&#xA;2.词法惯例 标识符：大小写敏感 注释：单行&amp;ndash;，多行&amp;ndash;[[]]&amp;ndash;，只有第一行和最后一行被注释&amp;mdash;[[]]&amp;ndash; 分号：两条语句之间可写可不写&#xA;3.全局变量 默认 nil&#xA;4.变量和类型 由于 Lua 是动态语言，所以变量没有类型，但是每个值都有它们自己的类型 八个基本类型：&#xA;value: &amp;gt; type(nil)&#x9;--&amp;gt; nil &amp;gt; type(true) --&amp;gt; boolean &amp;gt; type(10.4 * 3) --&amp;gt; number &amp;gt; type(&amp;#34;Hello world&amp;#34;) --&amp;gt; string &amp;gt; type(io.stdin) --&amp;gt; userdata &amp;gt; type(print) --&amp;gt; function &amp;gt; type(type) --&amp;gt; function &amp;gt; type({}) --&amp;gt; table &amp;gt; type(type(X)) --&amp;gt; string 5.</description>
+      <description></description>
     </item>
   </channel>
 </rss>

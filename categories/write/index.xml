@@ -4,7 +4,7 @@
     <title>Write on gzhh&#39;s blog</title>
     <link>https://blog.gzhh.tech/categories/write/</link>
     <description>Recent content in Write on gzhh&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 20 Oct 2019 17:23:05 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/categories/write/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://blog.gzhh.tech/posts/latex-usage-notes/</link>
       <pubDate>Sun, 20 Oct 2019 17:23:05 +0800</pubDate>
       <guid>https://blog.gzhh.tech/posts/latex-usage-notes/</guid>
-      <description>说在前面 最早接触的文字排版是 markdown，当时在 sublime 上面装了个插件就能把 .md 后缀文件生成 pdf，后来陆续读了 一些 LaTeX 排版的电子书籍(当时并不知道是 LaTeX 排版的)，觉得这样的排版很简洁，一直想使用这样的排版工具 写一些文档之类的东西，后来了解到 LaTeX 是 Lamport 基于 Knuth 发明的 TeX 演变开发出来的排版工具，现在笔者就把 LaTeX 的简单使用记录下来，方便 读者和自己查阅。&#xA;LaTeX 文本介绍 1.空格&#xA;多个空格和 tab 都被当作一个空格，多个空行被当作一个空行，一个空行表示两个段落之间的分隔&#xA;2.特殊字符&#xA;特殊字符的显示可以在前面加反斜线 \&#xA;3.LaTeX 命令&#xA;LaTeX 命令只由反斜线 \ 和大小写字母组成，命令名通过空格、数字或其他非字母字符结束&#xA;LaTeX 忽略命令后面的空格，可以使用命令加上 {} 再加上空格来保留空格&#xA;4.注释&#xA;单行注释：一行中 % 后面的字符都会被注释&#xA;多行注释：\begin{comment} 和 \end{comment} 直接的文本会被注释&#xA;LaTeX 文本结构 1.开始命令&#xA;\documentclass{&amp;hellip;}&#xA;2.加载包命令&#xA;\usepackage{&amp;hellip;}&#xA;3.开始文本主体命令&#xA;\begin{document}&#xA;4.结束文本主体命令&#xA;\end{document}&#xA;例子一：&#xA;\documentclass{article} \begin{document} This is a text. \end{document} 例子二：</description>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Slice on gzhh&#39;s blog</title>
     <link>https://blog.gzhh.tech/tags/slice/</link>
     <description>Recent content in Slice on gzhh&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 19 Jun 2020 17:00:00 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/tags/slice/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://blog.gzhh.tech/posts/understand-slice-param-in-go-function/</link>
       <pubDate>Fri, 19 Jun 2020 17:00:00 +0800</pubDate>
       <guid>https://blog.gzhh.tech/posts/understand-slice-param-in-go-function/</guid>
-      <description>Table Of Contents 切片（Slice） 函数使用切片传参涉及到的拷贝及扩容 例一：切片传参且函数内只有读操作 例二：切片传参且函数有修改操作（不涉及扩容） 例三：切片传参且函数有修改操作（涉及扩容） 例四：切片指针传参且函数有修改操作（不涉及扩容） 例五：切片指针传参且函数有修改操作（涉及扩容） 参考 切片（Slice） 我们知道在 Go 中切片的底层数据结构是一个结构体，结构体中有一个指针 array 指向一个底层数组，len 表示当前切片的长度，cap 表示当前切片的容量。&#xA;type slice struct { array unsafe.Pointer len int cap int } 函数使用切片传参涉及到的拷贝及扩容 例一：切片传参且函数内只有读操作 package main import &amp;#34;fmt&amp;#34; func test(nums []int) { fmt.Printf(&amp;#34;\ninner before address: %p\n&amp;#34;, nums) fmt.Println(&amp;#34;inner before len: &amp;#34;, len(nums)) for _, num := range nums { _ = num } fmt.Printf(&amp;#34;inner after address: %p\n&amp;#34;, nums) fmt.Println(&amp;#34;inner after len: &amp;#34;, len(nums)) } func main() { nums := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9} fmt.</description>
+      <description></description>
     </item>
   </channel>
 </rss>

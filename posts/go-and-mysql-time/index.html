@@ -22,7 +22,7 @@ Date
 The T is just a literal to separate the date from the time, and the Z means &ldquo;zero hour offset&rdquo; also known as &ldquo;Zulu time&rdquo; (UTC). UTC GMT Time in China - CST Time in the United States 二、Time in Linux 查看所在时区的日期和时间">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Golang time.Time 和 MySQL datetime 互转问题"/>
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Golang time.Time 和 MySQL datetime 互转问题">
 <meta name="twitter:description" content="一、时间概念 时间标准 某个时间系统的时间标准又称时间基准，是定义如何测量时间的一种规范，具体包括测量时间间隔的尺度基准和定义起始时刻的参考基准。
 UTC
 https://en.wikipedia.org/wiki/Coordinated_Universal_Time 标准时间 标准时间是在同一时区内的不同地区，舍弃地区性的子午线定出的太阳时或地方平时，而共同采用的同步时间。
@@ -33,10 +33,12 @@ Date
 06:50:41Z T065041Z Date and time in UTC
 2023-11-05T06:50:41Z 20231105T065041Z Date and time with the offset
 2023-11-04T23:50:41−07:00 UTC−07:00 2023-11-05T06:50:41&#43;00:00 UTC&#43;00:00 2023-11-05T13:50:41&#43;07:00 UTC&#43;07:00 Ref:
-The T is just a literal to separate the date from the time, and the Z means &ldquo;zero hour offset&rdquo; also known as &ldquo;Zulu time&rdquo; (UTC). UTC GMT Time in China - CST Time in the United States 二、Time in Linux 查看所在时区的日期和时间"/>
+The T is just a literal to separate the date from the time, and the Z means &ldquo;zero hour offset&rdquo; also known as &ldquo;Zulu time&rdquo; (UTC). UTC GMT Time in China - CST Time in the United States 二、Time in Linux 查看所在时区的日期和时间">
 
-<meta property="og:title" content="Golang time.Time 和 MySQL datetime 互转问题" />
-<meta property="og:description" content="一、时间概念 时间标准 某个时间系统的时间标准又称时间基准，是定义如何测量时间的一种规范，具体包括测量时间间隔的尺度基准和定义起始时刻的参考基准。
+<meta property="og:url" content="https://blog.gzhh.tech/posts/go-and-mysql-time/">
+  <meta property="og:site_name" content="gzhh&#39;s blog">
+  <meta property="og:title" content="Golang time.Time 和 MySQL datetime 互转问题">
+  <meta property="og:description" content="一、时间概念 时间标准 某个时间系统的时间标准又称时间基准，是定义如何测量时间的一种规范，具体包括测量时间间隔的尺度基准和定义起始时刻的参考基准。
 UTC
 https://en.wikipedia.org/wiki/Coordinated_Universal_Time 标准时间 标准时间是在同一时区内的不同地区，舍弃地区性的子午线定出的太阳时或地方平时，而共同采用的同步时间。
 Time Zone
@@ -46,11 +48,13 @@ Date
 06:50:41Z T065041Z Date and time in UTC
 2023-11-05T06:50:41Z 20231105T065041Z Date and time with the offset
 2023-11-04T23:50:41−07:00 UTC−07:00 2023-11-05T06:50:41&#43;00:00 UTC&#43;00:00 2023-11-05T13:50:41&#43;07:00 UTC&#43;07:00 Ref:
-The T is just a literal to separate the date from the time, and the Z means &ldquo;zero hour offset&rdquo; also known as &ldquo;Zulu time&rdquo; (UTC). UTC GMT Time in China - CST Time in the United States 二、Time in Linux 查看所在时区的日期和时间" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gzhh.tech/posts/go-and-mysql-time/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-11-05T16:10:00+08:00" />
-<meta property="article:modified_time" content="2023-11-05T16:10:00+08:00" />
+The T is just a literal to separate the date from the time, and the Z means “zero hour offset” also known as “Zulu time” (UTC). UTC GMT Time in China - CST Time in the United States 二、Time in Linux 查看所在时区的日期和时间">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-05T16:10:00+08:00">
+    <meta property="article:modified_time" content="2023-11-05T16:10:00+08:00">
+    <meta property="article:tag" content="MySQL">
 
 
 
@@ -98,7 +102,7 @@ The T is just a literal to separate the date from the time, and the Z means &ldq
   <link rel="alternate" type="application/rss+xml" href="/index.xml" title="gzhh's blog" />
 
 
-  <meta name="generator" content="Hugo 0.124.1">
+  <meta name="generator" content="Hugo 0.125.4">
 
 
   
@@ -406,6 +410,9 @@ The T is just a literal to separate the date from the time, and the Z means &ldq
   
 
   
+  
+
+
 
   
 

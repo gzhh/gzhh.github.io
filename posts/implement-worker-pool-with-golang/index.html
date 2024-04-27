@@ -13,17 +13,21 @@
 简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="使用 Golang 实现 worker pool"/>
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="使用 Golang 实现 worker pool">
 <meta name="twitter:description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
-简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c."/>
+简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.">
 
-<meta property="og:title" content="使用 Golang 实现 worker pool" />
-<meta property="og:description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
-简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-02-08T16:00:00+08:00" />
-<meta property="article:modified_time" content="2023-02-08T16:00:00+08:00" />
+<meta property="og:url" content="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/">
+  <meta property="og:site_name" content="gzhh&#39;s blog">
+  <meta property="og:title" content="使用 Golang 实现 worker pool">
+  <meta property="og:description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
+简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-02-08T16:00:00+08:00">
+    <meta property="article:modified_time" content="2023-02-08T16:00:00+08:00">
+    <meta property="article:tag" content="Golang">
 
 
 
@@ -71,7 +75,7 @@
   <link rel="alternate" type="application/rss+xml" href="/index.xml" title="gzhh's blog" />
 
 
-  <meta name="generator" content="Hugo 0.124.1">
+  <meta name="generator" content="Hugo 0.125.4">
 
 
   
@@ -461,6 +465,9 @@
   
 
   
+  
+
+
 
   
 

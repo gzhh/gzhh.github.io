@@ -4,7 +4,7 @@
     <title>Go on gzhh&#39;s blog</title>
     <link>https://blog.gzhh.tech/categories/go/</link>
     <description>Recent content in Go on gzhh&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 05 Jul 2021 17:38:50 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/categories/go/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</link>
       <pubDate>Mon, 05 Jul 2021 17:38:50 +0800</pubDate>
       <guid>https://blog.gzhh.tech/posts/lifecycle-of-gin-framework/</guid>
-      <description>Table Of Contents 一、Gin 简介 Gin 特性 目录结构 二、实现原理 从官网 Demo 开始 Gin 生命周期 三、总结 Ref 一、Gin 简介 Gin is a HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance &amp;ndash; up to 40 times faster. If you need smashing performance, get yourself some Gin.&#xA;Gin 是使用 Golang/Go 实现的 HTTP Web 框架，代码简洁且性能高。截止 1.8.0 版本为止，总体实现代码 18K 行，而去掉测试代码的话则仅为 7K 行。&#xA;$ find . -name &amp;#34;*.</description>
+      <description></description>
     </item>
   </channel>
 </rss>
