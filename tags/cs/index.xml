@@ -6,8 +6,15 @@
     <description>Recent content in CS on gzhh&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Aug 2023 16:41:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2024 16:41:52 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>汇编语言（第4版）</title>
+      <link>https://blog.gzhh.tech/reads/cs/assembly-language-4nd-edition/</link>
+      <pubDate>Tue, 23 Apr 2024 22:08:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/cs/assembly-language-4nd-edition/</guid>
+      <description>2024-05-02&#xA;前四章细读完，对汇编相关的知识有了大致的了解，也复习了一些 CPU 如何和内存通信的计组相关知识点。&#xA;当然本书是以 8086 CPU 架构来写的，没有用现在主流的 x86-64，用 8086 可能理解起来更容易一些。&#xA;后面章节主要更深入讲一些汇编相关的语法和使用，简单快速翻完，有时间和需要再细读后面章节。</description>
+    </item>
     <item>
       <title>Python编程-从入门到实践（第2版）</title>
       <link>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</link>
