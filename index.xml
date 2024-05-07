@@ -121,7 +121,7 @@
       <description>第一版大学读过了，工作几年后没怎么接触 Python，周末抽空重新读了下这第二版；项目1 和 项目2 跳过，项目3 Web 应用程序实践了下，第20章样式部分只快速过了下。</description>
     </item>
     <item>
-      <title>Golang json unmarshal 大整数为浮点数问题</title>
+      <title>Golang json unmarshal 大整数丢失精度问题</title>
       <link>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</link>
       <pubDate>Sun, 26 Mar 2023 13:00:00 +0800</pubDate>
       <guid>https://blog.gzhh.tech/posts/golang-json-unmarshal-long-number/</guid>
