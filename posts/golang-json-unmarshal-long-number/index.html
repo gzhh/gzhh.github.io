@@ -14,8 +14,10 @@
 例子 package main import ( &#34;bytes&#34; &#34;encoding/json&#34; &#34;fmt&#34; ) var jsonstring = `{ &#34;id&#34;: 1130839459432311551, &#34;id1&#34;: 113083945943231, &#34;id2&#34;: 12344556, &#34;create_time&#34;: &#34;2023-03-22 16:58:38&#34;, &#34;labels&#34;: [] }` func f1() { var data interface{} err := json.Unmarshal([]byte(jsonstring), &amp;data) if err != nil { panic(err) } fmt.Printf(&#34;%&#43;v\n&#34;, data) dataBytes, err := json.Marshal(data) if err != nil { panic(err) } fmt.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Golang json unmarshal 大整数丢失精度问题">
-<meta name="twitter:description" content="问题介绍 在 Golang 中使用 json Unmarshal 将一个 json 解析为不确定的结构 interface{} 时候，会将数字的接收类型默认设置为 float64。
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Golang json unmarshal 大整数丢失精度问题">
+  <meta name="twitter:description" content="问题介绍 在 Golang 中使用 json Unmarshal 将一个 json 解析为不确定的结构 interface{} 时候，会将数字的接收类型默认设置为 float64。
 当原 json 结构中的整数太长，会导致转为 float64 超出精度，导致精度丢失。
 例子 package main import ( &#34;bytes&#34; &#34;encoding/json&#34; &#34;fmt&#34; ) var jsonstring = `{ &#34;id&#34;: 1130839459432311551, &#34;id1&#34;: 113083945943231, &#34;id2&#34;: 12344556, &#34;create_time&#34;: &#34;2023-03-22 16:58:38&#34;, &#34;labels&#34;: [] }` func f1() { var data interface{} err := json.Unmarshal([]byte(jsonstring), &amp;data) if err != nil { panic(err) } fmt.Printf(&#34;%&#43;v\n&#34;, data) dataBytes, err := json.Marshal(data) if err != nil { panic(err) } fmt.">
 
@@ -78,7 +80,7 @@
   <link rel="alternate" type="application/rss+xml" href="/index.xml" title="gzhh's blog" />
 
 
-  <meta name="generator" content="Hugo 0.125.6">
+  <meta name="generator" content="Hugo 0.126.1">
 
 
   
