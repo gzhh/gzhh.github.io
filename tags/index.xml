@@ -6,8 +6,29 @@
     <description>Recent content in Tags on gzhh&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jun 2024 13:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2024 21:50:52 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Economics</title>
+      <link>https://blog.gzhh.tech/tags/economics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.gzhh.tech/tags/economics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Politics</title>
+      <link>https://blog.gzhh.tech/tags/politics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.gzhh.tech/tags/politics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS</title>
+      <link>https://blog.gzhh.tech/tags/cs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.gzhh.tech/tags/cs/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Methodology</title>
       <link>https://blog.gzhh.tech/tags/methodology/</link>
@@ -27,13 +48,6 @@
       <link>https://blog.gzhh.tech/tags/assembler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.gzhh.tech/tags/assembler/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS</title>
-      <link>https://blog.gzhh.tech/tags/cs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.gzhh.tech/tags/cs/</guid>
       <description></description>
     </item>
     <item>
@@ -62,20 +76,6 @@
       <link>https://blog.gzhh.tech/tags/mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.gzhh.tech/tags/mysql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Economics</title>
-      <link>https://blog.gzhh.tech/tags/economics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.gzhh.tech/tags/economics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Politics</title>
-      <link>https://blog.gzhh.tech/tags/politics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.gzhh.tech/tags/politics/</guid>
       <description></description>
     </item>
     <item>
