@@ -6,8 +6,22 @@
     <description>Recent content in Tags on gzhh&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jul 2024 23:41:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2024 20:44:52 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Methodology</title>
+      <link>https://blog.gzhh.tech/tags/methodology/</link>
+      <pubDate>Sun, 11 Aug 2024 20:44:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/tags/methodology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS</title>
+      <link>https://blog.gzhh.tech/tags/cs/</link>
+      <pubDate>Sun, 04 Aug 2024 17:52:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/tags/cs/</guid>
+      <description></description>
+    </item>
     <item>
       <title>IC</title>
       <link>https://blog.gzhh.tech/tags/ic/</link>
@@ -30,13 +44,6 @@
       <description></description>
     </item>
     <item>
-      <title>Methodology</title>
-      <link>https://blog.gzhh.tech/tags/methodology/</link>
-      <pubDate>Sat, 01 Jun 2024 10:30:52 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/tags/methodology/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Fiction</title>
       <link>https://blog.gzhh.tech/tags/fiction/</link>
       <pubDate>Mon, 27 May 2024 23:23:00 +0800</pubDate>
@@ -48,13 +55,6 @@
       <link>https://blog.gzhh.tech/tags/assembler/</link>
       <pubDate>Tue, 23 Apr 2024 22:08:52 +0800</pubDate>
       <guid>https://blog.gzhh.tech/tags/assembler/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS</title>
-      <link>https://blog.gzhh.tech/tags/cs/</link>
-      <pubDate>Tue, 23 Apr 2024 22:08:52 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/tags/cs/</guid>
       <description></description>
     </item>
     <item>

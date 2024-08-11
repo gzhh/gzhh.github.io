@@ -6,8 +6,22 @@
     <description>Recent content in Read on gzhh&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jul 2024 23:41:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2024 20:44:52 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/categories/read/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>金字塔原理</title>
+      <link>https://blog.gzhh.tech/reads/methodology/the-pyramid-principle/</link>
+      <pubDate>Sun, 11 Aug 2024 20:44:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/methodology/the-pyramid-principle/</guid>
+      <description>总结 金字塔原理&#xA;表达的逻辑 金字塔逻辑 ✅ 归类分组 自上而下，结论先行 自下而上，总结概括 金字塔结构 纵向关系 横向关系 序言结构 演绎推理与归纳推理 思考的逻辑 ✅ 逻辑顺序（时间、结构、程度） 概括思想 解决问题的逻辑 界定问题 结构化分析问题 ✅ 标准流程：收集信息 -&amp;gt; 描述发现 -&amp;gt; 得出结论 -&amp;gt; 提出方案 演示的逻辑 书面 PPT 图片 笔记 第1章　为什么要用金字塔结构 1.为了交流方便，必须将思想（观点、结论、要点、论点、论据、建议、行动、步骤等）归类分组。 2.将分组后的思想，按照不同层次，进行抽象提炼、总结概括，搭建金字塔。 3.向读者介绍（传递、阐述、论证）思想最有效的途径，是结论先行，自上而下表达。 4.金字塔中的思想，应遵守4个基本原则（见右图）。 5.条理清晰的关键，是把你的思想组织成金字塔结构，并在写作前用金字塔原理检查。 关键概念 金字塔原理的4个基本原则 ●结论先行：每篇文章只有一个中心思想，并放在文章的最前面。 ●以上统下：每一层次上的思想必须是对下一层次思想的总结概括。 ●归类分组：每一组中的思想必须属于同一逻辑范畴。 ●逻辑递进：每一组中的思想必须按照逻辑顺序排列。 第2章　金字塔内部的结构 1.金字塔结构的各个层级上包括各种思想；思想使受众（包括读者、听众、观众或学员）产生疑问。 2.在纵向方向上，各分支、各层级上的思想，与读者进行疑问/回答式对话。 3.在横向方向上，各种思想以演绎推理或归纳推理方式回答读者的疑问，但两种方式不可同时使用。 4.序言的讲故事形式是为了提醒读者，文章将回答的读者最初的疑问。 5.序言包括背景、冲突、读者的疑问和作者的回答。冲突因背景而产生，背景和冲突都是读者已知的事实。 6.冲突导致读者提出疑问，而文章将回答读者的疑问。 关键概念 金字塔结构中的逻辑关系 ●各种思想纵向相关（疑问/回答式对话） ●各种思想横向相关（演绎/归纳，MECE原则） ●金字塔顶端思想回答的疑问，来自读者已知的事实 ●序言引出读者最初的疑问 第3章　如何构建金字塔 1.自上而下法 －确定作者想论述的主题 －设想读者的疑问 －给出答案 －检查背景和冲突是否引发读者提出疑问 －证实答案 －填写关键句要点 2.</description>
+    </item>
+    <item>
+      <title>编码 隐匿在计算机软硬件背后的语言</title>
+      <link>https://blog.gzhh.tech/reads/cs/code/</link>
+      <pubDate>Sun, 04 Aug 2024 17:52:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/cs/code/</guid>
+      <description>笔记 摩尔斯电码 Morse Code https://en.wikipedia.org/wiki/Morse_code 布莱叶盲文 Braille https://en.wikipedia.org/wiki/Braille 电子控制器件 通常应用于自动控制电路中，它实际上是用较小的电流去控制较大电流的一种“自动开关”。&#xA;发展历史&#xA;继电器 -&amp;gt; 真空管 -&amp;gt; 晶体管（半导体） 反馈与触发器 这部分比较难懂</description>
+    </item>
     <item>
       <title>芯片战争</title>
       <link>https://blog.gzhh.tech/reads/ic/chip-war/</link>

@@ -6,8 +6,15 @@
     <description>Recent content in CS on gzhh&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 May 2024 16:41:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2024 17:52:52 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编码 隐匿在计算机软硬件背后的语言</title>
+      <link>https://blog.gzhh.tech/reads/cs/code/</link>
+      <pubDate>Sun, 04 Aug 2024 17:52:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/cs/code/</guid>
+      <description>笔记 摩尔斯电码 Morse Code https://en.wikipedia.org/wiki/Morse_code 布莱叶盲文 Braille https://en.wikipedia.org/wiki/Braille 电子控制器件 通常应用于自动控制电路中，它实际上是用较小的电流去控制较大电流的一种“自动开关”。&#xA;发展历史&#xA;继电器 -&amp;gt; 真空管 -&amp;gt; 晶体管（半导体） 反馈与触发器 这部分比较难懂</description>
+    </item>
     <item>
       <title>汇编语言（第4版）</title>
       <link>https://blog.gzhh.tech/reads/cs/assembly-language-4nd-edition/</link>
