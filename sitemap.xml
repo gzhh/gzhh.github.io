@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.gzhh.tech/life/hiking/</loc>
+    <lastmod>2025-04-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/life/running/</loc>
+    <lastmod>2025-04-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/life/swimming/</loc>
+    <lastmod>2025-04-07T16:41:52+08:00</lastmod>
+  </url><url>
     <loc>https://blog.gzhh.tech/work/</loc>
     <lastmod>2024-08-18T16:41:52+08:00</lastmod>
   </url><url>
@@ -11,10 +20,13 @@
     <loc>https://blog.gzhh.tech/read/</loc>
     <lastmod>2021-12-06T16:41:52+08:00</lastmod>
   </url><url>
-    <loc>https://blog.gzhh.tech/categories/</loc>
-    <lastmod>2025-02-22T19:51:52+08:00</lastmod>
-  </url><url>
     <loc>https://blog.gzhh.tech/</loc>
+    <lastmod>2025-04-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/life/</loc>
+    <lastmod>2025-04-07T16:41:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.gzhh.tech/categories/</loc>
     <lastmod>2025-02-22T19:51:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/tags/philosophy/</loc>
@@ -50,13 +62,10 @@
     <loc>https://blog.gzhh.tech/reads/philosophy/the-conquest-of-happiness/</loc>
     <lastmod>2024-09-15T20:51:52+08:00</lastmod>
   </url><url>
-    <loc>https://blog.gzhh.tech/works/being-glue/</loc>
+    <loc>https://blog.gzhh.tech/work/being-glue/</loc>
     <lastmod>2024-08-18T16:41:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/categories/work/</loc>
-    <lastmod>2024-08-18T16:41:52+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.gzhh.tech/works/</loc>
     <lastmod>2024-08-18T16:41:52+08:00</lastmod>
   </url><url>
     <loc>https://blog.gzhh.tech/reads/history/zizhi-tongjian/</loc>

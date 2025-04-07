@@ -6,8 +6,29 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Feb 2025 19:51:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Apr 2025 16:41:52 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hiking</title>
+      <link>https://blog.gzhh.tech/life/hiking/</link>
+      <pubDate>Mon, 07 Apr 2025 16:38:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/life/hiking/</guid>
+      <description>2024 夏初 - 山西五台山逆朝 计划2天半走完，实际2天走完。&#xA;d0 上海火车过夜卧铺到太原 d1 太原到五台山东台，东台-&amp;gt;北台-&amp;gt;澡浴池（挂单过夜） d2 澡浴池-&amp;gt;西台-&amp;gt;南台-&amp;gt;宽滩（民宿过夜） d3 宽滩-&amp;gt;太原-&amp;gt;飞机回上海 2023 夏初 - 新疆乌孙古道反穿 6天半走完&#xA;2021 中秋 - 武功山-&amp;gt;明月山反穿 2天半走完</description>
+    </item>
+    <item>
+      <title>Running</title>
+      <link>https://blog.gzhh.tech/life/running/</link>
+      <pubDate>Mon, 07 Apr 2025 16:38:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/life/running/</guid>
+      <description>2025 苏州太湖数字半程马拉松 成绩：1:57:34</description>
+    </item>
+    <item>
+      <title>Swimming</title>
+      <link>https://blog.gzhh.tech/life/swimming/</link>
+      <pubDate>Mon, 07 Apr 2025 16:38:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/life/swimming/</guid>
+      <description>2024 兴·泉滴水湖泳渡 总量 2000 米只游了 1000 米弃赛，湖水风浪太大。</description>
+    </item>
     <item>
       <title>Work</title>
       <link>https://blog.gzhh.tech/work/</link>
@@ -66,9 +87,9 @@
     </item>
     <item>
       <title>Being Glue</title>
-      <link>https://blog.gzhh.tech/works/being-glue/</link>
+      <link>https://blog.gzhh.tech/work/being-glue/</link>
       <pubDate>Sun, 18 Aug 2024 16:38:52 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/works/being-glue/</guid>
+      <guid>https://blog.gzhh.tech/work/being-glue/</guid>
       <description>原文 https://noidea.dog/glue&#xA;As a professional software engineer，your task is to translate the English content I send you into Chinese.`&#xA;var content = `Your job title says &amp;ldquo;software engineer&amp;rdquo;, but you seem to spend most of your time in meetings. You&amp;rsquo;d like to have time to code, but nobody else is onboarding the junior engineers, updating the roadmap, talking to the users, noticing the things that got dropped, asking questions on design documents, and making sure that everyone&amp;rsquo;s going roughly in the same direction.</description>
     </item>
     <item>

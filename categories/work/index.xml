@@ -10,9 +10,9 @@
     <atom:link href="https://blog.gzhh.tech/categories/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Being Glue</title>
-      <link>https://blog.gzhh.tech/works/being-glue/</link>
+      <link>https://blog.gzhh.tech/work/being-glue/</link>
       <pubDate>Sun, 18 Aug 2024 16:38:52 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/works/being-glue/</guid>
+      <guid>https://blog.gzhh.tech/work/being-glue/</guid>
       <description>原文 https://noidea.dog/glue&#xA;As a professional software engineer，your task is to translate the English content I send you into Chinese.`&#xA;var content = `Your job title says &amp;ldquo;software engineer&amp;rdquo;, but you seem to spend most of your time in meetings. You&amp;rsquo;d like to have time to code, but nobody else is onboarding the junior engineers, updating the roadmap, talking to the users, noticing the things that got dropped, asking questions on design documents, and making sure that everyone&amp;rsquo;s going roughly in the same direction.</description>
     </item>
   </channel>
