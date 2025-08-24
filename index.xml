@@ -6,7 +6,7 @@
     <description>Recent content on gzhh&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Jul 2025 15:40:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Aug 2025 16:40:52 +0800</lastBuildDate>
     <atom:link href="https://blog.gzhh.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hiking</title>
@@ -49,6 +49,13 @@
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       <guid>https://blog.gzhh.tech/read/</guid>
       <description>阅读媒介 非技术书主要是电子书，很小一部分是实体书；技术书大半是 PDF，小半是纸质书。经典反复看的会买纸质书，现在因为已经有了蛮多的纸质书，搬家不方便，后续会等有条件再买纸质书。&#xA;阅读方式主要是通过 iPad 上的 Books 和 微信读书 APP 来阅读；Mac 也会用预览 APP 来看一些 PDF 形式的技术书；Kindle 偶尔拿出来擦擦灰，有时候出去玩户外多天会带上。&#xA;阅读记录 2025 书名 标签 状态 媒介 方式 开始日期 结束日期 宇宙 天文学 想读 原则 方法论 想读 赞美闲散 随笔 想读 昨日的世界 传记 想读 筚路维艰 历史 想读 Unix/Linux&#xA;编程实践教程 计算机 想读 主题阅读 Linux/UNIX&#xA;系统编程手册 计算机 想读 主题阅读 Wireshark网络&#xA;分析的艺术 计算机 想读 主题阅读 Wireshark网络&#xA;分析就这么简单 计算机 想读 主题阅读 用Go语言自制&#xA;编译器 计算机 想读 微信阅读 主题阅读 用Go语言自制&#xA;解释器 计算机 想读 微信阅读 主题阅读 Programming</description>
+    </item>
+    <item>
+      <title>When the Heavens Went on Sale</title>
+      <link>https://blog.gzhh.tech/reads/business/when-the-heavens-went-on-sale/</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:52 +0800</pubDate>
+      <guid>https://blog.gzhh.tech/reads/business/when-the-heavens-went-on-sale/</guid>
+      <description>资料&#xA;Goodreads: https://goodreads.com/book/show/62050244-when-the-heavens-went-on-sale 纪录片：https://movie.douban.com/subject/36963096/ 背景 主要讲商业航天，冷战六七八十年代主要是美俄两个国家政府不计成本搞太空竞赛，进入九十年代苏联解体后美国政府国防预算拨给 NASA 这块的经费大幅缩减，所以进入新世纪商业航天的发展需求不断变大。&#xA;21 世纪商业航天进程 https://en.wikipedia.org/wiki/Private_spaceflight 首先 21 世纪初两个开启商业航天的大型公司是 Elon Musk 的 SpaceX 和 Jeff Bezos 的 Blue Origin。&#xA;还有其他几个 2015 年左右开始发展的小商业公司，简要对比。&#xA;Planet Labs → 数据公司（卫星遥感，下游应用） Rocket Lab → 成熟的小火箭发射公司 + 卫星制造 Astra → 新兴小火箭公司，低成本但不稳定 Firefly Aerospace → 火箭 + 探月项目，逐步崛起 AST SpaceMobile → 卫星通信 Planet Labs https://www.planet.com 创始人&#xA;Will Marshall Robbie Schingler 介绍&#xA;主营业务：商业卫星遥感 核心产品：运营着全球最大的地球观测卫星星座（“Dove” 立方星群）。 特点：每天对整个地球进行高频成像，服务对象包括农业、保险、金融、政府和国防机构。 定位：地球数据公司，侧重 下游应用（卫星数据服务），不是发射公司。 现状&#xA;稳步增长 Rocket Lab https://rocketlabcorp.com 创始人</description>
     </item>
     <item>
       <title>精神与爱欲</title>
