@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LaTeX on gzhh&#39;s blog</title>
-    <link>https://blog.gzhh.tech/tags/latex/</link>
-    <description>Recent content in LaTeX on gzhh&#39;s blog</description>
+    <title>LaTeX on JoeyGao&#39;s blog</title>
+    <link>https://blog.joeygao.com/tags/latex/</link>
+    <description>Recent content in LaTeX on JoeyGao&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 20 Oct 2019 17:23:05 +0800</lastBuildDate>
-    <atom:link href="https://blog.gzhh.tech/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.joeygao.com/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LaTeX 学习记录</title>
-      <link>https://blog.gzhh.tech/posts/latex-usage-notes/</link>
+      <link>https://blog.joeygao.com/posts/latex-usage-notes/</link>
       <pubDate>Sun, 20 Oct 2019 17:23:05 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/posts/latex-usage-notes/</guid>
+      <guid>https://blog.joeygao.com/posts/latex-usage-notes/</guid>
       <description></description>
     </item>
   </channel>

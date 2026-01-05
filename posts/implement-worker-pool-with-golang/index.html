@@ -8,7 +8,7 @@
 
 
 
-<meta name="author" content="gzhh">
+<meta name="author" content="Joey Gao">
 <meta name="description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
 简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.">
 <meta name="keywords" content="blog,developer,personal">
@@ -19,8 +19,8 @@
   <meta name="twitter:description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
 简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.">
 
-<meta property="og:url" content="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/">
-  <meta property="og:site_name" content="gzhh&#39;s blog">
+<meta property="og:url" content="https://blog.joeygao.com/posts/implement-worker-pool-with-golang/">
+  <meta property="og:site_name" content="JoeyGao&#39;s blog">
   <meta property="og:title" content="使用 Golang 实现 worker pool">
   <meta property="og:description" content="介绍 Golang 中的 Channel 可以用来处理并发，下面我们就使用 Channel 来实现一个并发异步任务 worker pool。
 简单实现 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; ) var mq chan int64 func init() { mq = make(chan int64, 10) } func produce(i int64) { time.Sleep(time.Second) mq &lt;- i } func consume() { for { i := &lt;-mq time.Sleep(time.Second) fmt.Printf(&#34;get i %d\n&#34;, i) } } func main() { go consume() r := gin.Default() r.GET(&#34;/ping&#34;, func(c *gin.Context) { go produce(time.Now().UnixMilli()) c.">
@@ -33,10 +33,10 @@
 
 
 
-  <title>gzhh&#39;s blog</title>
+  <title>JoeyGao&#39;s blog</title>
 
   
-  <link rel="canonical" href="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/">
+  <link rel="canonical" href="https://blog.joeygao.com/posts/implement-worker-pool-with-golang/">
   
 
   <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -74,7 +74,8 @@
 <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
-  
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="JoeyGao's blog" />
+
 
   <meta name="generator" content="Hugo 0.131.0">
 
@@ -102,7 +103,7 @@
     <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      gzhh&#39;s blog
+      JoeyGao&#39;s blog
     </a>
     
       <input type="checkbox" id="menu-toggle" />
@@ -139,7 +140,7 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://blog.gzhh.tech/posts/implement-worker-pool-with-golang/">
+            <a class="title-link" href="https://blog.joeygao.com/posts/implement-worker-pool-with-golang/">
               使用 Golang 实现 worker pool
             </a>
           </h1>
@@ -448,8 +449,8 @@
     
       2017 -
     
-    2025
-     gzhh 
+    2026
+     Joey Gao 
     ·
     
     Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.

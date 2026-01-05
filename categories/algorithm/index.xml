@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithm on gzhh&#39;s blog</title>
-    <link>https://blog.gzhh.tech/categories/algorithm/</link>
-    <description>Recent content in Algorithm on gzhh&#39;s blog</description>
+    <title>Algorithm on JoeyGao&#39;s blog</title>
+    <link>https://blog.joeygao.com/categories/algorithm/</link>
+    <description>Recent content in Algorithm on JoeyGao&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Apr 2018 23:24:03 +0800</lastBuildDate>
-    <atom:link href="https://blog.gzhh.tech/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.joeygao.com/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>常见排序算法</title>
-      <link>https://blog.gzhh.tech/posts/sort-algorithm/</link>
+      <link>https://blog.joeygao.com/posts/sort-algorithm/</link>
       <pubDate>Sun, 01 Apr 2018 23:24:03 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/posts/sort-algorithm/</guid>
+      <guid>https://blog.joeygao.com/posts/sort-algorithm/</guid>
       <description></description>
     </item>
   </channel>

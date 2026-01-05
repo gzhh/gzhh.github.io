@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CS on gzhh&#39;s blog</title>
-    <link>https://blog.gzhh.tech/tags/cs/</link>
-    <description>Recent content in CS on gzhh&#39;s blog</description>
+    <title>CS on JoeyGao&#39;s blog</title>
+    <link>https://blog.joeygao.com/tags/cs/</link>
+    <description>Recent content in CS on JoeyGao&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 04 Aug 2024 17:52:52 +0800</lastBuildDate>
-    <atom:link href="https://blog.gzhh.tech/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.joeygao.com/tags/cs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编码 隐匿在计算机软硬件背后的语言</title>
-      <link>https://blog.gzhh.tech/reads/cs/code/</link>
+      <link>https://blog.joeygao.com/reads/cs/code/</link>
       <pubDate>Sun, 04 Aug 2024 17:52:52 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/reads/cs/code/</guid>
+      <guid>https://blog.joeygao.com/reads/cs/code/</guid>
       <description>笔记 摩尔斯电码 Morse Code https://en.wikipedia.org/wiki/Morse_code 布莱叶盲文 Braille https://en.wikipedia.org/wiki/Braille 电子控制器件 通常应用于自动控制电路中，它实际上是用较小的电流去控制较大电流的一种“自动开关”。&#xA;发展历史&#xA;继电器 -&amp;gt; 真空管 -&amp;gt; 晶体管（半导体） 反馈与触发器 这部分比较难懂</description>
     </item>
     <item>
       <title>汇编语言（第4版）</title>
-      <link>https://blog.gzhh.tech/reads/cs/assembly-language-4nd-edition/</link>
+      <link>https://blog.joeygao.com/reads/cs/assembly-language-4nd-edition/</link>
       <pubDate>Tue, 23 Apr 2024 22:08:52 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/reads/cs/assembly-language-4nd-edition/</guid>
+      <guid>https://blog.joeygao.com/reads/cs/assembly-language-4nd-edition/</guid>
       <description>2024-05-02&#xA;前四章细读完，对汇编相关的知识有了大致的了解，也复习了一些 CPU 如何和内存通信的计组相关知识点。&#xA;当然本书是以 8086 CPU 架构来写的，没有用现在主流的 x86-64，用 8086 可能理解起来更容易一些。&#xA;后面章节主要更深入讲一些汇编相关的语法和使用，简单快速翻完，有时间和需要再细读后面章节。</description>
     </item>
     <item>
       <title>Python编程-从入门到实践（第2版）</title>
-      <link>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</link>
+      <link>https://blog.joeygao.com/reads/cs/python-crash-course-2nd-edition/</link>
       <pubDate>Mon, 07 Aug 2023 16:38:52 +0800</pubDate>
-      <guid>https://blog.gzhh.tech/reads/cs/python-crash-course-2nd-edition/</guid>
+      <guid>https://blog.joeygao.com/reads/cs/python-crash-course-2nd-edition/</guid>
       <description>第一版大学读过了，工作几年后没怎么接触 Python，周末抽空重新读了下这第二版；项目1 和 项目2 跳过，项目3 Web 应用程序实践了下，第20章样式部分只快速过了下。</description>
     </item>
   </channel>
