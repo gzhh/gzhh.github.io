@@ -6,7 +6,7 @@
     <description>Recent content on JoeyGao&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Oct 2025 16:00:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Feb 2026 15:40:52 +0800</lastBuildDate>
     <atom:link href="https://blog.joeygao.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hiking</title>
@@ -49,6 +49,13 @@
       <pubDate>Mon, 06 Dec 2021 16:38:52 +0800</pubDate>
       <guid>https://blog.joeygao.com/read/</guid>
       <description>阅读媒介 非技术书主要是电子书，很小一部分是实体书；技术书大半是 PDF，小半是纸质书。经典反复看的会买纸质书，现在因为已经有了蛮多的纸质书，搬家不方便，后续会等有条件再买纸质书。&#xA;阅读方式主要是通过 iPad 上的 Books 和 微信读书 APP 来阅读；Mac 也会用预览 APP 来看一些 PDF 形式的技术书；Kindle 偶尔拿出来擦擦灰，有时候出去玩户外多天会带上。&#xA;阅读记录 2026 书名 标签 状态 媒介 方式 开始日期 结束日期 宇宙 天文学 想读 原则 方法论 想读 赞美闲散 随笔 想读 昨日的世界 传记 想读 筚路维艰 历史 想读 Unix/Linux&#xA;编程实践教程 计算机 想读 主题阅读 Linux/UNIX&#xA;系统编程手册 计算机 想读 主题阅读 Wireshark网络&#xA;分析的艺术 计算机 想读 主题阅读 Wireshark网络&#xA;分析就这么简单 计算机 想读 主题阅读 用Go语言自制&#xA;编译器 计算机 想读 微信阅读 主题阅读 用Go语言自制&#xA;解释器 计算机 想读 微信阅读 主题阅读 Programming</description>
+    </item>
+    <item>
+      <title>资治通鉴</title>
+      <link>https://blog.joeygao.com/reads/biography/the-life-and-art-of-glenn-gould/</link>
+      <pubDate>Sun, 01 Feb 2026 15:00:52 +0800</pubDate>
+      <guid>https://blog.joeygao.com/reads/biography/the-life-and-art-of-glenn-gould/</guid>
+      <description>感想 或许古尔德、库布里克、胡金铨是都同一类人，皆为各自领域内追求极致、具有孤独感的完美主义者。</description>
     </item>
     <item>
       <title>Foundation Series</title>
@@ -532,6 +539,13 @@
       <pubDate>Sun, 01 Jan 2017 23:26:25 +0800</pubDate>
       <guid>https://blog.joeygao.com/posts/the-purpose-of-2017/</guid>
       <description>&lt;p&gt;今天是2017年的第一天，度过了有很过欢笑也有很多悲伤的2016年，不管怎样，2016年都过去了，新生活还要继续，写点新年的计划吧，虽然知道很大部分很难完成，但还是写一下吧，万一完成了呢。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://blog.joeygao.com/reads/biography/read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.joeygao.com/reads/biography/read/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
